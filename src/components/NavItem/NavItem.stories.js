@@ -7,6 +7,6 @@ export default {
   decorators: [(story) => <MemoryRouter initialEntries={['/']}>{story()}</MemoryRouter>],
 };
 
-export const normal = () => <NavItem path="/test/" label="Test" />;
-export const signUp = () => <NavItem path="/sign-up/" label="Sign Up" type="btn-primary" />;
-export const logIn = () => <NavItem path="/login/" label="Log In" type="btn-secondary" />;
+export const normal = () => <NavItem className="mr-5 px-3 py-1 text-gray-600" to="/default/" label="Default" />;
+export const primaryBtn = () => <NavItem className="btn btn-primary" to="/primary-btn/" label="Primary btn" />;
+export const secondaryBtn = () => <NavItem className="btn btn-secondary" to="/secondary-btn/" label="Secondary btn" />;
