@@ -4,7 +4,7 @@ import NavItem from './NavItem';
 
 export default {
   title: 'NavItem',
-  decorators: [story => <MemoryRouter initialEntries={['/']}>{story()}</MemoryRouter>],
+  decorators: [(story) => <MemoryRouter initialEntries={['/']}>{story()}</MemoryRouter>],
 };
 
 export const normal = () => <NavItem path="/test/" label="Test" />;

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+// eslint-disable-next-line import/no-extraneous-dependencies
 import PropTypes from 'prop-types';
 
 
