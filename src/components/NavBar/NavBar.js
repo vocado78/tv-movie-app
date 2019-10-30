@@ -7,9 +7,9 @@ import NavItem from '../NavItem/NavItem';
 
 
 export default function NavBar({ isLoggedIn }) {
-  const defaultClass = 'px-3 py-1 text-gray-600';
+  const itemDefaultClass = 'px-3 py-1 text-gray-600';
   const navItemsOnLeft = ['Films', 'TV-shows', 'Lists', 'Discussions'].map((label) => {
-    return <NavItem className={defaultClass} key={label} label={label} to={`/${label.toLowerCase()}/`} />;
+    return <NavItem className={itemDefaultClass} key={label} label={label} to={`/${label.toLowerCase()}/`} />;
   });
 
   return (
@@ -21,7 +21,7 @@ export default function NavBar({ isLoggedIn }) {
       <NavList className="flex items-center list-none">
         {
           isLoggedIn ? [
-            <NavItem className={defaultClass} key="My Profile" label="My Profile" to="/myprofile/" />,
+            <NavItem className={itemDefaultClass} key="My Profile" label="My Profile" to="/myprofile/" />,
             <NavItem className="btn btn-primary mx-3" key="Log Out" label="Log Out" to="/" />
           ] : [
             <NavItem className="btn btn-primary mr-6" key="Sign Up" label="Sign Up" to="/signup/" />,
