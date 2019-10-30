@@ -1,0 +1,185 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots NavBar Logged In 1`] = `
+<nav
+  className="flex justify-between w-240 h-16 my-0 mx-auto bg-gray-200 relative"
+>
+  <ul
+    className="flex items-center list-none"
+  >
+    <li>
+      <a
+        className="px-3 py-1 text-gray-600"
+        href="/films/"
+        onClick={[Function]}
+      >
+        Films
+      </a>
+    </li>
+    <li>
+      <a
+        className="px-3 py-1 text-gray-600"
+        href="/tv-shows/"
+        onClick={[Function]}
+      >
+        TV-shows
+      </a>
+    </li>
+    <li>
+      <a
+        className="px-3 py-1 text-gray-600"
+        href="/lists/"
+        onClick={[Function]}
+      >
+        Lists
+      </a>
+    </li>
+    <li>
+      <a
+        className="px-3 py-1 text-gray-600"
+        href="/discussions/"
+        onClick={[Function]}
+      >
+        Discussions
+      </a>
+    </li>
+  </ul>
+  <div
+    className="absolute inset-1/2"
+  >
+    LOGO
+  </div>
+  <ul
+    className="flex items-center list-none"
+  >
+    <li>
+      <a
+        className="px-3 py-1 text-gray-600"
+        href="/myprofile/"
+        onClick={[Function]}
+      >
+        My Profile
+      </a>
+    </li>
+    <li>
+      <a
+        className="btn btn-primary mx-3"
+        href="/"
+        onClick={[Function]}
+      >
+        Log Out
+      </a>
+    </li>
+  </ul>
+</nav>
+`;
+
+exports[`Storyshots NavBar Logged Out 1`] = `
+<nav
+  className="flex justify-between w-240 h-16 my-0 mx-auto bg-gray-200 relative"
+>
+  <ul
+    className="flex items-center list-none"
+  >
+    <li>
+      <a
+        className="px-3 py-1 text-gray-600"
+        href="/films/"
+        onClick={[Function]}
+      >
+        Films
+      </a>
+    </li>
+    <li>
+      <a
+        className="px-3 py-1 text-gray-600"
+        href="/tv-shows/"
+        onClick={[Function]}
+      >
+        TV-shows
+      </a>
+    </li>
+    <li>
+      <a
+        className="px-3 py-1 text-gray-600"
+        href="/lists/"
+        onClick={[Function]}
+      >
+        Lists
+      </a>
+    </li>
+    <li>
+      <a
+        className="px-3 py-1 text-gray-600"
+        href="/discussions/"
+        onClick={[Function]}
+      >
+        Discussions
+      </a>
+    </li>
+  </ul>
+  <div
+    className="absolute inset-1/2"
+  >
+    LOGO
+  </div>
+  <ul
+    className="flex items-center list-none"
+  >
+    <li>
+      <a
+        className="btn btn-primary mr-6"
+        href="/signup/"
+        onClick={[Function]}
+      >
+        Sign Up
+      </a>
+    </li>
+    <li>
+      <a
+        className="btn btn-secondary mr-3"
+        href="/login/"
+        onClick={[Function]}
+      >
+        Log In
+      </a>
+    </li>
+  </ul>
+</nav>
+`;
+
+exports[`Storyshots NavItem Normal 1`] = `
+<li>
+  <a
+    className="mr-5 px-3 py-1 text-gray-600"
+    href="/default/"
+    onClick={[Function]}
+  >
+    Default
+  </a>
+</li>
+`;
+
+exports[`Storyshots NavItem Primary Btn 1`] = `
+<li>
+  <a
+    className="btn btn-primary"
+    href="/primary-btn/"
+    onClick={[Function]}
+  >
+    Primary btn
+  </a>
+</li>
+`;
+
+exports[`Storyshots NavItem Secondary Btn 1`] = `
+<li>
+  <a
+    className="btn btn-secondary"
+    href="/secondary-btn/"
+    onClick={[Function]}
+  >
+    Secondary btn
+  </a>
+</li>
+`;

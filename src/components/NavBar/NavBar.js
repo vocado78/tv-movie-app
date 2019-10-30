@@ -8,24 +8,24 @@ import NavItem from '../NavItem/NavItem';
 
 export default function NavBar({ isLoggedIn }) {
   const defaultClass = 'px-3 py-1 text-gray-600';
+  const navItemsOnLeft = ['Films', 'TV-shows', 'Lists', 'Discussions'].map((label) => {
+    return <NavItem className={defaultClass} key={label} label={label} to={`/${label.toLowerCase()}/`} />;
+  });
 
   return (
     <nav className="flex justify-between w-240 h-16 my-0 mx-auto bg-gray-200 relative">
       <NavList className="flex items-center list-none">
-        <NavItem className={defaultClass} label="Films" to="/films/" />
-        <NavItem className={defaultClass} label="TV-shows" to="/tv-shows/" />
-        <NavItem className={defaultClass} label="Lists" to="/lists/" />
-        <NavItem className={defaultClass} label="Discussions" to="/discussions/" />
+        {navItemsOnLeft}
       </NavList>
       <div className="absolute inset-1/2">LOGO</div>
       <NavList className="flex items-center list-none">
         {
           isLoggedIn ? [
-            <NavItem className={defaultClass} label="My Profile" to="/myprofile/" />,
-            <NavItem className="btn btn-primary mx-3" label="Log Out" to="/" />
+            <NavItem className={defaultClass} key="My Profile" label="My Profile" to="/myprofile/" />,
+            <NavItem className="btn btn-primary mx-3" key="Log Out" label="Log Out" to="/" />
           ] : [
-            <NavItem className="btn btn-primary mr-6" label="Sign Up" to="/signup/" />,
-            <NavItem className="btn btn-secondary mr-3" label="Log In" to="/login/" />
+            <NavItem className="btn btn-primary mr-6" key="Sign Up" label="Sign Up" to="/signup/" />,
+            <NavItem className="btn btn-secondary mr-3" key="Log In" label="Log In" to="/login/" />
           ]
         }
       </NavList>
