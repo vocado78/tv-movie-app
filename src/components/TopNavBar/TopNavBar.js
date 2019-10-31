@@ -6,7 +6,7 @@ import NavList from '../NavList/NavList';
 import NavItem from '../NavItem/NavItem';
 
 
-export default function NavBar({ isLoggedIn }) {
+export default function TopNavBar({ isLoggedIn }) {
   const itemDefaultClass = 'px-3 py-1 text-gray-600';
   const navItemsOnLeft = ['Films', 'TV-shows', 'Lists', 'Discussions'].map((label) => {
     return <NavItem className={itemDefaultClass} key={label} label={label} to={`/${label.toLowerCase()}/`} />;
@@ -33,10 +33,10 @@ export default function NavBar({ isLoggedIn }) {
   );
 }
 
-NavBar.propTypes = {
+TopNavBar.propTypes = {
   isLoggedIn: PropTypes.bool
 };
 
-NavBar.defaultProps = {
+TopNavBar.defaultProps = {
   isLoggedIn: false
 };

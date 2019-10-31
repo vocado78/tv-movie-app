@@ -1,12 +1,12 @@
 import React from 'react';
 import { MemoryRouter } from 'react-router-dom';
-import NavBar from './NavBar';
+import TopNavBar from './TopNavBar';
 
 export default {
-  component: NavBar,
-  title: 'NavBar',
+  component: TopNavBar,
+  title: 'TopNavBar',
   decorators: [(story) => <MemoryRouter initialEntries={['/']}>{story()}</MemoryRouter>]
 };
 
-export const loggedOut = () => <NavBar />;
-export const loggedIn = () => <NavBar isLoggedIn />;
+export const loggedOut = () => <TopNavBar />;
+export const loggedIn = () => <TopNavBar isLoggedIn />;
