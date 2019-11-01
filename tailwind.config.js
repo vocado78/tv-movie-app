@@ -3,6 +3,9 @@ module.exports = {
     extend: {
       width: {
         240: '60rem'
+      },
+      height: {
+        168: '42rem'
       }
     },
     inset: {
