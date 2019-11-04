@@ -1,11 +1,12 @@
 import React from 'react';
 import { MemoryRouter } from 'react-router-dom';
-import Hero from './Hero';
+import TopNav from './TopNav';
 
 export default {
-  component: Hero,
-  title: 'Hero',
+  component: TopNav,
+  title: 'TopNav',
   decorators: [(story) => <MemoryRouter initialEntries={['/']}>{story()}</MemoryRouter>]
 };
 
-export const normal = () => <Hero />;
+export const loggedOut = () => <TopNav isLoggedIn={false} />;
+export const loggedIn = () => <TopNav isLoggedIn />;
