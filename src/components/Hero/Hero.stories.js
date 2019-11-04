@@ -9,3 +9,6 @@ export default {
 };
 
 export const normal = () => <Hero />;
+normal.story = {
+  name: 'default'
+};

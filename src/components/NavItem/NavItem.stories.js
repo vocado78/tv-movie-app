@@ -8,3 +8,6 @@ export default {
 };
 
 export const normal = () => <NavItem className="px-3 py-1 text-gray-600" to="/default/" label="Default" />;
+normal.story = {
+  name: 'default'
+};
