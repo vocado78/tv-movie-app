@@ -6,7 +6,7 @@ const topNavItems = [
   { label: 'Sign Up', to: '/signup/' },
   { label: 'Log In', to: '/login/' },
   { label: 'My Profile', to: '/myprofile/' },
-  { label: 'Sign Out', to: '/' },
+  { label: 'Log Out', to: '/' },
 ];
 
 export default topNavItems;

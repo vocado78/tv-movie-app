@@ -12,7 +12,7 @@ export default function TopNav({ isLoggedIn }) {
     if (isLoggedIn) {
       return item.label !== 'Sign Up' && item.label !== 'Log In';
     }
-    return item.label !== 'My Profile' && item.label !== 'Sign Out';
+    return item.label !== 'My Profile' && item.label !== 'Log Out';
   }).map((item) => (
     <NavItem
       className="px-3 py-1 text-gray-600"
