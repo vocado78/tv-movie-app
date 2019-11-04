@@ -4,22 +4,11 @@ import PropTypes from 'prop-types';
 
 import NavList from '../NavList/NavList';
 import NavItem from '../NavItem/NavItem';
-// import topNavItems from '../../content/topNav.yml';
+import topNavItems from '../../content/topNav';
 
-
-const items = [
-  { label: 'Films', to: '/films/' },
-  { label: 'TV-shows', to: '/tv-shows/' },
-  { label: 'Lists', to: '/lists/' },
-  { label: 'Discussions', to: '/discussions/' },
-  { label: 'Sign Up', to: '/signup/' },
-  { label: 'Log In', to: '/login/' },
-  { label: 'My Profile', to: '/myprofile/' },
-  { label: 'Sign Out', to: '/' },
-];
 
 export default function TopNav({ isLoggedIn }) {
-  const navItems = items.filter((item) => {
+  const navItems = topNavItems.filter((item) => {
     if (isLoggedIn) {
       return item.label !== 'Sign Up' && item.label !== 'Log In';
     }
