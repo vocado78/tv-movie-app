@@ -1,12 +1,12 @@
 const topNavItems = [
-  { label: 'Films', to: '/films/' },
-  { label: 'TV-shows', to: '/tv-shows/' },
-  { label: 'Lists', to: '/lists/' },
-  { label: 'Discussions', to: '/discussions/' },
-  { label: 'Sign Up', to: '/signup/' },
-  { label: 'Log In', to: '/login/' },
-  { label: 'My Profile', to: '/myprofile/' },
-  { label: 'Log Out', to: '/' },
+  { id: 'films', label: 'Films', to: '/films/' },
+  { id: 'tv-shows', label: 'TV-shows', to: '/tv-shows/' },
+  { id: 'lists', label: 'Lists', to: '/lists/' },
+  { id: 'discussions', label: 'Discussions', to: '/discussions/' },
+  { id: 'signup', label: 'Sign Up', to: '/signup/' },
+  { id: 'login', label: 'Log In', to: '/login/' },
+  { id: 'myprofile', label: 'My Profile', to: '/myprofile/' },
+  { id: 'logout', label: 'Log Out', to: '/' },
 ];
 
 export default topNavItems;
