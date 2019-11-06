@@ -8194,6 +8194,10 @@ nav > ul > li:nth-child(5) {
   width: 16rem;
 }
 
+.w-76 {
+  width: 19.2rem;
+}
+
 .w-240 {
   width: 60rem;
 }
@@ -15904,6 +15908,10 @@ nav > ul > li:nth-child(5) {
 
   .sm\:w-64 {
     width: 16rem;
+  }
+
+  .sm\:w-76 {
+    width: 19.2rem;
   }
 
   .sm\:w-240 {
@@ -23619,6 +23627,10 @@ nav > ul > li:nth-child(5) {
     width: 16rem;
   }
 
+  .md\:w-76 {
+    width: 19.2rem;
+  }
+
   .md\:w-240 {
     width: 60rem;
   }
@@ -31332,6 +31344,10 @@ nav > ul > li:nth-child(5) {
     width: 16rem;
   }
 
+  .lg\:w-76 {
+    width: 19.2rem;
+  }
+
   .lg\:w-240 {
     width: 60rem;
   }
@@ -39043,6 +39059,10 @@ nav > ul > li:nth-child(5) {
 
   .xl\:w-64 {
     width: 16rem;
+  }
+
+  .xl\:w-76 {
+    width: 19.2rem;
   }
 
   .xl\:w-240 {
