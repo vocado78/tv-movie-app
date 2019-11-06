@@ -29,5 +29,3 @@ export default function Hero() {
     </div>
   );
 }
-
-// Photo by JESHOOTS.COM on Unsplash: https://unsplash.com/photos/PpYOQgsZDM4
