@@ -12,9 +12,9 @@ export default function Hero() {
   };
 
   return (
-    <div className="flex justify-center content-center h-168 bg-center bg-no-repeat" style={backgroundStyles}>
+    <div className="flex justify-center content-center h-168 bg-center bg-no-repeat -mt-16" style={backgroundStyles}>
       <Container className="flex-col justify-center text-center">
-        <h1 className="text-4xl font-bold leading-tight text-gray-300">
+        <h1 className="text-4xl font-bold leading-tight text-gray-400">
           Save shows and movies you want to watch.
           <br />
           Track what you have watched.

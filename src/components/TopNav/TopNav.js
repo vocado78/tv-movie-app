@@ -15,10 +15,10 @@ export default function TopNav({ isLoggedIn }) {
   });
 
   return (
-    <nav className="w-3/4">
+    <nav className="w-2/3">
       <List
         listStyle="flex list-none"
-        itemStyle="px-3 py-1 text-gray-600"
+        itemStyle="px-3 py-1 text-gray-400"
         items={navItems}
         component={NavItem}
       />
