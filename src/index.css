@@ -610,6 +610,10 @@ video {
   }
 }
 
+nav > ul > li:nth-child(5) {
+  margin-left: auto;
+}
+
 .btn {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
@@ -3801,6 +3805,10 @@ video {
   height: 16rem;
 }
 
+.h-168 {
+  height: 42rem;
+}
+
 .h-auto {
   height: auto;
 }
@@ -6596,70 +6604,37 @@ video {
   position: sticky;
 }
 
-.inset-0 {
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+.inset-1\/2 {
+  top: calc(50% - 1rem);
+  right: calc(50% - 1rem);
+  bottom: calc(50% - 1rem);
+  left: calc(50% - 1rem);
 }
 
-.inset-auto {
-  top: auto;
-  right: auto;
-  bottom: auto;
-  left: auto;
+.inset-y-1\/2 {
+  top: calc(50% - 1rem);
+  bottom: calc(50% - 1rem);
 }
 
-.inset-y-0 {
-  top: 0;
-  bottom: 0;
+.inset-x-1\/2 {
+  right: calc(50% - 1rem);
+  left: calc(50% - 1rem);
 }
 
-.inset-x-0 {
-  right: 0;
-  left: 0;
+.top-1\/2 {
+  top: calc(50% - 1rem);
 }
 
-.inset-y-auto {
-  top: auto;
-  bottom: auto;
+.right-1\/2 {
+  right: calc(50% - 1rem);
 }
 
-.inset-x-auto {
-  right: auto;
-  left: auto;
+.bottom-1\/2 {
+  bottom: calc(50% - 1rem);
 }
 
-.top-0 {
-  top: 0;
-}
-
-.right-0 {
-  right: 0;
-}
-
-.bottom-0 {
-  bottom: 0;
-}
-
-.left-0 {
-  left: 0;
-}
-
-.top-auto {
-  top: auto;
-}
-
-.right-auto {
-  right: auto;
-}
-
-.bottom-auto {
-  bottom: auto;
-}
-
-.left-auto {
-  left: auto;
+.left-1\/2 {
+  left: calc(50% - 1rem);
 }
 
 .resize-none {
@@ -8217,6 +8192,14 @@ video {
 
 .w-64 {
   width: 16rem;
+}
+
+.w-76 {
+  width: 19.2rem;
+}
+
+.w-240 {
+  width: 60rem;
 }
 
 .w-auto {
@@ -11538,6 +11521,10 @@ video {
     height: 16rem;
   }
 
+  .sm\:h-168 {
+    height: 42rem;
+  }
+
   .sm\:h-auto {
     height: auto;
   }
@@ -14333,70 +14320,37 @@ video {
     position: sticky;
   }
 
-  .sm\:inset-0 {
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+  .sm\:inset-1\/2 {
+    top: calc(50% - 1rem);
+    right: calc(50% - 1rem);
+    bottom: calc(50% - 1rem);
+    left: calc(50% - 1rem);
   }
 
-  .sm\:inset-auto {
-    top: auto;
-    right: auto;
-    bottom: auto;
-    left: auto;
+  .sm\:inset-y-1\/2 {
+    top: calc(50% - 1rem);
+    bottom: calc(50% - 1rem);
   }
 
-  .sm\:inset-y-0 {
-    top: 0;
-    bottom: 0;
+  .sm\:inset-x-1\/2 {
+    right: calc(50% - 1rem);
+    left: calc(50% - 1rem);
   }
 
-  .sm\:inset-x-0 {
-    right: 0;
-    left: 0;
+  .sm\:top-1\/2 {
+    top: calc(50% - 1rem);
   }
 
-  .sm\:inset-y-auto {
-    top: auto;
-    bottom: auto;
+  .sm\:right-1\/2 {
+    right: calc(50% - 1rem);
   }
 
-  .sm\:inset-x-auto {
-    right: auto;
-    left: auto;
+  .sm\:bottom-1\/2 {
+    bottom: calc(50% - 1rem);
   }
 
-  .sm\:top-0 {
-    top: 0;
-  }
-
-  .sm\:right-0 {
-    right: 0;
-  }
-
-  .sm\:bottom-0 {
-    bottom: 0;
-  }
-
-  .sm\:left-0 {
-    left: 0;
-  }
-
-  .sm\:top-auto {
-    top: auto;
-  }
-
-  .sm\:right-auto {
-    right: auto;
-  }
-
-  .sm\:bottom-auto {
-    bottom: auto;
-  }
-
-  .sm\:left-auto {
-    left: auto;
+  .sm\:left-1\/2 {
+    left: calc(50% - 1rem);
   }
 
   .sm\:resize-none {
@@ -15954,6 +15908,14 @@ video {
 
   .sm\:w-64 {
     width: 16rem;
+  }
+
+  .sm\:w-76 {
+    width: 19.2rem;
+  }
+
+  .sm\:w-240 {
+    width: 60rem;
   }
 
   .sm\:w-auto {
@@ -19276,6 +19238,10 @@ video {
     height: 16rem;
   }
 
+  .md\:h-168 {
+    height: 42rem;
+  }
+
   .md\:h-auto {
     height: auto;
   }
@@ -22071,70 +22037,37 @@ video {
     position: sticky;
   }
 
-  .md\:inset-0 {
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+  .md\:inset-1\/2 {
+    top: calc(50% - 1rem);
+    right: calc(50% - 1rem);
+    bottom: calc(50% - 1rem);
+    left: calc(50% - 1rem);
   }
 
-  .md\:inset-auto {
-    top: auto;
-    right: auto;
-    bottom: auto;
-    left: auto;
+  .md\:inset-y-1\/2 {
+    top: calc(50% - 1rem);
+    bottom: calc(50% - 1rem);
   }
 
-  .md\:inset-y-0 {
-    top: 0;
-    bottom: 0;
+  .md\:inset-x-1\/2 {
+    right: calc(50% - 1rem);
+    left: calc(50% - 1rem);
   }
 
-  .md\:inset-x-0 {
-    right: 0;
-    left: 0;
+  .md\:top-1\/2 {
+    top: calc(50% - 1rem);
   }
 
-  .md\:inset-y-auto {
-    top: auto;
-    bottom: auto;
+  .md\:right-1\/2 {
+    right: calc(50% - 1rem);
   }
 
-  .md\:inset-x-auto {
-    right: auto;
-    left: auto;
+  .md\:bottom-1\/2 {
+    bottom: calc(50% - 1rem);
   }
 
-  .md\:top-0 {
-    top: 0;
-  }
-
-  .md\:right-0 {
-    right: 0;
-  }
-
-  .md\:bottom-0 {
-    bottom: 0;
-  }
-
-  .md\:left-0 {
-    left: 0;
-  }
-
-  .md\:top-auto {
-    top: auto;
-  }
-
-  .md\:right-auto {
-    right: auto;
-  }
-
-  .md\:bottom-auto {
-    bottom: auto;
-  }
-
-  .md\:left-auto {
-    left: auto;
+  .md\:left-1\/2 {
+    left: calc(50% - 1rem);
   }
 
   .md\:resize-none {
@@ -23692,6 +23625,14 @@ video {
 
   .md\:w-64 {
     width: 16rem;
+  }
+
+  .md\:w-76 {
+    width: 19.2rem;
+  }
+
+  .md\:w-240 {
+    width: 60rem;
   }
 
   .md\:w-auto {
@@ -27014,6 +26955,10 @@ video {
     height: 16rem;
   }
 
+  .lg\:h-168 {
+    height: 42rem;
+  }
+
   .lg\:h-auto {
     height: auto;
   }
@@ -29809,70 +29754,37 @@ video {
     position: sticky;
   }
 
-  .lg\:inset-0 {
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+  .lg\:inset-1\/2 {
+    top: calc(50% - 1rem);
+    right: calc(50% - 1rem);
+    bottom: calc(50% - 1rem);
+    left: calc(50% - 1rem);
   }
 
-  .lg\:inset-auto {
-    top: auto;
-    right: auto;
-    bottom: auto;
-    left: auto;
+  .lg\:inset-y-1\/2 {
+    top: calc(50% - 1rem);
+    bottom: calc(50% - 1rem);
   }
 
-  .lg\:inset-y-0 {
-    top: 0;
-    bottom: 0;
+  .lg\:inset-x-1\/2 {
+    right: calc(50% - 1rem);
+    left: calc(50% - 1rem);
   }
 
-  .lg\:inset-x-0 {
-    right: 0;
-    left: 0;
+  .lg\:top-1\/2 {
+    top: calc(50% - 1rem);
   }
 
-  .lg\:inset-y-auto {
-    top: auto;
-    bottom: auto;
+  .lg\:right-1\/2 {
+    right: calc(50% - 1rem);
   }
 
-  .lg\:inset-x-auto {
-    right: auto;
-    left: auto;
+  .lg\:bottom-1\/2 {
+    bottom: calc(50% - 1rem);
   }
 
-  .lg\:top-0 {
-    top: 0;
-  }
-
-  .lg\:right-0 {
-    right: 0;
-  }
-
-  .lg\:bottom-0 {
-    bottom: 0;
-  }
-
-  .lg\:left-0 {
-    left: 0;
-  }
-
-  .lg\:top-auto {
-    top: auto;
-  }
-
-  .lg\:right-auto {
-    right: auto;
-  }
-
-  .lg\:bottom-auto {
-    bottom: auto;
-  }
-
-  .lg\:left-auto {
-    left: auto;
+  .lg\:left-1\/2 {
+    left: calc(50% - 1rem);
   }
 
   .lg\:resize-none {
@@ -31430,6 +31342,14 @@ video {
 
   .lg\:w-64 {
     width: 16rem;
+  }
+
+  .lg\:w-76 {
+    width: 19.2rem;
+  }
+
+  .lg\:w-240 {
+    width: 60rem;
   }
 
   .lg\:w-auto {
@@ -34752,6 +34672,10 @@ video {
     height: 16rem;
   }
 
+  .xl\:h-168 {
+    height: 42rem;
+  }
+
   .xl\:h-auto {
     height: auto;
   }
@@ -37547,70 +37471,37 @@ video {
     position: sticky;
   }
 
-  .xl\:inset-0 {
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+  .xl\:inset-1\/2 {
+    top: calc(50% - 1rem);
+    right: calc(50% - 1rem);
+    bottom: calc(50% - 1rem);
+    left: calc(50% - 1rem);
   }
 
-  .xl\:inset-auto {
-    top: auto;
-    right: auto;
-    bottom: auto;
-    left: auto;
+  .xl\:inset-y-1\/2 {
+    top: calc(50% - 1rem);
+    bottom: calc(50% - 1rem);
   }
 
-  .xl\:inset-y-0 {
-    top: 0;
-    bottom: 0;
+  .xl\:inset-x-1\/2 {
+    right: calc(50% - 1rem);
+    left: calc(50% - 1rem);
   }
 
-  .xl\:inset-x-0 {
-    right: 0;
-    left: 0;
+  .xl\:top-1\/2 {
+    top: calc(50% - 1rem);
   }
 
-  .xl\:inset-y-auto {
-    top: auto;
-    bottom: auto;
+  .xl\:right-1\/2 {
+    right: calc(50% - 1rem);
   }
 
-  .xl\:inset-x-auto {
-    right: auto;
-    left: auto;
+  .xl\:bottom-1\/2 {
+    bottom: calc(50% - 1rem);
   }
 
-  .xl\:top-0 {
-    top: 0;
-  }
-
-  .xl\:right-0 {
-    right: 0;
-  }
-
-  .xl\:bottom-0 {
-    bottom: 0;
-  }
-
-  .xl\:left-0 {
-    left: 0;
-  }
-
-  .xl\:top-auto {
-    top: auto;
-  }
-
-  .xl\:right-auto {
-    right: auto;
-  }
-
-  .xl\:bottom-auto {
-    bottom: auto;
-  }
-
-  .xl\:left-auto {
-    left: auto;
+  .xl\:left-1\/2 {
+    left: calc(50% - 1rem);
   }
 
   .xl\:resize-none {
@@ -39168,6 +39059,14 @@ video {
 
   .xl\:w-64 {
     width: 16rem;
+  }
+
+  .xl\:w-76 {
+    width: 19.2rem;
+  }
+
+  .xl\:w-240 {
+    width: 60rem;
   }
 
   .xl\:w-auto {
