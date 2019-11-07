@@ -8,7 +8,16 @@ exports[`Storyshots FeatureItem Normal 1`] = `
     <img
       alt="eye icon"
       className="mr-5 -mt-1 w-10 h-10"
-      src="/eye.svg"
+      src={
+        Object {
+          "ReactComponent": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "render": [Function],
+          },
+          "__esModule": true,
+          "default": "eye.svg",
+        }
+      }
     />
     <p
       className="w-56 text-gray-700 text-sm"
@@ -33,7 +42,16 @@ exports[`Storyshots Features Normal 1`] = `
         <img
           alt="Graphic icon of an eye"
           className="mr-5 -mt-1 w-10 h-10"
-          src="/eye.svg"
+          src={
+            Object {
+              "ReactComponent": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "render": [Function],
+              },
+              "__esModule": true,
+              "default": "eye.svg",
+            }
+          }
         />
         <p
           className="w-56 text-gray-700 text-sm"
@@ -49,7 +67,16 @@ exports[`Storyshots Features Normal 1`] = `
         <img
           alt="Graphic icon of an eye"
           className="mr-5 -mt-1 w-10 h-10"
-          src="/eye.svg"
+          src={
+            Object {
+              "ReactComponent": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "render": [Function],
+              },
+              "__esModule": true,
+              "default": "eye.svg",
+            }
+          }
         />
         <p
           className="w-56 text-gray-700 text-sm"
@@ -65,7 +92,16 @@ exports[`Storyshots Features Normal 1`] = `
         <img
           alt="Graphic icon of an eye"
           className="mr-5 -mt-1 w-10 h-10"
-          src="/eye.svg"
+          src={
+            Object {
+              "ReactComponent": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "render": [Function],
+              },
+              "__esModule": true,
+              "default": "eye.svg",
+            }
+          }
         />
         <p
           className="w-56 text-gray-700 text-sm"
@@ -81,7 +117,16 @@ exports[`Storyshots Features Normal 1`] = `
         <img
           alt="Graphic icon of an eye"
           className="mr-5 -mt-1 w-10 h-10"
-          src="/eye.svg"
+          src={
+            Object {
+              "ReactComponent": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "render": [Function],
+              },
+              "__esModule": true,
+              "default": "eye.svg",
+            }
+          }
         />
         <p
           className="w-56 text-gray-700 text-sm"
@@ -97,7 +142,16 @@ exports[`Storyshots Features Normal 1`] = `
         <img
           alt="Graphic icon of an eye"
           className="mr-5 -mt-1 w-10 h-10"
-          src="/eye.svg"
+          src={
+            Object {
+              "ReactComponent": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "render": [Function],
+              },
+              "__esModule": true,
+              "default": "eye.svg",
+            }
+          }
         />
         <p
           className="w-56 text-gray-700 text-sm"
@@ -113,7 +167,16 @@ exports[`Storyshots Features Normal 1`] = `
         <img
           alt="Graphic icon of an eye"
           className="mr-5 -mt-1 w-10 h-10"
-          src="/eye.svg"
+          src={
+            Object {
+              "ReactComponent": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "render": [Function],
+              },
+              "__esModule": true,
+              "default": "eye.svg",
+            }
+          }
         />
         <p
           className="w-56 text-gray-700 text-sm"
@@ -128,25 +191,30 @@ exports[`Storyshots Features Normal 1`] = `
 
 exports[`Storyshots Header Normal 1`] = `
 <header
-  className="h-16 bg-gray-200"
+  className="h-16 relative z-10"
+  style={
+    Object {
+      "backgroundColor": "rgba(0,0,0,0.25)",
+    }
+  }
 >
   <div
-    className="flex w-240 my-0 mx-auto h-full items-center"
+    className="flex w-240 my-0 mx-auto h-full items-center justify-between"
   >
     <div
-      className="mr-20 px-3 py-1"
+      className="mr-20 px-3 py-1 text-gray-400"
     >
       LOGO
     </div>
     <nav
-      className="w-3/4"
+      className="w-2/3"
     >
       <ul
         className="flex list-none"
       >
         <li>
           <a
-            className="px-3 py-1 text-gray-600"
+            className="px-3 py-1 text-gray-400"
             href="/films/"
             onClick={[Function]}
           >
@@ -155,7 +223,7 @@ exports[`Storyshots Header Normal 1`] = `
         </li>
         <li>
           <a
-            className="px-3 py-1 text-gray-600"
+            className="px-3 py-1 text-gray-400"
             href="/tv-shows/"
             onClick={[Function]}
           >
@@ -164,7 +232,7 @@ exports[`Storyshots Header Normal 1`] = `
         </li>
         <li>
           <a
-            className="px-3 py-1 text-gray-600"
+            className="px-3 py-1 text-gray-400"
             href="/lists/"
             onClick={[Function]}
           >
@@ -173,7 +241,7 @@ exports[`Storyshots Header Normal 1`] = `
         </li>
         <li>
           <a
-            className="px-3 py-1 text-gray-600"
+            className="px-3 py-1 text-gray-400"
             href="/discussions/"
             onClick={[Function]}
           >
@@ -182,7 +250,7 @@ exports[`Storyshots Header Normal 1`] = `
         </li>
         <li>
           <a
-            className="px-3 py-1 text-gray-600"
+            className="px-3 py-1 text-gray-400"
             href="/signup/"
             onClick={[Function]}
           >
@@ -191,7 +259,7 @@ exports[`Storyshots Header Normal 1`] = `
         </li>
         <li>
           <a
-            className="px-3 py-1 text-gray-600"
+            className="px-3 py-1 text-gray-400"
             href="/login/"
             onClick={[Function]}
           >
@@ -206,10 +274,10 @@ exports[`Storyshots Header Normal 1`] = `
 
 exports[`Storyshots Hero Normal 1`] = `
 <div
-  className="flex justify-center content-center h-168 bg-center bg-no-repeat"
+  className="flex justify-center content-center h-168 bg-center bg-no-repeat -mt-16"
   style={
     Object {
-      "backgroundImage": "linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/watchingtv.jpg')",
+      "backgroundImage": "linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(watchingtv.jpg)",
     }
   }
 >
@@ -217,7 +285,7 @@ exports[`Storyshots Hero Normal 1`] = `
     className="flex w-240 my-0 mx-auto flex-col justify-center text-center"
   >
     <h1
-      className="text-4xl font-bold leading-tight text-gray-300"
+      className="text-4xl font-bold leading-tight text-gray-400"
     >
       Save shows and movies you want to watch.
       <br />
@@ -237,6 +305,7 @@ exports[`Storyshots Hero Normal 1`] = `
       </p>
       <svg
         className="bg-white rounded-full p-1 self-center"
+        title="arrow icon"
       >
         arrow.svg
       </svg>
@@ -259,14 +328,14 @@ exports[`Storyshots NavItem Normal 1`] = `
 
 exports[`Storyshots TopNav Logged In 1`] = `
 <nav
-  className="w-3/4"
+  className="w-2/3"
 >
   <ul
     className="flex list-none"
   >
     <li>
       <a
-        className="px-3 py-1 text-gray-600"
+        className="px-3 py-1 text-gray-400"
         href="/films/"
         onClick={[Function]}
       >
@@ -275,7 +344,7 @@ exports[`Storyshots TopNav Logged In 1`] = `
     </li>
     <li>
       <a
-        className="px-3 py-1 text-gray-600"
+        className="px-3 py-1 text-gray-400"
         href="/tv-shows/"
         onClick={[Function]}
       >
@@ -284,7 +353,7 @@ exports[`Storyshots TopNav Logged In 1`] = `
     </li>
     <li>
       <a
-        className="px-3 py-1 text-gray-600"
+        className="px-3 py-1 text-gray-400"
         href="/lists/"
         onClick={[Function]}
       >
@@ -293,7 +362,7 @@ exports[`Storyshots TopNav Logged In 1`] = `
     </li>
     <li>
       <a
-        className="px-3 py-1 text-gray-600"
+        className="px-3 py-1 text-gray-400"
         href="/discussions/"
         onClick={[Function]}
       >
@@ -302,7 +371,7 @@ exports[`Storyshots TopNav Logged In 1`] = `
     </li>
     <li>
       <a
-        className="px-3 py-1 text-gray-600"
+        className="px-3 py-1 text-gray-400"
         href="/myprofile/"
         onClick={[Function]}
       >
@@ -311,7 +380,7 @@ exports[`Storyshots TopNav Logged In 1`] = `
     </li>
     <li>
       <a
-        className="px-3 py-1 text-gray-600"
+        className="px-3 py-1 text-gray-400"
         href="/"
         onClick={[Function]}
       >
@@ -324,14 +393,14 @@ exports[`Storyshots TopNav Logged In 1`] = `
 
 exports[`Storyshots TopNav Logged Out 1`] = `
 <nav
-  className="w-3/4"
+  className="w-2/3"
 >
   <ul
     className="flex list-none"
   >
     <li>
       <a
-        className="px-3 py-1 text-gray-600"
+        className="px-3 py-1 text-gray-400"
         href="/films/"
         onClick={[Function]}
       >
@@ -340,7 +409,7 @@ exports[`Storyshots TopNav Logged Out 1`] = `
     </li>
     <li>
       <a
-        className="px-3 py-1 text-gray-600"
+        className="px-3 py-1 text-gray-400"
         href="/tv-shows/"
         onClick={[Function]}
       >
@@ -349,7 +418,7 @@ exports[`Storyshots TopNav Logged Out 1`] = `
     </li>
     <li>
       <a
-        className="px-3 py-1 text-gray-600"
+        className="px-3 py-1 text-gray-400"
         href="/lists/"
         onClick={[Function]}
       >
@@ -358,7 +427,7 @@ exports[`Storyshots TopNav Logged Out 1`] = `
     </li>
     <li>
       <a
-        className="px-3 py-1 text-gray-600"
+        className="px-3 py-1 text-gray-400"
         href="/discussions/"
         onClick={[Function]}
       >
@@ -367,7 +436,7 @@ exports[`Storyshots TopNav Logged Out 1`] = `
     </li>
     <li>
       <a
-        className="px-3 py-1 text-gray-600"
+        className="px-3 py-1 text-gray-400"
         href="/signup/"
         onClick={[Function]}
       >
@@ -376,7 +445,7 @@ exports[`Storyshots TopNav Logged Out 1`] = `
     </li>
     <li>
       <a
-        className="px-3 py-1 text-gray-600"
+        className="px-3 py-1 text-gray-400"
         href="/login/"
         onClick={[Function]}
       >

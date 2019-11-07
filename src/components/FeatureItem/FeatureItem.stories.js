@@ -9,7 +9,7 @@ export default {
 const props = {
   className: 'flex w-1/3 mb-3 rounded shadow p-5',
   text: 'Some text to describe one of the app features.',
-  src: '/eye.svg',
+  src: './assets/eye.svg',
   alt: 'eye icon'
 };
 
