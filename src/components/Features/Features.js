@@ -10,8 +10,8 @@ export default function Features() {
   return (
     <Container className="py-40">
       <List
-        listStyle="flex flex-wrap list-none justify-between"
-        itemStyle="flex w-76 mb-4 rounded shadow p-5"
+        listClass="flex flex-wrap list-none justify-between"
+        itemClass="flex w-76 mb-4 rounded shadow p-5"
         items={features}
         component={FeatureItem}
       />

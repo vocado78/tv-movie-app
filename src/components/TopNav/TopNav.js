@@ -1,31 +1,41 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 
 import List from '../List/List';
 import NavItem from '../NavItem/NavItem';
-import topNavItems from '../../content/topNav';
+import topNavItemsLeft from '../../content/topNav';
+import { showModal } from '../../actions';
+import MODAL_IDS from '../Modal/modalIds';
 
 
-export default function TopNav({ isLoggedIn }) {
-  const navItems = topNavItems.filter((item) => {
-    if (isLoggedIn) {
-      return item.label !== 'Sign Up' && item.label !== 'Log In';
-    }
-    return item.label !== 'My Profile' && item.label !== 'Log Out';
-  });
+export const TopNav = (props) => {
+  const itemClass = 'px-3 py-1 text-gray-400';
 
   return (
-    <nav className="w-2/3">
+    <nav className="flex w-2/3">
       <List
-        listStyle="flex list-none"
-        itemStyle="px-3 py-1 text-gray-400"
-        items={navItems}
+        listClass="flex"
+        itemClass={itemClass}
+        items={topNavItemsLeft}
         component={NavItem}
       />
+      <ul className="flex">
+        {props.isLoggedIn ? [
+          <NavItem className={itemClass} key="myprofile" label="My Profile" to="/myprofile/" />,
+          <NavItem className={itemClass} key="logout" label="Log Out" to="/" />
+        ] : [
+          <NavItem className={itemClass} key="signup" onClick={() => props.showModal(MODAL_IDS.SIGN_UP)} label="Sign Up" to="#" />,
+          <NavItem className={itemClass} key="login" onClick={() => props.showModal(MODAL_IDS.LOG_IN)} label="Log In" to="#" />
+        ]}
+      </ul>
     </nav>
   );
-}
+};
+
+export default connect(null, { showModal })(TopNav);
 
 TopNav.propTypes = {
-  isLoggedIn: PropTypes.bool.isRequired
+  isLoggedIn: PropTypes.bool.isRequired,
+  showModal: PropTypes.func.isRequired
 };

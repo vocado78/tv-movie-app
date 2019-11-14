@@ -610,7 +610,7 @@ video {
   }
 }
 
-nav > ul > li:nth-child(5) {
+nav > ul:last-child {
   margin-left: auto;
 }
 

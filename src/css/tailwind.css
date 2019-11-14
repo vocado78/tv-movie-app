@@ -2,7 +2,7 @@
 
 @tailwind components;
 
-nav > ul > li:nth-child(5) {
+nav > ul:last-child {
   @apply ml-auto;
 }
 

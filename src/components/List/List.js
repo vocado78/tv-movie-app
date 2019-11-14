@@ -2,11 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 
-export default function List({ listStyle, itemStyle, items, component }) {
+export default function List({ listClass, itemClass, items, component }) {
   return (
-    <ul className={listStyle}>
+    <ul className={listClass}>
       {items.map((item) => {
-        const newProps = { key: item.id, className: itemStyle, ...item };
+        const newProps = { key: item.id, className: itemClass, ...item };
         return React.createElement(component, newProps);
       })}
     </ul>
@@ -14,8 +14,8 @@ export default function List({ listStyle, itemStyle, items, component }) {
 }
 
 List.propTypes = {
-  listStyle: PropTypes.string.isRequired,
-  itemStyle: PropTypes.string.isRequired,
+  listClass: PropTypes.string.isRequired,
+  itemClass: PropTypes.string.isRequired,
   items: PropTypes.arrayOf(PropTypes.object).isRequired,
   component: PropTypes.func.isRequired
 };
