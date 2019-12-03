@@ -399,10 +399,10 @@ exports[`Storyshots Header Normal 1`] = `
       LOGO
     </div>
     <nav
-      className="w-2/3"
+      className="flex w-2/3"
     >
       <ul
-        className="flex list-none"
+        className="flex"
       >
         <li>
           <a
@@ -440,10 +440,14 @@ exports[`Storyshots Header Normal 1`] = `
             Discussions
           </a>
         </li>
+      </ul>
+      <ul
+        className="flex"
+      >
         <li>
           <a
             className="px-3 py-1 text-gray-400"
-            href="/signup/"
+            href="/"
             onClick={[Function]}
           >
             Sign Up
@@ -452,7 +456,7 @@ exports[`Storyshots Header Normal 1`] = `
         <li>
           <a
             className="px-3 py-1 text-gray-400"
-            href="/login/"
+            href="/"
             onClick={[Function]}
           >
             Log In
@@ -487,7 +491,7 @@ exports[`Storyshots Hero Normal 1`] = `
     </h1>
     <a
       className="flex justify-around w-48 mx-auto mt-10 py-1 border-b border-transparent hover:border-white"
-      href="/signup"
+      href="/"
       onClick={[Function]}
     >
       <p
@@ -520,10 +524,10 @@ exports[`Storyshots NavItem Normal 1`] = `
 
 exports[`Storyshots TopNav Logged In 1`] = `
 <nav
-  className="w-2/3"
+  className="flex w-2/3"
 >
   <ul
-    className="flex list-none"
+    className="flex"
   >
     <li>
       <a
@@ -561,6 +565,10 @@ exports[`Storyshots TopNav Logged In 1`] = `
         Discussions
       </a>
     </li>
+  </ul>
+  <ul
+    className="flex"
+  >
     <li>
       <a
         className="px-3 py-1 text-gray-400"
@@ -585,10 +593,10 @@ exports[`Storyshots TopNav Logged In 1`] = `
 
 exports[`Storyshots TopNav Logged Out 1`] = `
 <nav
-  className="w-2/3"
+  className="flex w-2/3"
 >
   <ul
-    className="flex list-none"
+    className="flex"
   >
     <li>
       <a
@@ -626,10 +634,14 @@ exports[`Storyshots TopNav Logged Out 1`] = `
         Discussions
       </a>
     </li>
+  </ul>
+  <ul
+    className="flex"
+  >
     <li>
       <a
         className="px-3 py-1 text-gray-400"
-        href="/signup/"
+        href="/"
         onClick={[Function]}
       >
         Sign Up
@@ -638,7 +650,7 @@ exports[`Storyshots TopNav Logged Out 1`] = `
     <li>
       <a
         className="px-3 py-1 text-gray-400"
-        href="/login/"
+        href="/"
         onClick={[Function]}
       >
         Log In

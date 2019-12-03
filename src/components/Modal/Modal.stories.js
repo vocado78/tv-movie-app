@@ -8,7 +8,7 @@ export default {
 
 export const normal = () => {
   return (
-    <Modal title="Test Modal" onClick={() => {}} onKeyDown={() => {}}>
+    <Modal title="Test Modal" onClick={() => {}} onKeyDown={() => {}} closeModal={() => {}} onMount={() => {}} onUnmount={() => {}}>
       <p>Sit ad non magna voluptate aliqua voluptate aliqua proident cupidatat adipisicing.</p>
     </Modal>
   );

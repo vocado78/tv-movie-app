@@ -2,11 +2,15 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 
-import Modal from './Modal';
 import { showModal, hideModal } from '../../actions';
+import Signup from '../Signup/Signup';
 
 
 const appRoot = document.getElementById('root');
+const modalConfig = {
+  SIGN_UP: Signup,
+  LOG_IN: ''
+};
 
 class ModalContainer extends Component {
   onMount = () => {
@@ -26,11 +30,9 @@ class ModalContainer extends Component {
       this.closeModal();
     }
   }
-  // TODO: create signup and login specific modals to render as CurrentModal or maybe just use a prop
-  // for modal content, and pass signup/login form as prop? avoid prop drilling
 
   render() {
-    const CurrentModal = this.props.modal ? Modal : null;
+    const CurrentModal = this.props.modal ? modalConfig[this.props.modal] : null;
 
     return (
       <>
@@ -38,14 +40,11 @@ class ModalContainer extends Component {
           CurrentModal
           && (
             <CurrentModal
-              title="Testing"
               closeModal={this.closeModal}
               onKeyDown={this.onKeyDown}
               onMount={this.onMount}
               onUnmount={this.onUnmount}
-            >
-              <p>Quis est id est adipisicing occaecat ex sunt.</p>
-            </CurrentModal>
+            />
           )
         }
       </>

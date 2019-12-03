@@ -29,14 +29,14 @@ export default class Modal extends Component {
         >
           <div
             onClick={(e) => e.stopPropagation()}
-            className="max-w-lg p-6 bg-white rounded"
+            className="pt-4 pb-6 px-10 bg-white rounded"
             role="dialog"
             tabIndex="-1"
             aria-labelledby="modal-title"
           >
             <button
               onClick={closeModal}
-              className="float-right text-3xl -mt-4 hover:text-gray-500"
+              className="float-right text-4xl -mt-4 -mr-5 hover:text-gray-500"
               type="button"
               aria-label={`Close ${title} dialog`}
             >

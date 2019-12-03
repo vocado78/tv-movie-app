@@ -8,8 +8,8 @@ import topNavItemsLeft from '../../content/topNav';
 import { showModal } from '../../actions';
 import MODAL_IDS from '../Modal/modalIds';
 
-
-export const TopNav = (props) => {
+// TODO: modal triggers should be buttons, not links
+export const PureTopNav = (props) => {
   const itemClass = 'px-3 py-1 text-gray-400';
 
   return (
@@ -33,9 +33,9 @@ export const TopNav = (props) => {
   );
 };
 
-export default connect(null, { showModal })(TopNav);
+export default connect(null, { showModal })(PureTopNav);
 
-TopNav.propTypes = {
+PureTopNav.propTypes = {
   isLoggedIn: PropTypes.bool.isRequired,
   showModal: PropTypes.func.isRequired
 };

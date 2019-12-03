@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
@@ -9,8 +10,8 @@ import Container from '../Container/Container';
 import { showModal } from '../../actions';
 import MODAL_IDS from '../Modal/modalIds';
 
-
-const Hero = (props) => {
+// TODO: fix link issue
+export const Hero = (props) => {
   const backgroundStyles = {
     backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(${heroImage})`
   };
@@ -25,7 +26,7 @@ const Hero = (props) => {
           <br />
           Share with your friends what is worth watching.
         </h1>
-        <Link onClick={() => props.showModal(MODAL_IDS.SIGN_UP)} to="/" className="flex justify-around w-48 mx-auto mt-10 py-1 border-b border-transparent hover:border-white">
+        <Link onClick={() => props.showModal(MODAL_IDS.SIGN_UP)} to="#" className="flex justify-around w-48 mx-auto mt-10 py-1 border-b border-transparent hover:border-white">
           <p className="uppercase tracking-wide text-xl text-white">Get started</p>
           <ArrowIcon className="bg-white rounded-full p-1 self-center" title="arrow icon" />
         </Link>
