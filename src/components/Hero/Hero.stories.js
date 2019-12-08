@@ -1,14 +1,14 @@
 import React from 'react';
 import { MemoryRouter } from 'react-router-dom';
-import { Hero } from './Hero';
+import { PureHero } from './Hero';
 
 export default {
-  component: Hero,
+  component: PureHero,
   title: 'Hero',
   decorators: [(story) => <MemoryRouter initialEntries={['/']}>{story()}</MemoryRouter>]
 };
 
-export const normal = () => <Hero showModal={() => {}} />;
+export const normal = () => <PureHero showModal={() => {}} />;
 normal.story = {
   name: 'default'
 };
