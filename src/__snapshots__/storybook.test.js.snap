@@ -425,10 +425,10 @@ exports[`Storyshots Header Normal 1`] = `
         <li>
           <a
             className="px-3 py-1 text-gray-400"
-            href="/lists/"
+            href="/people/"
             onClick={[Function]}
           >
-            Lists
+            People
           </a>
         </li>
         <li>
@@ -550,10 +550,10 @@ exports[`Storyshots TopNav Logged In 1`] = `
     <li>
       <a
         className="px-3 py-1 text-gray-400"
-        href="/lists/"
+        href="/people/"
         onClick={[Function]}
       >
-        Lists
+        People
       </a>
     </li>
     <li>
@@ -619,10 +619,10 @@ exports[`Storyshots TopNav Logged Out 1`] = `
     <li>
       <a
         className="px-3 py-1 text-gray-400"
-        href="/lists/"
+        href="/people/"
         onClick={[Function]}
       >
-        Lists
+        People
       </a>
     </li>
     <li>

@@ -11,7 +11,7 @@ import { showModal } from '../../actions';
 import MODAL_IDS from '../Modal/modalIds';
 
 // TODO: fix link issue
-export const Hero = (props) => {
+export const PureHero = (props) => {
   const backgroundStyles = {
     backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(${heroImage})`
   };
@@ -35,8 +35,8 @@ export const Hero = (props) => {
   );
 };
 
-export default connect(null, { showModal })(Hero);
+export default connect(null, { showModal })(PureHero);
 
-Hero.propTypes = {
+PureHero.propTypes = {
   showModal: PropTypes.func.isRequired
 };
