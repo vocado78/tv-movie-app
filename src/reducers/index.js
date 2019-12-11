@@ -1,9 +1,6 @@
 import { combineReducers } from 'redux';
-import { SHOW_MODAL, HIDE_MODAL } from '../actions/types';
+import { SHOW_MODAL, HIDE_MODAL, AUTH_USER } from '../actions/types';
 
-// const INITIAL_STATE = {
-//   modal: null
-// };
 
 const modalReducer = (state = null, action) => {
   switch (action.type) {
@@ -16,6 +13,16 @@ const modalReducer = (state = null, action) => {
   }
 };
 
+const authReducer = (state = null, action) => {
+  switch (action.type) {
+    case AUTH_USER:
+      return action.payload;
+    default:
+      return state;
+  }
+};
+
 export default combineReducers({
-  modal: modalReducer
+  modal: modalReducer,
+  auth: authReducer
 });
