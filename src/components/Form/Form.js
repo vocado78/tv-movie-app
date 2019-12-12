@@ -13,13 +13,15 @@ export default function Form({
   otherAttrs,
   inputStyle,
   buttonLabel,
-  buttonStyle
+  buttonStyle,
+  validate
 }) {
   // TODO: validate fn in Form containers to pass to Field comp
 
   return (
     <FinalForm
       onSubmit={onSubmit}
+      validate={validate}
       render={({ handleSubmit, submitting }) => (
         <form className={formStyle} onSubmit={handleSubmit}>
           {otherAttrs.map((attrs) => (
@@ -42,5 +44,6 @@ Form.propTypes = {
   otherAttrs: PropTypes.arrayOf(PropTypes.object).isRequired,
   inputStyle: PropTypes.string.isRequired,
   buttonLabel: PropTypes.string.isRequired,
-  buttonStyle: PropTypes.string.isRequired
+  buttonStyle: PropTypes.string.isRequired,
+  validate: PropTypes.func.isRequired
 };

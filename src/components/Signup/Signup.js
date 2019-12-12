@@ -8,11 +8,18 @@ import Form from '../Form/Form';
 import signupAttrs from '../../content/forms';
 import { withFirebase } from '../Firebase/FirebaseContext';
 import { setAuthUser } from '../../actions';
+import { validateSignup } from '../../helpers/validate';
 
-// TODO validate fn: username should be unique
-// TODO onSubmit: create user in db, fb email verification, error handling
+// TODO onSubmit: create user in db, fb email verification
 
-class Signup extends Component {
+export class Signup extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      error: ''
+    };
+  }
+
   onSubmit = ({ email, password }) => {
     console.log(email, password);
     this.props.firebase.doCreateUserWithEmailAndPassword(email, password)
@@ -22,38 +29,13 @@ class Signup extends Component {
       })
       .catch((error) => {
         console.log('An error happened', error);
-        // use local state for error messages
+        this.setState({ error: error.message });
       });
-  }
-
-  validate = (values) => {
-    const errors = {};
-    const pwRegex = /(?!^[0-9]*$)(?!^[a-z]*$)(?!^[A-Z]*$)^([a-zA-Z0-9]{8,15})$/;
-
-    if (!values.username) {
-      errors.username = 'This field is required.';
-    }
-    if (values.username.length < 5) {
-      errors.username = 'Your username must be at least 5 characters long.';
-    }
-    if (!values.email) {
-      errors.email = 'This field is required.';
-    }
-    if (!values.password) {
-      errors.password = 'This field is required.';
-    }
-    if (values.password.length < 8 || values.password.length > 14) {
-      errors.password = 'Your password must be between 8 and 15 characters long.';
-    }
-    if (!pwRegex.test(values.password)) {
-      errors.password = 'Your password must contain at least 1 digit, 1 uppercase letter, and 1 lowercase letter.';
-    }
-
-    return errors;
   }
 
   render() {
     const { closeModal, onKeyDown, onMount, onUnmount } = this.props;
+    const { error } = this.state;
 
     if (this.state.authUser) {
       return <Redirect to="/profile" />;
@@ -67,13 +49,15 @@ class Signup extends Component {
         onMount={onMount}
         onUnmount={onUnmount}
       >
+        {error && <p>{error}</p>}
         <Form
           formStyle="mt-6"
           onSubmit={this.onSubmit}
           otherAttrs={signupAttrs}
           inputStyle="text-input"
-          buttonLabel="Sign Up"
+          buttonLabel="Create Account"
           buttonStyle="btn btn-primary"
+          validate={validateSignup}
         />
       </Modal>
     );
@@ -91,8 +75,7 @@ Signup.propTypes = {
   onKeyDown: PropTypes.func.isRequired,
   onMount: PropTypes.func.isRequired,
   onUnmount: PropTypes.func.isRequired,
-  firebase: PropTypes.objectOf(
-    PropTypes.func
-  ).isRequired,
+  // eslint-disable-next-line react/forbid-prop-types
+  firebase: PropTypes.object.isRequired,
   setAuthUser: PropTypes.func.isRequired
 };

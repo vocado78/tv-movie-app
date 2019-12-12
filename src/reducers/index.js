@@ -13,7 +13,7 @@ const modalReducer = (state = null, action) => {
   }
 };
 
-const authReducer = (state = null, action) => {
+export const authReducer = (state = { auth: null }, action) => {
   switch (action.type) {
     case AUTH_USER:
       return action.payload;
