@@ -7,9 +7,10 @@ import Footer from '../Footer/Footer';
 import HomeScreen from '../../screens/HomeScreen/HomeScreen';
 import ProfileScreen from '../../screens/ProfileScreen/ProfileScreen';
 import ModalContainer from '../Modal/ModalContainer';
+import { withAuthentication } from '../Auth';
 
 
-export default function App() {
+const App = () => {
   return (
     <div>
       <BrowserRouter>
@@ -21,4 +22,6 @@ export default function App() {
       </BrowserRouter>
     </div>
   );
-}
+};
+
+export default withAuthentication(App);
