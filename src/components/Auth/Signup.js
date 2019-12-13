@@ -6,7 +6,7 @@ import { withRouter } from 'react-router-dom';
 
 import Modal from '../Modal/Modal';
 import Form from '../Form/Form';
-import signupAttrs from '../../content/forms';
+import { signupAttrs } from '../../content/forms';
 import { withFirebase } from '../Firebase/FirebaseContext';
 import { hideModal } from '../../actions';
 import { validateSignup } from '../../helpers/validate';
@@ -17,7 +17,7 @@ export class Signup extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      error: ''
+      error: null
     };
   }
 
@@ -30,7 +30,7 @@ export class Signup extends Component {
       })
       .catch((error) => {
         console.log('An error happened', error);
-        this.setState({ error: error.message });
+        this.setState({ error });
       });
   }
 
@@ -46,7 +46,7 @@ export class Signup extends Component {
         onMount={onMount}
         onUnmount={onUnmount}
       >
-        {error && <p>{error}</p>}
+        {error && <p>{error.message}</p>}
         <Form
           formStyle="mt-6"
           onSubmit={this.onSubmit}

@@ -3,13 +3,13 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 
 import { showModal, hideModal } from '../../actions';
-import Signup from '../Signup/Signup';
+import { Signup, Login } from '../Auth';
 
 
 const appRoot = document.getElementById('root');
 const modalConfig = {
   SIGN_UP: Signup,
-  LOG_IN: ''
+  LOG_IN: Login
 };
 
 class ModalContainer extends Component {
