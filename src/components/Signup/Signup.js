@@ -1,13 +1,14 @@
+/* eslint-disable react/forbid-prop-types */
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { Redirect } from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
 
 import Modal from '../Modal/Modal';
 import Form from '../Form/Form';
 import signupAttrs from '../../content/forms';
 import { withFirebase } from '../Firebase/FirebaseContext';
-import { setAuthUser } from '../../actions';
+import { hideModal } from '../../actions';
 import { validateSignup } from '../../helpers/validate';
 
 // TODO onSubmit: create user in db, fb email verification
@@ -21,11 +22,11 @@ export class Signup extends Component {
   }
 
   onSubmit = ({ email, password }) => {
-    console.log(email, password);
     this.props.firebase.doCreateUserWithEmailAndPassword(email, password)
       .then((authUser) => {
-        this.props.setAuthUser(authUser);
         console.log(authUser);
+        this.props.hideModal();
+        this.props.history.push('/profile');
       })
       .catch((error) => {
         console.log('An error happened', error);
@@ -36,10 +37,6 @@ export class Signup extends Component {
   render() {
     const { closeModal, onKeyDown, onMount, onUnmount } = this.props;
     const { error } = this.state;
-
-    if (this.state.authUser) {
-      return <Redirect to="/profile" />;
-    }
 
     return (
       <Modal
@@ -64,18 +61,14 @@ export class Signup extends Component {
   }
 }
 
-const mapStateToProps = (state) => {
-  return { authUser: state.auth };
-};
-
-export default connect(mapStateToProps, { setAuthUser })(withFirebase(Signup));
+export default connect(null, { hideModal })(withRouter((withFirebase(Signup))));
 
 Signup.propTypes = {
   closeModal: PropTypes.func.isRequired,
   onKeyDown: PropTypes.func.isRequired,
   onMount: PropTypes.func.isRequired,
   onUnmount: PropTypes.func.isRequired,
-  // eslint-disable-next-line react/forbid-prop-types
   firebase: PropTypes.object.isRequired,
-  setAuthUser: PropTypes.func.isRequired
+  hideModal: PropTypes.func.isRequired,
+  history: PropTypes.object.isRequired
 };

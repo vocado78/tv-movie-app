@@ -4,24 +4,25 @@ import ReactDOM from 'react-dom';
 import { render } from '@testing-library/react';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
-import { MemoryRouter } from 'react-router-dom';
+import { Router } from 'react-router-dom';
+import { createMemoryHistory } from 'history';
 
-import { authReducer } from '../../../reducers';
+import reducers from '../../../reducers';
 import FirebaseContext from '../../Firebase/FirebaseContext';
 import Signup from '../Signup';
 import FirebaseMock from '../__mocks__/FirebaseMock';
 
 
-const store = createStore(authReducer);
+const store = createStore(reducers);
 
 const renderWithFbAndRedux = (ui) => {
   return {
     ...render(
       <Provider store={store}>
         <FirebaseContext.Provider value={new FirebaseMock()}>
-          <MemoryRouter initialEntries={['/']}>
+          <Router history={createMemoryHistory()}>
             {ui}
-          </MemoryRouter>
+          </Router>
         </FirebaseContext.Provider>
       </Provider>
     )
@@ -49,9 +50,5 @@ describe('Signup', () => {
   it('renders with redux and fb with defaults', () => {
     const { getByText } = renderWithFbAndRedux(<Signup {...props} />);
     expect(getByText('Create An Account')).not.toBeNull();
-  });
-
-  it('redirects user to /profile route on successful signup', () => {
-    // const { getByText } = renderWithFbAndRedux(<Signup props={propsMock} />);
   });
 });

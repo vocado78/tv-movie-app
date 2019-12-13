@@ -8,7 +8,7 @@ export default function User({ src, username, children }) {
         <img className="w-32 h-32 rounded-full" src={src} alt="User avatar" />
       </div>
       <div className="flex flex-col justify-center">
-        <h1 className="text-lg font-bold mb-3" title={username}>{username}</h1>
+        <h1 className="text-lg font-bold mb-3" title="username">{username}</h1>
         {children}
       </div>
     </div>

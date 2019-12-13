@@ -1,17 +1,21 @@
 import firebase from 'firebase/app';
-// import 'firebase/auth';
+
 
 jest.mock('firebase/app', () => ({
   initializeApp: (config) => (config),
   auth: () => ({
     createUserWithEmailAndPassword: (email, password) => {
-      const id = Math.floor(Math.random() * 100) + password.length;
-      return { email, id };
+      return new Promise((resolve) => {
+        const user = {
+          userId: Math.floor(Math.random() * 10) + password.length,
+          email
+        };
+        process.nextTick(() => {
+          resolve(user);
+        });
+      });
     },
-    signInWithEmailAndPassword: (email, password) => {
-      const id = Math.floor(Math.random() * 100) + password.length;
-      return { email, id };
-    },
+    signInWithEmailAndPassword: () => {},
     signOut: () => {}
   })
 }));

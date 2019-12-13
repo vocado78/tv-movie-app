@@ -61,11 +61,7 @@ export default connect(
   { showModal, hideModal }
 )(ModalContainer);
 
-ModalContainer.defaultProps = {
-  modal: null
-};
-
 ModalContainer.propTypes = {
-  modal: PropTypes.string,
+  modal: PropTypes.string.isRequired,
   hideModal: PropTypes.func.isRequired
 };
