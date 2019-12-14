@@ -35,4 +35,14 @@ const validateLogin = (values) => {
   return errors;
 };
 
-export { validateSignup, validateLogin };
+const validateReset = (values) => {
+  const errors = {};
+
+  if (!values.email) {
+    errors.email = 'This field is required.';
+  }
+
+  return errors;
+};
+
+export { validateSignup, validateLogin, validateReset };

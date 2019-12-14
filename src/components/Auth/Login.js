@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { withRouter } from 'react-router-dom';
+import { withRouter, Link } from 'react-router-dom';
 
 import Modal from '../Modal/Modal';
 import Form from '../Form/Form';
@@ -55,6 +55,8 @@ export class Login extends Component {
           buttonStyle="btn btn-primary"
           validate={validateLogin}
         />
+        <Link to="/reset-password" className="text-xs" onClick={this.props.hideModal}>I forgot my password</Link>
+        <p className="text-xs">Do not have an account? Create an account.</p>
       </Modal>
     );
   }
