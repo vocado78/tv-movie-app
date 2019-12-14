@@ -11,7 +11,7 @@ import { withFirebase } from '../Firebase/FirebaseContext';
 import { hideModal } from '../../actions';
 import { validateSignup } from '../../helpers/validate';
 
-// TODO onSubmit: create user in db, fb email verification
+// TODO onSubmit: fb email verification
 
 export class Signup extends Component {
   constructor(props) {
@@ -21,10 +21,17 @@ export class Signup extends Component {
     };
   }
 
-  onSubmit = ({ email, password }) => {
+  onSubmit = ({ username, email, password }) => {
     this.props.firebase.doCreateUserWithEmailAndPassword(email, password)
       .then((authUser) => {
-        console.log(authUser);
+        return this.props.firebase
+          .user(authUser.user.uid)
+          .set({
+            username,
+            email
+          });
+      })
+      .then(() => {
         this.props.hideModal();
         this.props.history.push('/profile');
       })

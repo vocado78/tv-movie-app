@@ -1,5 +1,6 @@
 import firebase from 'firebase/app';
 import 'firebase/auth';
+import 'firebase/firestore';
 
 
 const config = {
@@ -17,6 +18,7 @@ class Firebase {
     firebase.initializeApp(config);
 
     this.auth = firebase.auth();
+    this.db = firebase.firestore();
   }
 
   doCreateUserWithEmailAndPassword = (email, password) => {
@@ -28,6 +30,10 @@ class Firebase {
   }
 
   doSignOut = () => this.auth.signOut();
+
+  user = (uid) => this.db.collection('users').doc(uid);
+
+  users = () => this.db.collection('users');
 }
 
 export default Firebase;
