@@ -4,8 +4,9 @@ import Container from '../../components/Container/Container';
 import ProfileHeader from '../../components/profile/ProfileHeader';
 import ProfileNav from '../../components/profile/ProfileNav';
 import ProfileTabs from '../../components/profile/ProfileTabs';
+import { withAuthorisation } from '../../components/Auth';
 
-export default function ProfileScreen() {
+const ProfileScreen = () => {
   return (
     <Container className="flex-col py-8">
       <ProfileHeader />
@@ -13,4 +14,6 @@ export default function ProfileScreen() {
       <ProfileTabs />
     </Container>
   );
-}
+};
+
+export default withAuthorisation(ProfileScreen);

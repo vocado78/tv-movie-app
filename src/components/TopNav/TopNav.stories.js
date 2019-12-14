@@ -1,12 +1,12 @@
 import React from 'react';
 import { MemoryRouter } from 'react-router-dom';
-import { PureTopNav } from './TopNav';
+import TopNav from './TopNav';
 
 export default {
-  component: PureTopNav,
+  component: TopNav,
   title: 'TopNav',
   decorators: [(story) => <MemoryRouter initialEntries={['/']}>{story()}</MemoryRouter>]
 };
 
-export const loggedOut = () => <PureTopNav showModal={() => {}} isLoggedIn={false} />;
-export const loggedIn = () => <PureTopNav showModal={() => {}} isLoggedIn />;
+export const loggedOut = () => <TopNav showModal={() => {}} isLoggedIn={false} />;
+export const loggedIn = () => <TopNav showModal={() => {}} isLoggedIn />;

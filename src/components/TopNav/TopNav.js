@@ -1,16 +1,15 @@
+/* eslint-disable react/forbid-prop-types */
 import React from 'react';
-import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 
 import List from '../List/List';
 import NavItem from '../NavItem/NavItem';
 import topNavItemsLeft from '../../content/topNav';
-import { showModal } from '../../actions';
 import MODAL_IDS from '../Modal/modalIds';
 import { Logout } from '../Auth';
 
 // TODO: modal triggers should be buttons, not links
-export const PureTopNav = (props) => {
+export default function TopNav({ isLoggedIn, showModal }) {
   const itemClass = 'px-3 py-1 text-gray-400';
 
   return (
@@ -22,21 +21,23 @@ export const PureTopNav = (props) => {
         component={NavItem}
       />
       <ul className="flex">
-        {props.isLoggedIn ? [
+        {isLoggedIn ? [
           <NavItem className={itemClass} key="myprofile" label="My Profile" to="/myprofile/" />,
           <Logout className={itemClass} key="logout" />
         ] : [
-          <NavItem className={itemClass} key="signup" onClick={() => props.showModal(MODAL_IDS.SIGN_UP)} label="Sign Up" to="#" />,
-          <NavItem className={itemClass} key="login" onClick={() => props.showModal(MODAL_IDS.LOG_IN)} label="Log In" to="#" />
+          <NavItem className={itemClass} key="signup" onClick={() => showModal(MODAL_IDS.SIGN_UP)} label="Sign Up" to="#" />,
+          <NavItem className={itemClass} key="login" onClick={() => showModal(MODAL_IDS.LOG_IN)} label="Log In" to="#" />
         ]}
       </ul>
     </nav>
   );
+}
+
+TopNav.defaultProps = {
+  isLoggedIn: null
 };
 
-export default connect(null, { showModal })(PureTopNav);
-
-PureTopNav.propTypes = {
-  isLoggedIn: PropTypes.bool.isRequired,
+TopNav.propTypes = {
+  isLoggedIn: PropTypes.object,
   showModal: PropTypes.func.isRequired
 };
