@@ -7,10 +7,10 @@ import { Provider } from 'react-redux';
 import { Router } from 'react-router-dom';
 import { createMemoryHistory } from 'history';
 
-import reducers from '../../../reducers';
-import FirebaseContext from '../../Firebase/FirebaseContext';
-import Signup from '../Signup';
-import FirebaseMock from '../__mocks__/FirebaseMock';
+import reducers from '../../../../reducers';
+import FirebaseContext from '../../../Firebase/FirebaseContext';
+import SignupForm from '../SignupForm';
+import FirebaseMock from '../../__mocks__/FirebaseMock';
 
 
 const store = createStore(reducers);
@@ -29,14 +29,8 @@ const renderWithFbAndRedux = (ui) => {
   };
 };
 
-const props = {
-  closeModal: () => {},
-  onKeyDown: () => {},
-  onMount: () => {},
-  onUnmount: () => {}
-};
 
-describe('Signup', () => {
+describe('SignupForm', () => {
   beforeAll(() => {
     ReactDOM.createPortal = jest.fn((element, node) => {
       return element;
@@ -48,7 +42,7 @@ describe('Signup', () => {
   });
 
   it('renders with redux and fb with defaults', () => {
-    const { getByText } = renderWithFbAndRedux(<Signup {...props} />);
-    expect(getByText('Create An Account')).not.toBeNull();
+    const { getByText } = renderWithFbAndRedux(<SignupForm />);
+    expect(getByText('Create Account')).not.toBeNull();
   });
 });

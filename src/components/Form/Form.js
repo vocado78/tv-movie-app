@@ -16,8 +16,6 @@ export default function Form({
   buttonStyle,
   validate
 }) {
-  // TODO: validate fn in Form containers to pass to Field comp
-
   return (
     <FinalForm
       onSubmit={onSubmit}

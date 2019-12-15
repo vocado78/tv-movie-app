@@ -4,16 +4,16 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 
-import Modal from '../Modal/Modal';
-import Form from '../Form/Form';
-import { signupAttrs } from '../../content/forms';
-import { withFirebase } from '../Firebase/FirebaseContext';
-import { hideModal } from '../../actions';
-import { validateSignup } from '../../helpers/validate';
+import Form from '../../Form/Form';
+import AuthError from '../AuthError';
+import { signupAttrs } from '../../../content/forms';
+import { withFirebase } from '../../Firebase/FirebaseContext';
+import { hideModal } from '../../../actions';
+import { validateSignup } from '../../../helpers/validate';
 
 // TODO onSubmit: fb email verification
 
-export class Signup extends Component {
+class SignupForm extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -42,18 +42,11 @@ export class Signup extends Component {
   }
 
   render() {
-    const { closeModal, onKeyDown, onMount, onUnmount } = this.props;
     const { error } = this.state;
 
     return (
-      <Modal
-        title="Create An Account"
-        closeModal={closeModal}
-        onKeyDown={onKeyDown}
-        onMount={onMount}
-        onUnmount={onUnmount}
-      >
-        {error && <p>{error.message}</p>}
+      <>
+        {error && <AuthError error={error} />}
         <Form
           formStyle="mt-6"
           onSubmit={this.onSubmit}
@@ -63,18 +56,14 @@ export class Signup extends Component {
           buttonStyle="btn btn-primary"
           validate={validateSignup}
         />
-      </Modal>
+      </>
     );
   }
 }
 
-export default connect(null, { hideModal })(withRouter((withFirebase(Signup))));
+export default connect(null, { hideModal })(withRouter((withFirebase(SignupForm))));
 
-Signup.propTypes = {
-  closeModal: PropTypes.func.isRequired,
-  onKeyDown: PropTypes.func.isRequired,
-  onMount: PropTypes.func.isRequired,
-  onUnmount: PropTypes.func.isRequired,
+SignupForm.propTypes = {
   firebase: PropTypes.object.isRequired,
   hideModal: PropTypes.func.isRequired,
   history: PropTypes.object.isRequired

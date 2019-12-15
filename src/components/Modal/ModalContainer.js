@@ -3,7 +3,8 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 
 import { showModal, hideModal } from '../../actions';
-import { Signup, Login } from '../Auth';
+import Signup from '../Auth/Signup';
+import Login from '../Auth/Login';
 
 
 const appRoot = document.getElementById('root');

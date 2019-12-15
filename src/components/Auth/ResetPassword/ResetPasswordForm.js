@@ -2,10 +2,11 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-import { withFirebase } from '../Firebase/FirebaseContext';
-import Form from '../Form/Form';
-import { resetAttrs } from '../../content/forms';
-import { validateReset } from '../../helpers/validate';
+import { withFirebase } from '../../Firebase/FirebaseContext';
+import Form from '../../Form/Form';
+import AuthError from '../AuthError';
+import { resetAttrs } from '../../../content/forms';
+import { validateReset } from '../../../helpers/validate';
 
 
 class ResetPasswordForm extends Component {
@@ -28,7 +29,7 @@ class ResetPasswordForm extends Component {
 
     return (
       <>
-        {error && <p>{error.message}</p>}
+        {error && <AuthError error={error} />}
         <Form
           formStyle="mt-6 rounded bg-gray-300"
           onSubmit={this.onSubmit}

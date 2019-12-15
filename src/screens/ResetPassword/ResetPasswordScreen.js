@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Container from '../../components/Container/Container';
-import { ResetPasswordForm } from '../../components/Auth';
+import { ResetPasswordForm } from '../../components/Auth/ResetPassword';
 
 
 export default function ResetPasswordScreen() {
