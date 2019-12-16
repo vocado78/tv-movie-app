@@ -18,7 +18,8 @@ const testProps = {
   ],
   inputStyle: 'text-input',
   buttonLabel: 'Try Me',
-  buttonStyle: 'btn btn-primary'
+  buttonStyle: 'btn btn-primary',
+  validate: () => {}
 };
 
 export const normal = () => <Form {...testProps} />;
