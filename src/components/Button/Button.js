@@ -8,22 +8,29 @@ export default function Button({
   className,
   label,
   onClick,
-  disabled
+  disabled,
+  children
 }) {
   return (
-    <button type={type} className={className} onClick={onClick} disabled={disabled}>{label}</button>
+    <button type={type} className={className} onClick={onClick} disabled={disabled}>
+      {label}
+      {children}
+    </button>
   );
 }
 
 Button.defaultProps = {
+  type: 'button',
   disabled: false,
-  onClick: () => {}
+  onClick: () => {},
+  children: null
 };
 
 Button.propTypes = {
-  type: PropTypes.string.isRequired,
+  type: PropTypes.string,
   className: PropTypes.string.isRequired,
   label: PropTypes.string.isRequired,
   onClick: PropTypes.func,
-  disabled: PropTypes.bool
+  disabled: PropTypes.bool,
+  children: PropTypes.node
 };

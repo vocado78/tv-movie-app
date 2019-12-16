@@ -11,7 +11,7 @@ nav > ul:last-child {
 }
 
 .btn {
-  @apply px-3 py-1 rounded mt-4 uppercase;
+  @apply px-3 py-1 rounded uppercase;
 }
 
 .btn-primary {

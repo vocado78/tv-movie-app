@@ -4,11 +4,12 @@ import PropTypes from 'prop-types';
 
 import List from '../List/List';
 import NavItem from '../NavItem/NavItem';
+import { LogoutButton } from '../Auth';
+import Button from '../Button/Button';
 import topNavItemsLeft from '../../content/topNav';
 import MODAL_IDS from '../Modal/modalIds';
-import { LogoutButton } from '../Auth';
 
-// TODO: modal triggers should be buttons, not links
+
 export default function TopNav({ isLoggedIn, showModal }) {
   const itemClass = 'px-3 py-1 text-gray-400';
 
@@ -22,11 +23,11 @@ export default function TopNav({ isLoggedIn, showModal }) {
       />
       <ul className="flex">
         {isLoggedIn ? [
-          <NavItem className={itemClass} key="myprofile" label="My Profile" to="/myprofile/" />,
+          <NavItem className={itemClass} key="myprofile" label="My Profile" to="/profile/" />,
           <LogoutButton key="logout" />
         ] : [
-          <NavItem className={itemClass} key="signup" onClick={() => showModal(MODAL_IDS.SIGN_UP)} label="Sign Up" to="#" />,
-          <NavItem className={itemClass} key="login" onClick={() => showModal(MODAL_IDS.LOG_IN)} label="Log In" to="#" />
+          <Button className="btn btn-primary" key="signup" onClick={() => showModal(MODAL_IDS.SIGN_UP)} label="Create Account" />,
+          <Button className="btn btn-secondary" key="login" onClick={() => showModal(MODAL_IDS.LOG_IN)} label="Log In" />
         ]}
       </ul>
     </nav>
