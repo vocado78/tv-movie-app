@@ -9,10 +9,6 @@ export default function AuthError({ error }) {
   );
 }
 
-// AuthError.defaultProps = {
-//   error: null
-// };
-
 AuthError.propTypes = {
   error: PropTypes.object.isRequired
 };

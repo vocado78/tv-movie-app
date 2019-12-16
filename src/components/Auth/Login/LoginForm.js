@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
+import { compose } from 'recompose';
 
 import Form from '../../Form/Form';
 import AuthError from '../AuthError';
@@ -59,7 +60,14 @@ class LoginForm extends Component {
   }
 }
 
-export default connect(null, { hideModal, showModal })(withRouter((withFirebase(LoginForm))));
+export default compose(
+  withFirebase,
+  withRouter,
+  connect(
+    null,
+    { hideModal, showModal }
+  )
+)(LoginForm);
 
 LoginForm.propTypes = {
   firebase: PropTypes.object.isRequired,
