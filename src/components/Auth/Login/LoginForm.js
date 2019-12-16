@@ -6,10 +6,12 @@ import { withRouter } from 'react-router-dom';
 
 import Form from '../../Form/Form';
 import AuthError from '../AuthError';
+import AuthFormBottom from '../AuthFormBottom';
 import { loginAttrs } from '../../../content/forms';
 import { withFirebase } from '../../Firebase/FirebaseContext';
-import { hideModal } from '../../../actions';
+import { hideModal, showModal } from '../../../actions';
 import { validateLogin } from '../../../helpers/validate';
+import MODAL_IDS from '../../Modal/modalIds';
 
 
 class LoginForm extends Component {
@@ -44,21 +46,24 @@ class LoginForm extends Component {
           onSubmit={this.onSubmit}
           otherAttrs={loginAttrs}
           inputStyle="text-input"
-          buttonLabel="Log In"
-          buttonStyle="btn btn-primary"
           validate={validateLogin}
-        />
+        >
+          <AuthFormBottom
+            modalId={MODAL_IDS.LOG_IN}
+            hideModal={this.props.hideModal}
+            showModal={this.props.showModal}
+          />
+        </Form>
       </>
     );
   }
 }
 
-export default connect(null, { hideModal })(withRouter((withFirebase(LoginForm))));
+export default connect(null, { hideModal, showModal })(withRouter((withFirebase(LoginForm))));
 
 LoginForm.propTypes = {
   firebase: PropTypes.object.isRequired,
   hideModal: PropTypes.func.isRequired,
+  showModal: PropTypes.func.isRequired,
   history: PropTypes.object.isRequired
 };
-
-// className="text-xs">Do not have an account? Create an account.

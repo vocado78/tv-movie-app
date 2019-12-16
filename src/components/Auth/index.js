@@ -1,9 +1,9 @@
-import Logout from './Logout';
+import LogoutButton from './LogoutButton';
 import withAuthentication from './withAuthentication';
 import withAuthorisation from './withAuthorisation';
 
 export {
-  Logout,
+  LogoutButton,
   withAuthentication,
   withAuthorisation
 };

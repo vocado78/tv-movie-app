@@ -6,5 +6,5 @@ export default {
   component: Button
 };
 
-export const primary = () => <Button className="btn btn-primary" label="Primary" />;
-export const secondary = () => <Button className="btn btn-secondary" label="Secondary" />;
+export const primary = () => <Button type="button" className="btn btn-primary" label="Primary" />;
+export const secondary = () => <Button type="button" className="btn btn-secondary" label="Secondary" />;

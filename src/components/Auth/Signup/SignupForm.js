@@ -6,10 +6,12 @@ import { withRouter } from 'react-router-dom';
 
 import Form from '../../Form/Form';
 import AuthError from '../AuthError';
+import AuthFormBottom from '../AuthFormBottom';
 import { signupAttrs } from '../../../content/forms';
 import { withFirebase } from '../../Firebase/FirebaseContext';
-import { hideModal } from '../../../actions';
+import { hideModal, showModal } from '../../../actions';
 import { validateSignup } from '../../../helpers/validate';
+import MODAL_IDS from '../../Modal/modalIds';
 
 // TODO onSubmit: fb email verification
 
@@ -52,19 +54,24 @@ class SignupForm extends Component {
           onSubmit={this.onSubmit}
           otherAttrs={signupAttrs}
           inputStyle="text-input"
-          buttonLabel="Create Account"
-          buttonStyle="btn btn-primary"
           validate={validateSignup}
-        />
+        >
+          <AuthFormBottom
+            modalId={MODAL_IDS.SIGN_UP}
+            hideModal={this.props.hideModal}
+            showModal={this.props.showModal}
+          />
+        </Form>
       </>
     );
   }
 }
 
-export default connect(null, { hideModal })(withRouter((withFirebase(SignupForm))));
+export default connect(null, { hideModal, showModal })(withRouter((withFirebase(SignupForm))));
 
 SignupForm.propTypes = {
   firebase: PropTypes.object.isRequired,
   hideModal: PropTypes.func.isRequired,
+  showModal: PropTypes.func.isRequired,
   history: PropTypes.object.isRequired
 };

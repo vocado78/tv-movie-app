@@ -6,7 +6,7 @@ import List from '../List/List';
 import NavItem from '../NavItem/NavItem';
 import topNavItemsLeft from '../../content/topNav';
 import MODAL_IDS from '../Modal/modalIds';
-import { Logout } from '../Auth';
+import { LogoutButton } from '../Auth';
 
 // TODO: modal triggers should be buttons, not links
 export default function TopNav({ isLoggedIn, showModal }) {
@@ -23,7 +23,7 @@ export default function TopNav({ isLoggedIn, showModal }) {
       <ul className="flex">
         {isLoggedIn ? [
           <NavItem className={itemClass} key="myprofile" label="My Profile" to="/myprofile/" />,
-          <Logout className={itemClass} key="logout" />
+          <LogoutButton key="logout" />
         ] : [
           <NavItem className={itemClass} key="signup" onClick={() => showModal(MODAL_IDS.SIGN_UP)} label="Sign Up" to="#" />,
           <NavItem className={itemClass} key="login" onClick={() => showModal(MODAL_IDS.LOG_IN)} label="Log In" to="#" />

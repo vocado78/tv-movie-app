@@ -14,7 +14,8 @@ export default function Form({
   inputStyle,
   buttonLabel,
   buttonStyle,
-  validate
+  validate,
+  children
 }) {
   return (
     <FinalForm
@@ -29,19 +30,28 @@ export default function Form({
               )}
             </Field>
           ))}
-          <Button className={buttonStyle} disabled={submitting} label={buttonLabel} />
+          {children || (
+            <Button type="submit" className={buttonStyle} disabled={submitting} label={buttonLabel} />
+          )}
         </form>
       )}
     />
   );
 }
 
+Form.defaultProps = {
+  children: null,
+  buttonLabel: '',
+  buttonStyle: ''
+};
+
 Form.propTypes = {
   formStyle: PropTypes.string.isRequired,
   onSubmit: PropTypes.func.isRequired,
   otherAttrs: PropTypes.arrayOf(PropTypes.object).isRequired,
   inputStyle: PropTypes.string.isRequired,
-  buttonLabel: PropTypes.string.isRequired,
-  buttonStyle: PropTypes.string.isRequired,
-  validate: PropTypes.func.isRequired
+  buttonLabel: PropTypes.string,
+  buttonStyle: PropTypes.string,
+  validate: PropTypes.func.isRequired,
+  children: PropTypes.node
 };
