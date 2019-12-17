@@ -5,7 +5,7 @@ import {
   Reviews,
   Watched,
   Watchlist
-} from './tabs';
+} from './Tabs';
 import ROUTES from '../../../constants/routes';
 
 const routes = [
