@@ -1,6 +1,6 @@
 import React from 'react';
 import { MemoryRouter } from 'react-router-dom';
-import Hero from './Hero';
+import { Hero } from '.';
 
 export default {
   component: Hero,
@@ -8,7 +8,7 @@ export default {
   decorators: [(story) => <MemoryRouter initialEntries={['/']}>{story()}</MemoryRouter>]
 };
 
-export const normal = () => <Hero />;
+export const normal = () => <Hero showModal={() => {}} />;
 normal.story = {
   name: 'default'
 };

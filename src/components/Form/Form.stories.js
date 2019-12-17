@@ -1,6 +1,6 @@
 /* eslint-disable react/jsx-props-no-spreading */
 import React from 'react';
-import Form from './Form';
+import Form from '.';
 
 export default {
   title: 'Form',
@@ -18,7 +18,8 @@ const testProps = {
   ],
   inputStyle: 'text-input',
   buttonLabel: 'Try Me',
-  buttonStyle: 'btn btn-primary'
+  buttonStyle: 'btn btn-primary',
+  validate: () => {}
 };
 
 export const normal = () => <Form {...testProps} />;

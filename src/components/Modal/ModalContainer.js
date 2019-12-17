@@ -2,11 +2,16 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 
-import Modal from './Modal';
 import { showModal, hideModal } from '../../actions';
+import Signup from '../Auth/Signup';
+import Login from '../Auth/Login';
 
 
 const appRoot = document.getElementById('root');
+const modalConfig = {
+  SIGN_UP: Signup,
+  LOG_IN: Login
+};
 
 class ModalContainer extends Component {
   onMount = () => {
@@ -26,11 +31,9 @@ class ModalContainer extends Component {
       this.closeModal();
     }
   }
-  // TODO: create signup and login specific modals to render as CurrentModal or maybe just use a prop
-  // for modal content, and pass signup/login form as prop? avoid prop drilling
 
   render() {
-    const CurrentModal = this.props.modal ? Modal : null;
+    const CurrentModal = this.props.modal ? modalConfig[this.props.modal] : null;
 
     return (
       <>
@@ -38,14 +41,11 @@ class ModalContainer extends Component {
           CurrentModal
           && (
             <CurrentModal
-              title="Testing"
               closeModal={this.closeModal}
               onKeyDown={this.onKeyDown}
               onMount={this.onMount}
               onUnmount={this.onUnmount}
-            >
-              <p>Quis est id est adipisicing occaecat ex sunt.</p>
-            </CurrentModal>
+            />
           )
         }
       </>
@@ -62,11 +62,7 @@ export default connect(
   { showModal, hideModal }
 )(ModalContainer);
 
-ModalContainer.defaultProps = {
-  modal: null
-};
-
 ModalContainer.propTypes = {
-  modal: PropTypes.string,
+  modal: PropTypes.string.isRequired,
   hideModal: PropTypes.func.isRequired
 };

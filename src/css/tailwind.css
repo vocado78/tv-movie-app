@@ -7,11 +7,11 @@ nav > ul:last-child {
 }
 
 .text-input {
-  @apply border border-solid border-gray-500 rounded px-3 py-1 mt-2;
+  @apply border border-solid border-gray-500 rounded px-3 py-1 mt-2 w-64;
 }
 
 .btn {
-  @apply px-3 py-1 rounded mt-4 uppercase;
+  @apply px-3 py-1 rounded uppercase;
 }
 
 .btn-primary {

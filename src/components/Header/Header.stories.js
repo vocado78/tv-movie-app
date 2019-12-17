@@ -1,11 +1,25 @@
 import React from 'react';
 import { MemoryRouter } from 'react-router-dom';
-import Header from './Header';
+import { Provider } from 'react-redux';
+import Header from '.';
+
+const store = {
+  getState: () => {
+    return {
+      modal: 'modal',
+    };
+  },
+  subscribe: () => 0,
+  dispatch: () => {},
+};
 
 export default {
   component: Header,
   title: 'Header',
-  decorators: [(story) => <MemoryRouter initialEntries={['/']}>{story()}</MemoryRouter>]
+  decorators: [
+    (story) => <MemoryRouter initialEntries={['/']}>{story()}</MemoryRouter>,
+    (story) => <Provider store={store}>{story()}</Provider>
+  ]
 };
 
 export const normal = () => <Header />;
