@@ -6,7 +6,7 @@ import Button from '../Button';
 import { withFirebase } from '../Firebase';
 import LABELS from '../../constants/buttonLabels';
 
-const LogoutButton = ({ firebase }) => {
+export const LogoutButton = ({ firebase }) => {
   return (
     <li>
       <Button

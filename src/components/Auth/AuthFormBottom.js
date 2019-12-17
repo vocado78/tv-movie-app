@@ -13,7 +13,7 @@ const AuthFormBottom = ({ hideModal, showModal, modalId }) => {
   const modalToShow = modalId === MODAL_IDS.LOG_IN ? MODAL_IDS.SIGN_UP : MODAL_IDS.LOG_IN;
 
   return (
-    <div className="">
+    <div className="" data-testid="auth-form-bottom">
       {modalId === MODAL_IDS.LOG_IN && <ResetPasswordLink onClick={hideModal} />}
       <Button type="submit" className="btn btn-primary" label={labelPrimary} />
       <Button type="button" className="btn btn-secondary" onClick={() => showModal(modalToShow)} label={labelSecondary} />
