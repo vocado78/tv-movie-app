@@ -4,15 +4,12 @@ import PropTypes from 'prop-types';
 import Button from '../Button';
 import { ResetPasswordLink } from './ResetPassword';
 import { MODAL_IDS } from '../Modal';
+import LABELS from '../../constants/buttonLabels';
 
-const LABELS = {
-  LOG_IN: 'Log In',
-  SIGN_UP: 'Create Account'
-};
 
 const AuthFormBottom = ({ hideModal, showModal, modalId }) => {
-  const labelPrimary = modalId === MODAL_IDS.LOG_IN ? LABELS.LOG_IN : LABELS.SIGN_UP;
-  const labelSecondary = modalId === MODAL_IDS.LOG_IN ? LABELS.SIGN_UP : LABELS.LOG_IN;
+  const labelPrimary = modalId === MODAL_IDS.LOG_IN ? LABELS.LOG_IN : LABELS.CREATE_ACCOUNT;
+  const labelSecondary = modalId === MODAL_IDS.LOG_IN ? LABELS.CREATE_ACCOUNT : LABELS.LOG_IN;
   const modalToShow = modalId === MODAL_IDS.LOG_IN ? MODAL_IDS.SIGN_UP : MODAL_IDS.LOG_IN;
 
   return (

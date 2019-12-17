@@ -7,6 +7,7 @@ import Form from '../../Form';
 import AuthError from '../AuthError';
 import { resetAttrs } from '../../../content/forms';
 import { validateReset } from '../../../helpers/validate';
+import LABELS from '../../../constants/buttonLabels';
 
 
 class ResetPasswordForm extends Component {
@@ -35,7 +36,7 @@ class ResetPasswordForm extends Component {
           onSubmit={this.onSubmit}
           otherAttrs={resetAttrs}
           inputStyle="text-input"
-          buttonLabel="Reset Password"
+          buttonLabel={LABELS.RESET_PASSWORD}
           buttonStyle="btn btn-primary"
           validate={validateReset}
         />

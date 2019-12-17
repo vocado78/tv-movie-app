@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 
 import Button from '../Button';
 import { withFirebase } from '../Firebase';
+import LABELS from '../../constants/buttonLabels';
 
 const LogoutButton = ({ firebase }) => {
   return (
@@ -12,7 +13,7 @@ const LogoutButton = ({ firebase }) => {
         type="button"
         className="btn btn-primary"
         onClick={firebase.doSignOut}
-        label="Log Out"
+        label={LABELS.LOG_OUT}
       />
     </li>
   );

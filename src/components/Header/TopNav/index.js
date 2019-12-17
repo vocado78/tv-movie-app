@@ -9,6 +9,7 @@ import Button from '../../Button';
 import topNavItemsLeft from '../../../content/topNav';
 import { MODAL_IDS } from '../../Modal';
 import ROUTES from '../../../constants/routes';
+import LABELS from '../../../constants/buttonLabels';
 
 
 export default function TopNav({ isLoggedIn, showModal }) {
@@ -27,8 +28,8 @@ export default function TopNav({ isLoggedIn, showModal }) {
           <NavItem className={itemClass} key="myprofile" label="My Profile" to={ROUTES.PROFILE} />,
           <LogoutButton key="logout" />
         ] : [
-          <Button className="btn btn-primary" key="signup" onClick={() => showModal(MODAL_IDS.SIGN_UP)} label="Create Account" />,
-          <Button className="btn btn-secondary" key="login" onClick={() => showModal(MODAL_IDS.LOG_IN)} label="Log In" />
+          <Button className="btn btn-primary" key="signup" onClick={() => showModal(MODAL_IDS.SIGN_UP)} label={LABELS.CREATE_ACCOUNT} />,
+          <Button className="btn btn-secondary" key="login" onClick={() => showModal(MODAL_IDS.LOG_IN)} label={LABELS.LOG_IN} />
         ]}
       </ul>
     </nav>
