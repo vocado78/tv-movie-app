@@ -21,13 +21,17 @@ class Firebase {
     this.db = firebase.firestore();
   }
 
-  doCreateUserWithEmailAndPassword = (email, password) => {
-    return this.auth.createUserWithEmailAndPassword(email, password);
-  }
+  doCreateUserWithEmailAndPassword = (email, password) => (
+    this.auth.createUserWithEmailAndPassword(email, password)
+  );
 
-  doSignInWithEmailAndPassword = (email, password) => {
-    return this.auth.signInWithEmailAndPassword(email, password);
-  }
+  doSignInWithEmailAndPassword = (email, password) => (
+    this.auth.signInWithEmailAndPassword(email, password)
+  );
+
+  doSendEmailVerification = () => this.auth.currentUser.sendEmailVerification({
+    url: process.env.REACT_APP_VERIFICATION_REDIRECT
+  });
 
   doSignOut = () => this.auth.signOut();
 

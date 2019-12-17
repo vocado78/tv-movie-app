@@ -13,8 +13,8 @@ import { withFirebase } from '../../Firebase/FirebaseContext';
 import { hideModal, showModal } from '../../../actions';
 import { validateSignup } from '../../../helpers/validate';
 import { MODAL_IDS } from '../../Modal';
+import ROUTES from '../../../constants/routes';
 
-// TODO onSubmit: fb email verification
 
 class SignupForm extends Component {
   constructor(props) {
@@ -35,8 +35,11 @@ class SignupForm extends Component {
           });
       })
       .then(() => {
+        return this.props.firebase.doSendEmailVerification();
+      })
+      .then(() => {
         this.props.hideModal();
-        this.props.history.push('/profile');
+        this.props.history.push(ROUTES.PROFILE);
       })
       .catch((error) => {
         console.log('An error happened', error);

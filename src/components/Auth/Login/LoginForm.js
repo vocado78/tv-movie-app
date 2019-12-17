@@ -13,6 +13,7 @@ import { withFirebase } from '../../Firebase';
 import { hideModal, showModal } from '../../../actions';
 import { validateLogin } from '../../../helpers/validate';
 import { MODAL_IDS } from '../../Modal';
+import ROUTES from '../../../constants/routes';
 
 
 class LoginForm extends Component {
@@ -28,7 +29,7 @@ class LoginForm extends Component {
       .then((authUser) => {
         console.log(authUser);
         this.props.hideModal();
-        this.props.history.push('/profile');
+        this.props.history.push(ROUTES.PROFILE);
       })
       .catch((error) => {
         console.log('An error happened', error);
