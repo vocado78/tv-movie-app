@@ -8,6 +8,7 @@ import { LogoutButton } from '../../Auth';
 import Button from '../../Button';
 import topNavItemsLeft from '../../../content/topNav';
 import { MODAL_IDS } from '../../Modal';
+import ROUTES from '../../../constants/routes';
 
 
 export default function TopNav({ isLoggedIn, showModal }) {
@@ -23,7 +24,7 @@ export default function TopNav({ isLoggedIn, showModal }) {
       />
       <ul className="flex">
         {isLoggedIn ? [
-          <NavItem className={itemClass} key="myprofile" label="My Profile" to="/profile/" />,
+          <NavItem className={itemClass} key="myprofile" label="My Profile" to={ROUTES.PROFILE} />,
           <LogoutButton key="logout" />
         ] : [
           <Button className="btn btn-primary" key="signup" onClick={() => showModal(MODAL_IDS.SIGN_UP)} label="Create Account" />,

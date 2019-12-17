@@ -1,12 +1,12 @@
-const path = '/profile';
+import ROUTES from '../constants/routes';
 
 const profileNavItems = [
-  { id: 'profile', label: 'My Profile', to: `${path}` },
-  { id: 'watched', label: 'Watched', to: `${path}/watched` },
-  { id: 'watchlist', label: 'Watchlist', to: `${path}/watchlist` },
-  { id: 'reviews', label: 'Reviews', to: `${path}/reviews` },
-  { id: 'discussions', label: 'Discussions', to: `${path}/discussions` },
-  { id: 'connections', label: 'Connections', to: `${path}/connections` }
+  { id: 'profile', label: 'My Profile', to: `${ROUTES.PROFILE}` },
+  { id: 'watched', label: 'Watched', to: `${ROUTES.WATCHED}` },
+  { id: 'watchlist', label: 'Watchlist', to: `${ROUTES.WATCHLIST}` },
+  { id: 'reviews', label: 'Reviews', to: `${ROUTES.REVIEWS}` },
+  { id: 'discussions', label: 'Discussions', to: `${ROUTES.PROFILE_DISCUSSIONS}` },
+  { id: 'connections', label: 'Connections', to: `${ROUTES.CONNECTIONS}` }
 ];
 
 export default profileNavItems;

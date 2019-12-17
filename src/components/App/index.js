@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
 
 import '../../index.css';
+import ROUTES from '../../constants/routes';
 import Header from '../Header';
 import Footer from '../Footer';
 import HomeScreen from '../../screens/HomeScreen';
@@ -17,9 +18,9 @@ const App = () => {
       <BrowserRouter>
         <ModalContainer />
         <Header />
-        <Route path="/" exact component={HomeScreen} />
-        <Route path="/profile" component={ProfileScreen} />
-        <Route path="/reset-password" component={ResetPasswordScreen} />
+        <Route path={ROUTES.HOME} exact component={HomeScreen} />
+        <Route path={ROUTES.PROFILE} component={ProfileScreen} />
+        <Route path={ROUTES.RESET_PASSWORD} component={ResetPasswordScreen} />
         <Footer />
       </BrowserRouter>
     </div>

@@ -410,7 +410,7 @@ exports[`Storyshots Header Normal 1`] = `
         <li>
           <a
             className="px-3 py-1 text-gray-400"
-            href="/films/"
+            href="/films"
             onClick={[Function]}
           >
             Films
@@ -419,7 +419,7 @@ exports[`Storyshots Header Normal 1`] = `
         <li>
           <a
             className="px-3 py-1 text-gray-400"
-            href="/tv-shows/"
+            href="/tv-shows"
             onClick={[Function]}
           >
             TV-shows
@@ -428,7 +428,7 @@ exports[`Storyshots Header Normal 1`] = `
         <li>
           <a
             className="px-3 py-1 text-gray-400"
-            href="/people/"
+            href="/people"
             onClick={[Function]}
           >
             People
@@ -437,7 +437,7 @@ exports[`Storyshots Header Normal 1`] = `
         <li>
           <a
             className="px-3 py-1 text-gray-400"
-            href="/discussions/"
+            href="/discussions"
             onClick={[Function]}
           >
             Discussions
@@ -530,7 +530,7 @@ exports[`Storyshots TopNav Logged In 1`] = `
     <li>
       <a
         className="px-3 py-1 text-gray-400"
-        href="/films/"
+        href="/films"
         onClick={[Function]}
       >
         Films
@@ -539,7 +539,7 @@ exports[`Storyshots TopNav Logged In 1`] = `
     <li>
       <a
         className="px-3 py-1 text-gray-400"
-        href="/tv-shows/"
+        href="/tv-shows"
         onClick={[Function]}
       >
         TV-shows
@@ -548,7 +548,7 @@ exports[`Storyshots TopNav Logged In 1`] = `
     <li>
       <a
         className="px-3 py-1 text-gray-400"
-        href="/people/"
+        href="/people"
         onClick={[Function]}
       >
         People
@@ -557,7 +557,7 @@ exports[`Storyshots TopNav Logged In 1`] = `
     <li>
       <a
         className="px-3 py-1 text-gray-400"
-        href="/discussions/"
+        href="/discussions"
         onClick={[Function]}
       >
         Discussions
@@ -570,7 +570,7 @@ exports[`Storyshots TopNav Logged In 1`] = `
     <li>
       <a
         className="px-3 py-1 text-gray-400"
-        href="/profile/"
+        href="/profile"
         onClick={[Function]}
       >
         My Profile
@@ -600,7 +600,7 @@ exports[`Storyshots TopNav Logged Out 1`] = `
     <li>
       <a
         className="px-3 py-1 text-gray-400"
-        href="/films/"
+        href="/films"
         onClick={[Function]}
       >
         Films
@@ -609,7 +609,7 @@ exports[`Storyshots TopNav Logged Out 1`] = `
     <li>
       <a
         className="px-3 py-1 text-gray-400"
-        href="/tv-shows/"
+        href="/tv-shows"
         onClick={[Function]}
       >
         TV-shows
@@ -618,7 +618,7 @@ exports[`Storyshots TopNav Logged Out 1`] = `
     <li>
       <a
         className="px-3 py-1 text-gray-400"
-        href="/people/"
+        href="/people"
         onClick={[Function]}
       >
         People
@@ -627,7 +627,7 @@ exports[`Storyshots TopNav Logged Out 1`] = `
     <li>
       <a
         className="px-3 py-1 text-gray-400"
-        href="/discussions/"
+        href="/discussions"
         onClick={[Function]}
       >
         Discussions
