@@ -8,6 +8,7 @@ import { compose } from 'recompose';
 import { withFirebase } from '../Firebase';
 import { showModal } from '../../actions';
 import MODAL_IDS from '../Modal/modalIds';
+import ROUTES from '../../constants/routes';
 
 
 const withAuthorisation = (Component) => {
@@ -18,7 +19,7 @@ const withAuthorisation = (Component) => {
 
     render() {
       return (
-        this.props.authUser ? (<Component {...this.props} />) : (<Redirect to="/" />)
+        this.props.authUser ? (<Component {...this.props} />) : (<Redirect to={ROUTES.HOME} />)
       );
     }
   }

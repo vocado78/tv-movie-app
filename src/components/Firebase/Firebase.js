@@ -33,6 +33,8 @@ class Firebase {
 
   doPasswordReset = (email) => this.auth.sendPasswordResetEmail(email);
 
+  onAuthUserChange = (callback) => this.auth.onAuthStateChanged(callback);
+
   user = (uid) => this.db.collection('users').doc(uid);
 
   users = () => this.db.collection('users');
