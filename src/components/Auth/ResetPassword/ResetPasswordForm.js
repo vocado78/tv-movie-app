@@ -2,8 +2,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-import { withFirebase } from '../../Firebase/FirebaseContext';
-import Form from '../../Form/Form';
+import { withFirebase } from '../../Firebase';
+import Form from '../../Form';
 import AuthError from '../AuthError';
 import { resetAttrs } from '../../../content/forms';
 import { validateReset } from '../../../helpers/validate';

@@ -1,6 +1,6 @@
 /* eslint-disable react/jsx-props-no-spreading */
 import React from 'react';
-import Form from './Form';
+import Form from '.';
 
 export default {
   title: 'Form',

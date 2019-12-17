@@ -2,12 +2,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import List from '../List/List';
-import NavItem from '../NavItem/NavItem';
-import { LogoutButton } from '../Auth';
-import Button from '../Button/Button';
-import topNavItemsLeft from '../../content/topNav';
-import MODAL_IDS from '../Modal/modalIds';
+import List from '../../List';
+import NavItem from '../../NavItem';
+import { LogoutButton } from '../../Auth';
+import Button from '../../Button';
+import topNavItemsLeft from '../../../content/topNav';
+import { MODAL_IDS } from '../../Modal';
 
 
 export default function TopNav({ isLoggedIn, showModal }) {

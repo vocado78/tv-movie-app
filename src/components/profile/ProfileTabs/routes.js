@@ -1,14 +1,13 @@
-import Connections from './tabs/Connections';
-import Discussions from './tabs/Discussions';
-import Profile from './tabs/Profile';
-import Reviews from './tabs/Reviews';
-import Watched from './tabs/Watched';
-import Watchlist from './tabs/Watchlist';
+import {
+  Connections,
+  Discussions,
+  Profile,
+  Reviews,
+  Watched,
+  Watchlist
+} from './tabs';
 
 const path = '/profile';
-
-// should prob create separate components as profile, watched/reviews/watchlist
-// and others will look pretty different? so add component prop below in routes
 
 const routes = [
   { path: `${path}`, exact: true, component: Profile },

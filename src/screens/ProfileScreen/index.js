@@ -1,9 +1,7 @@
 import React from 'react';
 
-import Container from '../../components/Container/Container';
-import ProfileHeader from '../../components/profile/ProfileHeader';
-import ProfileNav from '../../components/profile/ProfileNav';
-import ProfileTabs from '../../components/profile/ProfileTabs';
+import Container from '../../components/Container';
+import { ProfileNav, ProfileHeader, ProfileTabs } from '../../components/Profile';
 import { withAuthorisation } from '../../components/Auth';
 
 const ProfileScreen = () => {

@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import Button from '../Button/Button';
+import Button from '../Button';
 import { ResetPasswordLink } from './ResetPassword';
-import MODAL_IDS from '../Modal/modalIds';
+import { MODAL_IDS } from '../Modal';
 
 const LABELS = {
   LOG_IN: 'Log In',

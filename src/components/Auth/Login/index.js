@@ -2,7 +2,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import Modal from '../../Modal/Modal';
+import { ModalContent } from '../../Modal';
 import LoginForm from './LoginForm';
 
 
@@ -13,7 +13,7 @@ export default function Login({
   onUnmount
 }) {
   return (
-    <Modal
+    <ModalContent
       title="Log In"
       closeModal={closeModal}
       onKeyDown={onKeyDown}
@@ -21,7 +21,7 @@ export default function Login({
       onUnmount={onUnmount}
     >
       <LoginForm />
-    </Modal>
+    </ModalContent>
   );
 }
 

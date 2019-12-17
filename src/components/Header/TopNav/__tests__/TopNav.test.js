@@ -2,7 +2,7 @@ import React from 'react';
 import { render } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
 
-import TopNav from '../TopNav';
+import TopNav from '..';
 
 const showModalStub = () => {};
 

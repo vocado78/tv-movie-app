@@ -5,14 +5,14 @@ import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 import { compose } from 'recompose';
 
-import Form from '../../Form/Form';
+import Form from '../../Form';
 import AuthError from '../AuthError';
 import AuthFormBottom from '../AuthFormBottom';
 import { loginAttrs } from '../../../content/forms';
-import { withFirebase } from '../../Firebase/FirebaseContext';
+import { withFirebase } from '../../Firebase';
 import { hideModal, showModal } from '../../../actions';
 import { validateLogin } from '../../../helpers/validate';
-import MODAL_IDS from '../../Modal/modalIds';
+import { MODAL_IDS } from '../../Modal';
 
 
 class LoginForm extends Component {

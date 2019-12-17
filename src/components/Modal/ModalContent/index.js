@@ -7,7 +7,7 @@ import PropTypes from 'prop-types';
 import FocusTrap from 'focus-trap-react';
 
 
-export default class Modal extends Component {
+export default class ModalContent extends Component {
   componentDidMount() {
     this.props.onMount();
   }
@@ -52,7 +52,7 @@ export default class Modal extends Component {
   }
 }
 
-Modal.propTypes = {
+ModalContent.propTypes = {
   title: PropTypes.string.isRequired,
   children: PropTypes.node.isRequired,
   closeModal: PropTypes.func.isRequired,

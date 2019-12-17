@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import Modal from '../../Modal/Modal';
+import { ModalContent } from '../../Modal';
 import SignupForm from './SignupForm';
 
 
@@ -12,7 +12,7 @@ export default function Signup({
   onUnmount
 }) {
   return (
-    <Modal
+    <ModalContent
       title="Create An Account"
       closeModal={closeModal}
       onKeyDown={onKeyDown}
@@ -20,7 +20,7 @@ export default function Signup({
       onUnmount={onUnmount}
     >
       <SignupForm />
-    </Modal>
+    </ModalContent>
   );
 }
 

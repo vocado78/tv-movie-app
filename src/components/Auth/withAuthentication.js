@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { compose } from 'recompose';
 
-import { withFirebase } from '../Firebase/FirebaseContext';
+import { withFirebase } from '../Firebase';
 import { setAuthUser } from '../../actions';
 
 const withAuthentication = (Component) => {

@@ -1,9 +1,9 @@
 import React from 'react';
 import { MemoryRouter } from 'react-router-dom';
 
-import TopNav from './TopNav';
-import FirebaseContext from '../Firebase/FirebaseContext';
-import FirebaseMock from '../Auth/__mocks__/FirebaseMock';
+import TopNav from '.';
+import FirebaseContext from '../../Firebase/FirebaseContext';
+import FirebaseMock from '../../Auth/__mocks__/FirebaseMock';
 
 
 export default {

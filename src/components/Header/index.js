@@ -3,8 +3,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
-import Container from '../Container/Container';
-import TopNav from '../TopNav/TopNav';
+import Container from '../Container';
+import TopNav from './TopNav';
 import { showModal } from '../../actions';
 
 
@@ -24,6 +24,7 @@ export const Header = (props) => {
 };
 
 const mapStateToProps = (state) => {
+  console.log(state);
   return { auth: state.auth };
 };
 

@@ -5,7 +5,7 @@ import { Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { compose } from 'recompose';
 
-import { withFirebase } from '../Firebase/FirebaseContext';
+import { withFirebase } from '../Firebase';
 import { showModal } from '../../actions';
 import MODAL_IDS from '../Modal/modalIds';
 

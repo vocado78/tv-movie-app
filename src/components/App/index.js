@@ -2,12 +2,12 @@ import React from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
 
 import '../../index.css';
-import Header from '../Header/Header';
-import Footer from '../Footer/Footer';
-import HomeScreen from '../../screens/HomeScreen/HomeScreen';
-import ProfileScreen from '../../screens/ProfileScreen/ProfileScreen';
-import ResetPasswordScreen from '../../screens/ResetPassword/ResetPasswordScreen';
-import ModalContainer from '../Modal/ModalContainer';
+import Header from '../Header';
+import Footer from '../Footer';
+import HomeScreen from '../../screens/HomeScreen';
+import ProfileScreen from '../../screens/ProfileScreen';
+import ResetPasswordScreen from '../../screens/ResetPasswordScreen';
+import { ModalContainer } from '../Modal';
 import { withAuthentication } from '../Auth';
 
 
