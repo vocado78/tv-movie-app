@@ -12,6 +12,9 @@ import FirebaseContext from '../../../Firebase/FirebaseContext';
 import SignupForm from '../SignupForm';
 import FirebaseMock from '../../__mocks__/FirebaseMock';
 
+// it renders with defaults
+// if auth error, error message is displayed
+// if successful signup, redirect to profile, mock fn:s have been called, no errors
 
 const store = createStore(reducers);
 
