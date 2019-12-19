@@ -1,23 +1,29 @@
+/* eslint-disable prefer-promise-reject-errors */
+/* eslint-disable no-unused-vars */
 import firebase from 'firebase/app';
 
 
 jest.mock('firebase/app', () => ({
   initializeApp: (config) => (config),
   auth: () => ({
-    // createUserWithEmailAndPassword: (email, password) => {
-    //   return new Promise((resolve) => {
-    //     const user = {
-    //       userId: Math.floor(Math.random() * 10) + password.length,
-    //       email
-    //     };
-    //     process.nextTick(() => {
-    //       resolve(user);
-    //     });
-    //   });
-    // },
-    createUserWithEmailAndPassword: jest.fn(),
+    createUserWithEmailAndPassword: (email, password) => {
+      return new Promise((resolve, reject) => {
+        const emails = { exist: 'exist@test.com' };
+        const authUser = {
+          user: {
+            uid: Math.floor(Math.random() * 10) + password.length,
+            email
+          }
+        };
+        process.nextTick(() => (
+          emails.exist === email ? reject({ message: 'Email already in use.' }) : resolve(authUser)
+        ));
+      });
+    },
     signInWithEmailAndPassword: jest.fn(),
-    sendEmailVerification: jest.fn(),
+    currentUser: {
+      sendEmailVerification: jest.fn()
+    },
     signOut: () => {}
   }),
   firestore: () => ({
