@@ -36,6 +36,15 @@ jest.mock('firebase/app', () => ({
     },
     currentUser: {
       sendEmailVerification: () => {},
+    },
+    sendPasswordResetEmail: (email) => {
+      return new Promise((resolve, reject) => {
+        const emails = ['test@test.com', 'email@test.com'];
+
+        process.nextTick(() => (
+          emails.includes(email) ? resolve() : reject({ message: 'User not found.' })
+        ));
+      });
     }
   }),
   firestore: () => ({
@@ -76,6 +85,8 @@ class FirebaseMock {
   doSendEmailVerification = jest.fn(() => this.auth.currentUser.sendEmailVerification({
     url: process.env.REACT_APP_VERIFICATION_REDIRECT
   }));
+
+  doPasswordReset = (email) => this.auth.sendPasswordResetEmail(email);
 
   user = (uid) => this.db.collection('users').doc(uid);
 }

@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import Button from '../../Button/Button';
-import ResetPasswordLink from '../ResetPassword/ResetPasswordLink';
+import { ResetPasswordLink } from '../ResetPassword';
 import MODAL_IDS from '../../../constants/modalIds';
 import LABELS from '../../../constants/buttonLabels';
 

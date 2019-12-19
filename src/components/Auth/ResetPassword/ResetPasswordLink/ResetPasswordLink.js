@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
-import ROUTES from '../../../constants/routes';
+import ROUTES from '../../../../constants/routes';
 
 
 export default function ResetPasswordLink({ onClick }) {
