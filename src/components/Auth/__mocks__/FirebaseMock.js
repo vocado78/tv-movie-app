@@ -22,7 +22,7 @@ jest.mock('firebase/app', () => ({
     },
     signInWithEmailAndPassword: jest.fn(),
     currentUser: {
-      sendEmailVerification: jest.fn()
+      sendEmailVerification: () => {},
     },
     signOut: () => {}
   }),
@@ -61,9 +61,9 @@ class FirebaseMock {
     return this.auth.signInWithEmailAndPassword(email, password);
   }
 
-  doSendEmailVerification = () => this.auth.currentUser.sendEmailVerification({
+  doSendEmailVerification = jest.fn(() => this.auth.currentUser.sendEmailVerification({
     url: process.env.REACT_APP_VERIFICATION_REDIRECT
-  });
+  }));
 
   doSignOut = () => this.auth.signOut();
 

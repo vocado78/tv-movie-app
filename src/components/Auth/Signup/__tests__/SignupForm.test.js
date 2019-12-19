@@ -28,7 +28,7 @@ describe('SignupForm', () => {
     expect(getByText(LABELS.CREATE_ACCOUNT)).not.toBeNull();
   });
 
-  it('calls hideModal and navigates to /profile on successful signup', async () => {
+  it('calls hideModal, email verification, and navigates to /profile on successful signup', async () => {
     const { getByText, getByLabelText } = render(<SignupForm {...props} />);
 
     fireEvent.change(getByLabelText(/username/i), { target: { value: 'Tester' } });
@@ -38,6 +38,7 @@ describe('SignupForm', () => {
     fireEvent.click(getByText(LABELS.CREATE_ACCOUNT));
 
     await wait(() => {
+      expect(props.firebase.doSendEmailVerification).toHaveBeenCalledTimes(1);
       expect(props.history.push).toHaveBeenCalledWith(ROUTES.PROFILE);
       expect(props.hideModal).toHaveBeenCalledTimes(1);
     });
