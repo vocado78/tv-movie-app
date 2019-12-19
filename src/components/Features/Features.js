@@ -1,8 +1,8 @@
 import React from 'react';
 
-import Container from '../Container';
-import List from '../List';
-import FeatureItem from './FeatureItem';
+import Container from '../Container/Container';
+import List from '../List/List';
+import FeatureItem from './FeatureItem/FeatureItem';
 import features from '../../content/features';
 
 

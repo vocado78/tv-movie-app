@@ -1,6 +1,6 @@
 import React from 'react';
 import { MemoryRouter } from 'react-router-dom';
-import { Hero } from '.';
+import { Hero } from './Hero';
 
 export default {
   component: Hero,

@@ -1,5 +1,5 @@
 import React from 'react';
-import ModalContent from '.';
+import ModalContent from './ModalContent';
 
 export default {
   title: 'ModalContent',

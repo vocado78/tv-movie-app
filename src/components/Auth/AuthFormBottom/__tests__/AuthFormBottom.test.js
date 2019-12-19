@@ -3,8 +3,8 @@ import { render } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
 
 import AuthFormBottom from '../AuthFormBottom';
-import LABELS from '../../../constants/buttonLabels';
-import { MODAL_IDS } from '../../Modal';
+import LABELS from '../../../../constants/buttonLabels';
+import MODAL_IDS from '../../../../constants/modalIds';
 
 
 const createProps = (modalId = '') => ({

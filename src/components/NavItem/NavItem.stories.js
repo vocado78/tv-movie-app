@@ -1,6 +1,6 @@
 import React from 'react';
 import { MemoryRouter } from 'react-router-dom';
-import NavItem from '.';
+import NavItem from './NavItem';
 
 export default {
   title: 'NavItem',

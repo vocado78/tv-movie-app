@@ -4,10 +4,10 @@ import { connect } from 'react-redux';
 
 import { ReactComponent as ArrowIcon } from './assets/arrow.svg';
 import heroImage from './assets/watchingtv.jpg';
-import Container from '../Container';
-import Button from '../Button';
+import Container from '../Container/Container';
+import Button from '../Button/Button';
 import { showModal } from '../../actions';
-import { MODAL_IDS } from '../Modal';
+import MODAL_IDS from '../../constants/modalIds';
 
 
 export const Hero = (props) => {

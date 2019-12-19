@@ -1,5 +1,5 @@
 import React from 'react';
-import Features from '.';
+import Features from './Features';
 
 export default {
   title: 'Features'

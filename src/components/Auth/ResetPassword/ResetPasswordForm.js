@@ -3,8 +3,8 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 import { withFirebase } from '../../Firebase';
-import Form from '../../Form';
-import AuthError from '../AuthError';
+import Form from '../../Form/Form';
+import AuthError from '../AuthError/AuthError';
 import { resetAttrs } from '../../../content/forms';
 import { validateReset } from '../../../helpers/validate';
 import LABELS from '../../../constants/buttonLabels';

@@ -5,10 +5,10 @@ import { Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { compose } from 'recompose';
 
-import { withFirebase } from '../Firebase';
-import { showModal } from '../../actions';
-import MODAL_IDS from '../Modal/modalIds';
-import ROUTES from '../../constants/routes';
+import { withFirebase } from '../../Firebase';
+import { showModal } from '../../../actions';
+import MODAL_IDS from '../../../constants/modalIds';
+import ROUTES from '../../../constants/routes';
 
 
 const withAuthorisation = (Component) => {

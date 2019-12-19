@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import Button from '../Button';
-import { ResetPasswordLink } from './ResetPassword';
-import { MODAL_IDS } from '../Modal';
-import LABELS from '../../constants/buttonLabels';
+import Button from '../../Button/Button';
+import ResetPasswordLink from '../ResetPassword/ResetPasswordLink';
+import MODAL_IDS from '../../../constants/modalIds';
+import LABELS from '../../../constants/buttonLabels';
 
 
 const AuthFormBottom = ({ hideModal, showModal, modalId }) => {

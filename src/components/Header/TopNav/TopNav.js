@@ -2,12 +2,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import List from '../../List';
-import NavItem from '../../NavItem';
+import List from '../../List/List';
+import NavItem from '../../NavItem/NavItem';
 import { LogoutButton } from '../../Auth';
-import Button from '../../Button';
+import Button from '../../Button/Button';
 import topNavItemsLeft from '../../../content/topNav';
-import { MODAL_IDS } from '../../Modal';
+import MODAL_IDS from '../../../constants/modalIds';
 import ROUTES from '../../../constants/routes';
 import LABELS from '../../../constants/buttonLabels';
 

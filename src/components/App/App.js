@@ -3,12 +3,12 @@ import { BrowserRouter, Route } from 'react-router-dom';
 
 import '../../index.css';
 import ROUTES from '../../constants/routes';
-import Header from '../Header';
-import Footer from '../Footer';
+import Header from '../Header/Header';
+import Footer from '../Footer/Footer';
 import HomeScreen from '../../screens/HomeScreen';
 import ProfileScreen from '../../screens/ProfileScreen';
 import ResetPasswordScreen from '../../screens/ResetPasswordScreen';
-import { ModalContainer } from '../Modal';
+import ModalContainer from '../ModalContainer/ModalContainer';
 import { withAuthentication } from '../Auth';
 
 

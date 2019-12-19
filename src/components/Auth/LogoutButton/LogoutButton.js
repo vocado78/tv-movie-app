@@ -2,9 +2,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import Button from '../Button';
-import { withFirebase } from '../Firebase';
-import LABELS from '../../constants/buttonLabels';
+import Button from '../../Button/Button';
+import { withFirebase } from '../../Firebase';
+import LABELS from '../../../constants/buttonLabels';
 
 export const LogoutButton = ({ firebase }) => {
   return (

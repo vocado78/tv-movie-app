@@ -3,8 +3,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Form as FinalForm, Field } from 'react-final-form';
 
-import FormInput from './FormInput';
-import Button from '../Button';
+import FormInput from './FormInput/FormInput';
+import Button from '../Button/Button';
 
 
 export default function Form({

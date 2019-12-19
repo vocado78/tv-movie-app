@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Container from '../../components/Container';
+import Container from '../../components/Container/Container';
 import { ProfileNav, ProfileHeader, ProfileTabs } from '../../components/Profile';
 import { withAuthorisation } from '../../components/Auth';
 

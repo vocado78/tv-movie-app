@@ -1,11 +1,12 @@
+/* eslint-disable react/forbid-prop-types */
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { ModalContent } from '../../Modal';
-import SignupForm from './SignupForm';
+import ModalContent from '../../ModalContent/ModalContent';
+import LoginForm from './LoginForm';
 
 
-export default function Signup({
+export default function Login({
   closeModal,
   onKeyDown,
   onMount,
@@ -13,18 +14,18 @@ export default function Signup({
 }) {
   return (
     <ModalContent
-      title="Create An Account"
+      title="Log In"
       closeModal={closeModal}
       onKeyDown={onKeyDown}
       onMount={onMount}
       onUnmount={onUnmount}
     >
-      <SignupForm />
+      <LoginForm />
     </ModalContent>
   );
 }
 
-Signup.propTypes = {
+Login.propTypes = {
   closeModal: PropTypes.func.isRequired,
   onKeyDown: PropTypes.func.isRequired,
   onMount: PropTypes.func.isRequired,

@@ -2,7 +2,7 @@ import React from 'react';
 import { render, fireEvent } from '@testing-library/react';
 
 import { LogoutButton } from '../LogoutButton';
-import LABELS from '../../../constants/buttonLabels';
+import LABELS from '../../../../constants/buttonLabels';
 
 
 const firebaseMock = {

@@ -4,8 +4,8 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { compose } from 'recompose';
 
-import { withFirebase } from '../Firebase';
-import { setAuthUser } from '../../actions';
+import { withFirebase } from '../../Firebase';
+import { setAuthUser } from '../../../actions';
 
 // TODO: only set uid on the store instead of entire user obj?
 
