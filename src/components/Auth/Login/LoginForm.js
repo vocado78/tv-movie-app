@@ -16,7 +16,7 @@ import MODAL_IDS from '../../../constants/modalIds';
 import ROUTES from '../../../constants/routes';
 
 
-class LoginForm extends Component {
+export class LoginForm extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -32,7 +32,6 @@ class LoginForm extends Component {
         this.props.history.push(ROUTES.PROFILE);
       })
       .catch((error) => {
-        console.log('An error happened', error);
         this.setState({ error });
       });
   }

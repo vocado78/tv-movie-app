@@ -20,11 +20,23 @@ jest.mock('firebase/app', () => ({
         ));
       });
     },
-    signInWithEmailAndPassword: jest.fn(),
+    signInWithEmailAndPassword: (email, password) => {
+      return new Promise((resolve, reject) => {
+        const credential = { email: 'test@test.com', password: 'Password012' };
+        const authUser = {
+          user: {
+            uid: Math.floor(Math.random() * 10) + password.length,
+            email
+          }
+        };
+        process.nextTick(() => (
+          credential.password === password ? resolve(authUser) : reject({ message: 'Wrong password.' })
+        ));
+      });
+    },
     currentUser: {
       sendEmailVerification: () => {},
-    },
-    signOut: () => {}
+    }
   }),
   firestore: () => ({
     collection: (str) => ({
@@ -64,8 +76,6 @@ class FirebaseMock {
   doSendEmailVerification = jest.fn(() => this.auth.currentUser.sendEmailVerification({
     url: process.env.REACT_APP_VERIFICATION_REDIRECT
   }));
-
-  doSignOut = () => this.auth.signOut();
 
   user = (uid) => this.db.collection('users').doc(uid);
 }

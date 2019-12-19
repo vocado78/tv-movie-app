@@ -23,7 +23,7 @@ describe('SignupForm', () => {
     props.hideModal.mockClear();
   });
 
-  it('renders with redux and fb with defaults', () => {
+  it('renders', () => {
     const { getByText } = render(<SignupForm {...props} />);
     expect(getByText(LABELS.CREATE_ACCOUNT)).not.toBeNull();
   });
@@ -45,7 +45,7 @@ describe('SignupForm', () => {
   });
 
   // uses an "existing" email address, see FirebaseMock
-  it('displays an error message if signup fails', async () => {
+  it('displays an auth error message if signup fails', async () => {
     const { getByText, getByLabelText } = render(<SignupForm {...props} />);
 
     fireEvent.change(getByLabelText(/username/i), { target: { value: 'Tester' } });
