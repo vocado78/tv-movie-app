@@ -29,7 +29,7 @@ const withAuthentication = (Component) => {
     }
 
     componentWillUnmount() {
-      this.listener();
+      if (this.listener) this.listener();
     }
 
     render() {

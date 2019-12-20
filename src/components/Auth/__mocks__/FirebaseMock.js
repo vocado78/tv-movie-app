@@ -66,7 +66,7 @@ const mockConfig = {
   appId: 'appId'
 };
 
-class FirebaseMock {
+export default class FirebaseMock {
   constructor() {
     firebase.initializeApp(mockConfig);
 
@@ -91,4 +91,21 @@ class FirebaseMock {
   user = (uid) => this.db.collection('users').doc(uid);
 }
 
-export default FirebaseMock;
+
+export const firebaseObserverMock = {
+  auth: {
+    onAuthStateChanged: jest
+      .fn()
+      .mockImplementationOnce((cb) => { cb(); })
+      .mockImplementationOnce((cb) => {
+        const authUser = { user: { uid: 'uid' } };
+        cb(authUser);
+      })
+      .mockImplementationOnce((cb) => {
+        cb(null);
+      })
+  },
+  onAuthUserChange(callback) {
+    return this.auth.onAuthStateChanged(callback);
+  }
+};
