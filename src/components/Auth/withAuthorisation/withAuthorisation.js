@@ -5,7 +5,6 @@ import { Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { compose } from 'recompose';
 
-import { withFirebase } from '../../Firebase';
 import { showModal } from '../../../actions';
 import MODAL_IDS from '../../../constants/modalIds';
 import ROUTES from '../../../constants/routes';
@@ -33,13 +32,11 @@ const withAuthorisation = (Component) => {
   };
 
   WithAuthorisation.propTypes = {
-    firebase: PropTypes.object.isRequired,
     authUser: PropTypes.object,
     showModal: PropTypes.func.isRequired
   };
 
   return compose(
-    withFirebase,
     connect(
       mapStateToProps,
       { showModal }
