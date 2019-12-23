@@ -5,18 +5,18 @@ import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 import { compose } from 'recompose';
 
-import Form from '../../Form';
-import AuthError from '../AuthError';
-import AuthFormBottom from '../AuthFormBottom';
+import Form from '../../Form/Form';
+import AuthError from '../AuthError/AuthError';
+import AuthFormBottom from '../AuthFormBottom/AuthFormBottom';
 import { loginAttrs } from '../../../content/forms';
 import { withFirebase } from '../../Firebase';
 import { hideModal, showModal } from '../../../actions';
 import { validateLogin } from '../../../helpers/validate';
-import { MODAL_IDS } from '../../Modal';
+import MODAL_IDS from '../../../constants/modalIds';
 import ROUTES from '../../../constants/routes';
 
 
-class LoginForm extends Component {
+export class LoginForm extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -32,7 +32,6 @@ class LoginForm extends Component {
         this.props.history.push(ROUTES.PROFILE);
       })
       .catch((error) => {
-        console.log('An error happened', error);
         this.setState({ error });
       });
   }

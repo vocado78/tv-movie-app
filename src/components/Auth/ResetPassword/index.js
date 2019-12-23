@@ -1,4 +1,4 @@
-import ResetPasswordForm from './ResetPasswordForm';
-import ResetPasswordLink from './ResetPasswordLink';
+import ResetPasswordForm from './ResetPasswordForm/ResetPasswordForm';
+import ResetPasswordLink from './ResetPasswordLink/ResetPasswordLink';
 
 export { ResetPasswordForm, ResetPasswordLink };

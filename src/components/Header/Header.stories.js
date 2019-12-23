@@ -1,7 +1,7 @@
 import React from 'react';
 import { MemoryRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
-import Header from '.';
+import Header from './Header';
 
 const store = {
   getState: () => {

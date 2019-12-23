@@ -2,7 +2,7 @@ import React from 'react';
 import { render } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
 
-import TopNav from '..';
+import TopNav from '../TopNav';
 import FirebaseContext from '../../../Firebase/FirebaseContext';
 import FirebaseMock from '../../../Auth/__mocks__/FirebaseMock';
 

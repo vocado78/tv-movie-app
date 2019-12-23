@@ -520,6 +520,16 @@ exports[`Storyshots NavItem Normal 1`] = `
 </li>
 `;
 
+exports[`Storyshots ResetPasswordLink Normal 1`] = `
+<a
+  className="text-xs"
+  href="/reset-password"
+  onClick={[Function]}
+>
+  Forgot my password
+</a>
+`;
+
 exports[`Storyshots TopNav Logged In 1`] = `
 <nav
   className="flex w-2/3"

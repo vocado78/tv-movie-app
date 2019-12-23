@@ -1,48 +1,61 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
-import ReactDOM from 'react-dom';
-import { render } from '@testing-library/react';
-import { createStore } from 'redux';
-import { Provider } from 'react-redux';
-import { Router } from 'react-router-dom';
-import { createMemoryHistory } from 'history';
+import { render, fireEvent, wait } from '@testing-library/react';
 
-import reducers from '../../../../reducers';
-import FirebaseContext from '../../../Firebase/FirebaseContext';
-import SignupForm from '../SignupForm';
+import { SignupForm } from '../SignupForm';
+import ROUTES from '../../../../constants/routes';
+import LABELS from '../../../../constants/buttonLabels';
 import FirebaseMock from '../../__mocks__/FirebaseMock';
 
 
-const store = createStore(reducers);
-
-const renderWithFbAndRedux = (ui) => {
-  return {
-    ...render(
-      <Provider store={store}>
-        <FirebaseContext.Provider value={new FirebaseMock()}>
-          <Router history={createMemoryHistory()}>
-            {ui}
-          </Router>
-        </FirebaseContext.Provider>
-      </Provider>
-    )
-  };
+const props = {
+  history: {
+    push: jest.fn()
+  },
+  firebase: new FirebaseMock(),
+  hideModal: jest.fn(),
+  showModal: () => {}
 };
 
-
 describe('SignupForm', () => {
-  beforeAll(() => {
-    ReactDOM.createPortal = jest.fn((element, node) => {
-      return element;
+  afterEach(() => {
+    props.history.push.mockClear();
+    props.hideModal.mockClear();
+  });
+
+  it('renders', () => {
+    const { getByText } = render(<SignupForm {...props} />);
+    expect(getByText(LABELS.CREATE_ACCOUNT)).not.toBeNull();
+  });
+
+  it('calls hideModal, email verification, and navigates to /profile on successful signup', async () => {
+    const { getByText, getByLabelText } = render(<SignupForm {...props} />);
+
+    fireEvent.change(getByLabelText(/username/i), { target: { value: 'Tester' } });
+    fireEvent.change(getByLabelText(/e-mail address/i), { target: { value: 'test@test.com' } });
+    fireEvent.change(getByLabelText(/password/i), { target: { value: 'Testing123' } });
+
+    fireEvent.click(getByText(LABELS.CREATE_ACCOUNT));
+
+    await wait(() => {
+      expect(props.firebase.doSendEmailVerification).toHaveBeenCalledTimes(1);
+      expect(props.history.push).toHaveBeenCalledWith(ROUTES.PROFILE);
+      expect(props.hideModal).toHaveBeenCalledTimes(1);
     });
   });
 
-  afterEach(() => {
-    ReactDOM.createPortal.mockClear();
-  });
+  // uses an "existing" email address, see FirebaseMock
+  it('displays an auth error message if signup fails', async () => {
+    const { getByText, getByLabelText } = render(<SignupForm {...props} />);
 
-  it('renders with redux and fb with defaults', () => {
-    const { getByText } = renderWithFbAndRedux(<SignupForm />);
-    expect(getByText('Create Account')).not.toBeNull();
+    fireEvent.change(getByLabelText(/username/i), { target: { value: 'Tester' } });
+    fireEvent.change(getByLabelText(/e-mail address/i), { target: { value: 'exist@test.com' } });
+    fireEvent.change(getByLabelText(/password/i), { target: { value: 'Testing123' } });
+
+    fireEvent.click(getByText(LABELS.CREATE_ACCOUNT));
+
+    await wait(() => {
+      expect(getByText('Email already in use.')).not.toBeNull();
+    });
   });
 });

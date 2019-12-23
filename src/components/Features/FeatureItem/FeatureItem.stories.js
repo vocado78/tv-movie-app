@@ -1,6 +1,6 @@
 /* eslint-disable react/jsx-props-no-spreading */
 import React from 'react';
-import FeatureItem from '.';
+import FeatureItem from './FeatureItem';
 
 export default {
   title: 'FeatureItem'
