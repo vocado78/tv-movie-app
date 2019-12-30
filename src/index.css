@@ -657,6 +657,10 @@ nav > ul:last-child {
   background-color: #e2e8f0
 }
 
+.test2:hover > .test1 {
+  display: block
+}
+
 .sr-only {
   position: absolute;
   width: 1px;

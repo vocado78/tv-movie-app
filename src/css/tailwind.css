@@ -30,4 +30,8 @@ nav > ul:last-child {
   @apply bg-gray-300
 }
 
+.test2:hover > .test1 {
+  @apply block
+}
+
 @tailwind utilities;
