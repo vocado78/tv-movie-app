@@ -30,7 +30,7 @@ nav > ul:last-child {
   @apply bg-gray-300
 }
 
-.test2:hover > .test1 {
+.dropdown-container:hover > .dropdown-content {
   @apply block
 }
 

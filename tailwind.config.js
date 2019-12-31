@@ -13,6 +13,9 @@ module.exports = {
       '1/2': 'calc(50% - 1rem)'
     }
   },
-  variants: {},
+  variants: {
+    borderRadius: ['hover', 'responsive', 'active'],
+    borderWidth: ['hover', 'responsive', 'last', 'active']
+  },
   plugins: []
 };

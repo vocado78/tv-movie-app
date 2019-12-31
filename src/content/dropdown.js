@@ -1,4 +1,4 @@
-export const genreDropdown = [
+const genreItems = [
   { id: 'action', label: 'Action', to: '/films/:genre/:decade/:sort' },
   { id: 'adventure', label: 'Adventure', to: '/films/:genre/:decade/:sort' },
   { id: 'animation', label: 'Animation', to: '/films/:genre/:decade/:sort' },
@@ -19,7 +19,7 @@ export const genreDropdown = [
   { id: 'western', label: 'Western', to: '/films/:genre/:decade/:sort' }
 ];
 
-export const decadeDropdown = [
+const decadeItems = [
   { id: 'allDecades', label: 'All', to: '/films/:genre/:decade/:sort' },
   { id: '2020s', label: '2020s', to: '/films/:genre/:decade/:sort' },
   { id: '2010s', label: '2010s', to: '/films/:genre/:decade/:sort' },
@@ -36,7 +36,7 @@ export const decadeDropdown = [
   { id: '1900s', label: '1900s', to: '/films/:genre/:decade/:sort' }
 ];
 
-export const browseList = [
-  { id: 'genre', label: 'Genre', to: '#' },
-  { id: 'decade', label: 'Decade', to: '#' }
+export default [
+  { id: 'genre', label: 'Genre', items: genreItems },
+  { id: 'decade', label: 'Decade', items: decadeItems }
 ];

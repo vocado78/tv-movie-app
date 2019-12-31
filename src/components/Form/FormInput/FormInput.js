@@ -10,9 +10,10 @@ export default function FormInput({
   inputStyle
 }) {
   const isError = meta.error && meta.touched;
+  const divClass = attrs.name === 'title' ? 'flex items-center' : 'flex flex-col mb-4';
 
   return (
-    <div className="flex flex-col mb-4">
+    <div className={divClass}>
       <label htmlFor={attrs.name} className={isError ? 'text-red-600' : ''}>{attrs.label}</label>
       <input
         id={attrs.name}
