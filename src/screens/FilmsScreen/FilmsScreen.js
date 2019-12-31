@@ -6,7 +6,7 @@ import SearchBar from '../../components/SearchBar/SearchBar';
 
 const FilmsScreen = () => {
   return (
-    <Container className="flex-col py-8 bg-gray-800">
+    <Container className="flex-col py-8">
       <section className="flex justify-between">
         <BrowseBar />
         <SearchBar onSubmit={() => {}} />
