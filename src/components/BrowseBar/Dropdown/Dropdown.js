@@ -6,7 +6,7 @@ import DropdownItem from './DropdownItem/DropdownItem';
 
 
 export default function Dropdown({ title, items, onClick }) {
-  const dropdownContentClass = 'hidden absolute -ml-4 mt-1 bg-gray-400 border-t border-solid border-gray-600 text-gray-600 capitalize rounded-b py-1 px-3 w-32 dropdown-content';
+  const dropdownContentClass = 'hidden absolute -ml-4 mt-1 px-3 w-full bg-gray-400 border-t border-solid border-gray-600 text-gray-600 capitalize rounded-b py-1 dropdown-content';
 
   return (
     <DropdownTitle title={title}>

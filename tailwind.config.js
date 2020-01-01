@@ -8,6 +8,9 @@ module.exports = {
       height: {
         168: '42rem',
         stick: 'calc(100vh - 12rem)'
+      },
+      minWidth: {
+        32: '8rem'
       }
     },
     inset: {

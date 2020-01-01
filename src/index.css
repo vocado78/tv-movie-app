@@ -5807,6 +5807,10 @@ nav > ul:last-child {
   min-width: 0;
 }
 
+.min-w-32 {
+  min-width: 8rem;
+}
+
 .min-w-full {
   min-width: 100%;
 }
@@ -14225,6 +14229,10 @@ nav > ul:last-child {
 
   .sm\:min-w-0 {
     min-width: 0;
+  }
+
+  .sm\:min-w-32 {
+    min-width: 8rem;
   }
 
   .sm\:min-w-full {
@@ -22648,6 +22656,10 @@ nav > ul:last-child {
     min-width: 0;
   }
 
+  .md\:min-w-32 {
+    min-width: 8rem;
+  }
+
   .md\:min-w-full {
     min-width: 100%;
   }
@@ -31069,6 +31081,10 @@ nav > ul:last-child {
     min-width: 0;
   }
 
+  .lg\:min-w-32 {
+    min-width: 8rem;
+  }
+
   .lg\:min-w-full {
     min-width: 100%;
   }
@@ -39488,6 +39504,10 @@ nav > ul:last-child {
 
   .xl\:min-w-0 {
     min-width: 0;
+  }
+
+  .xl\:min-w-32 {
+    min-width: 8rem;
   }
 
   .xl\:min-w-full {
