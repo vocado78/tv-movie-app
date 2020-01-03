@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
+
+import { setActiveGenre, setActiveDecade } from '../../../../actions';
 
 // before returning navitem, check what happens when classname is moved to li from link
 
@@ -8,7 +11,7 @@ const sanitise = (str) => {
   return str.toLowerCase().replace(' ', '-');
 };
 
-export default class DropdownItem extends Component {
+class DropdownItem extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -21,19 +24,20 @@ export default class DropdownItem extends Component {
   }
 
   componentDidUpdate(prevProps) {
-    const { activeItems: { genre, decade } } = this.props;
-    if (genre !== prevProps.activeItems.genre || decade !== prevProps.activeItems.decade) {
+    const { genre, decade } = this.props;
+    if (genre !== prevProps.genre || decade !== prevProps.decade) {
       this.generatePath();
     }
   }
 
   handleClick = () => {
     const { type, label } = this.props;
-    this.props.onClick(type, label);
+    if (type === 'genre') this.props.setActiveGenre(label);
+    else this.props.setActiveDecade(label);
   }
 
   generatePath = () => {
-    const { activeItems: { genre, decade }, type, label } = this.props;
+    const { genre, decade, type, label } = this.props;
     const sanitisedLabel = sanitise(label);
     const sanitisedGenre = sanitise(genre);
 
@@ -75,9 +79,23 @@ export default class DropdownItem extends Component {
   }
 }
 
+const mapStateToProps = (state) => {
+  return {
+    genre: state.dropdowns.activeGenre,
+    decade: state.dropdowns.activeDecade
+  };
+};
+
+export default connect(
+  mapStateToProps,
+  { setActiveDecade, setActiveGenre }
+)(DropdownItem);
+
 DropdownItem.propTypes = {
   label: PropTypes.string.isRequired,
-  onClick: PropTypes.func.isRequired,
   type: PropTypes.string.isRequired,
-  activeItems: PropTypes.objectOf(PropTypes.string).isRequired
+  genre: PropTypes.string.isRequired,
+  decade: PropTypes.string.isRequired,
+  setActiveDecade: PropTypes.func.isRequired,
+  setActiveGenre: PropTypes.func.isRequired
 };
