@@ -11,7 +11,7 @@ export default {
   ]
 };
 
-export const normal = () => <BrowserBar handleSelect={() => {}} />;
+export const normal = () => <BrowserBar />;
 normal.story = {
   name: 'default'
 };
