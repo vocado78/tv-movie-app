@@ -1,26 +1,26 @@
 const genreItems = [
-  { type: 'genre', label: 'Action' },
-  { type: 'genre', label: 'Adventure' },
-  { type: 'genre', label: 'Animation' },
-  { type: 'genre', label: 'Comedy' },
-  { type: 'genre', label: 'Crime' },
-  { type: 'genre', label: 'Documentary' },
-  { type: 'genre', label: 'Drama' },
-  { type: 'genre', label: 'Family' },
-  { type: 'genre', label: 'Fantasy' },
-  { type: 'genre', label: 'History' },
-  { type: 'genre', label: 'Horror' },
-  { type: 'genre', label: 'Music' },
-  { type: 'genre', label: 'Mystery' },
-  { type: 'genre', label: 'Romance' },
-  { type: 'genre', label: 'Science Fiction' },
-  { type: 'genre', label: 'Thriller' },
-  { type: 'genre', label: 'War' },
-  { type: 'genre', label: 'Western' }
+  { type: 'genre', label: 'action' },
+  { type: 'genre', label: 'adventure' },
+  { type: 'genre', label: 'animation' },
+  { type: 'genre', label: 'comedy' },
+  { type: 'genre', label: 'crime' },
+  { type: 'genre', label: 'documentary' },
+  { type: 'genre', label: 'drama' },
+  { type: 'genre', label: 'family' },
+  { type: 'genre', label: 'fantasy' },
+  { type: 'genre', label: 'history' },
+  { type: 'genre', label: 'horror' },
+  { type: 'genre', label: 'music' },
+  { type: 'genre', label: 'mystery' },
+  { type: 'genre', label: 'romance' },
+  { type: 'genre', label: 'science fiction' },
+  { type: 'genre', label: 'thriller' },
+  { type: 'genre', label: 'war' },
+  { type: 'genre', label: 'western' }
 ];
 
 const decadeItems = [
-  { type: 'decade', label: 'All' },
+  { type: 'decade', label: 'all' },
   { type: 'decade', label: '2020s' },
   { type: 'decade', label: '2010s' },
   { type: 'decade', label: '2000s' },
@@ -37,8 +37,8 @@ const decadeItems = [
 ];
 
 export const dropdownItems = [
-  { type: 'genre', label: 'Genre', items: genreItems },
-  { type: 'decade', label: 'Decade', items: decadeItems },
+  { type: 'genre', label: 'genre', items: genreItems },
+  { type: 'decade', label: 'decade', items: decadeItems },
 ];
 
-export const BROWSE_BAR_LABEL = 'Browse by';
+export const BROWSE_BAR_LABEL = 'browse by';

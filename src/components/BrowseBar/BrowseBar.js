@@ -11,7 +11,7 @@ class BrowseBar extends Component {
     const { genre, decade } = this.props;
     let title;
 
-    if (label === 'Genre') {
+    if (label === 'genre') {
       title = genre || label;
     } else {
       title = decade || label;
@@ -22,8 +22,8 @@ class BrowseBar extends Component {
 
   render() {
     return (
-      <div className="flex items-center text-gray-400 text-sm uppercase">
-        <h3 className="mr-6 tracking-wider">{BROWSE_BAR_LABEL}</h3>
+      <div className="flex items-center text-gray-400 text-sm">
+        <h3 className="mr-6 tracking-wider uppercase">{BROWSE_BAR_LABEL}</h3>
         <ul className="flex border border-solid border-gray-600 rounded px-1 py-px">
           {dropdownItems.map(({ type, label, items }) => {
             return (

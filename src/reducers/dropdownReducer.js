@@ -1,4 +1,4 @@
-import { ACTIVE_DECADE, ACTIVE_GENRE, ACTIVE_SORT } from '../actions/types';
+import { ACTIVE_DECADE, ACTIVE_GENRE, ACTIVE_SORT, CLEAR_DROPDOWNS } from '../actions/types';
 
 const initialState = {
   activeGenre: '',
@@ -14,6 +14,8 @@ const dropdownReducer = (state = initialState, action) => {
       return { ...state, activeGenre: action.payload };
     case ACTIVE_SORT:
       return { ...state, activeSort: action.payload };
+    case CLEAR_DROPDOWNS:
+      return { ...state, activeGenre: '', activeDecade: '', activeSort: '' };
     default:
       return state;
   }

@@ -72,7 +72,7 @@ class DropdownItem extends Component {
     const { path } = this.state;
 
     return (
-      <li className="text-sm py-px whitespace-no-wrap hover:text-white">
+      <li className="text-sm capitalize py-px whitespace-no-wrap hover:text-white">
         <Link to={path} onClick={this.handleClick}>{label}</Link>
       </li>
     );

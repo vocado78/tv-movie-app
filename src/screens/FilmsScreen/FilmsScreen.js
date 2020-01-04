@@ -7,7 +7,6 @@ import SearchBar from '../../components/SearchBar/SearchBar';
 import SearchResults from '../../components/SearchResults/SearchResults';
 import ROUTES from '../../constants/routes';
 
-
 // film screen will make api browse/search requests, based on url params, and keep film/tv list state
 // which is passed to result list component
 

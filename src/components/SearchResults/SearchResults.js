@@ -1,16 +1,12 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 
+import withDropdownStateSync from '../../screens/FilmsScreen/withDropdownStateSync';
+
 
 function SearchResults(props) {
-  const params = useParams();
-  console.log(params, props.genre, props.decade);
-
-  // compare genre and decade from params with genre and decade in store
-  // if not the same, update store with genre and/or decade from params
-
+  console.log(props.genre, props.decade);
   return (
     <section>
       <h2>Films found are the following</h2>
@@ -26,7 +22,7 @@ const mapStateToProps = (state) => {
   };
 };
 
-export default connect(mapStateToProps)(SearchResults);
+export default connect(mapStateToProps)(withDropdownStateSync(SearchResults));
 
 SearchResults.propTypes = {
   genre: PropTypes.string.isRequired,

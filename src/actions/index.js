@@ -4,7 +4,8 @@ import {
   AUTH_USER,
   ACTIVE_DECADE,
   ACTIVE_GENRE,
-  ACTIVE_SORT
+  ACTIVE_SORT,
+  CLEAR_DROPDOWNS
 } from './types';
 
 export const showModal = (modalId) => {
@@ -38,6 +39,12 @@ export const setActiveDecade = (decade) => {
   return {
     type: ACTIVE_DECADE,
     payload: decade
+  };
+};
+
+export const clearActiveDropdowns = () => {
+  return {
+    type: CLEAR_DROPDOWNS
   };
 };
 

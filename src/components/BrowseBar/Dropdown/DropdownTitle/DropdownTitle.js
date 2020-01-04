@@ -8,7 +8,7 @@ export default function DropdownTitle({ title, children }) {
 
   return (
     <li className={titleClass}>
-      <p className="tracking-wider inline">{title}</p>
+      <p className="tracking-wider inline uppercase">{title}</p>
       <ArrowDownIcon className="inline ml-2 fill-current" />
       {children}
     </li>
