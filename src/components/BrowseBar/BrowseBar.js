@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 
 import Dropdown from './Dropdown/Dropdown';
 import { dropdownItems, BROWSE_BAR_LABEL } from '../../content/dropdown';
+import DropdownItem from './Dropdown/DropdownItem/DropdownItem';
 
 
 class BrowseBar extends Component {
@@ -27,7 +28,7 @@ class BrowseBar extends Component {
         <ul className="flex border border-solid border-gray-600 rounded px-1 py-px">
           {dropdownItems.map(({ type, label, items }) => {
             return (
-              <Dropdown key={type} title={this.setTitle(label)} items={items} />
+              <Dropdown key={type} title={this.setTitle(label)} items={items} component={DropdownItem} />
             );
           })}
         </ul>
