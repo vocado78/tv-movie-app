@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import DropdownTitle from './DropdownTitle/DropdownTitle';
-import List from '../../List/List';
+import List from '../List/List';
 
 
 export default function Dropdown({ title, ...props }) {

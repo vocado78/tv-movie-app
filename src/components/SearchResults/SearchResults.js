@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 import withDropdownStateSync from '../../screens/FilmsScreen/withDropdownStateSync';
 import { sortItems, SORT_BY_LABEL } from '../../content/dropdown';
-import Dropdown from '../BrowseBar/Dropdown/Dropdown';
+import Dropdown from '../Dropdown/Dropdown';
 
 const tempItem = ({ label }) => {
   return <li><p>{label}</p></li>;

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
-import { setActiveGenre, setActiveDecade } from '../../../../actions';
+import { setActiveGenre, setActiveDecade } from '../../../actions';
 
 // before returning navitem, check what happens when classname is moved to li from link
 
@@ -11,7 +11,7 @@ const sanitise = (str) => {
   return str.toLowerCase().replace(' ', '-');
 };
 
-class DropdownItem extends Component {
+class BrowseBarDropdownItem extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -89,9 +89,9 @@ const mapStateToProps = (state) => {
 export default connect(
   mapStateToProps,
   { setActiveDecade, setActiveGenre }
-)(DropdownItem);
+)(BrowseBarDropdownItem);
 
-DropdownItem.propTypes = {
+BrowseBarDropdownItem.propTypes = {
   label: PropTypes.string.isRequired,
   type: PropTypes.string.isRequired,
   genre: PropTypes.string.isRequired,
