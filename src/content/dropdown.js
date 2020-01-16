@@ -36,18 +36,24 @@ const decadeItems = [
   { type: 'decade', label: '1900s', id: '1900s' }
 ];
 
-export const dropdownItems = [
-  { type: 'genre', label: 'genre', items: genreItems },
-  { type: 'decade', label: 'decade', items: decadeItems },
-];
-
-export const BROWSE_BAR_LABEL = 'browse by';
-
-export const SORT_BY_LABEL = 'sort by';
-
 export const sortItems = [
   { type: 'sort', label: 'a-z', id: 'a-z' },
   { type: 'sort', label: 'rating', id: 'rating' },
   { type: 'sort', label: 'popular', id: 'popular' },
   { type: 'sort', label: 'release date', id: 'release' }
 ];
+
+export const browseBarDropdownLabels = [
+  { type: 'genre', label: 'genre', items: genreItems },
+  { type: 'decade', label: 'decade', items: decadeItems },
+];
+
+// export const searchResultsDropdownTitles = [
+//   { type: 'genre', label: 'genre', items: genreItems },
+//   { type: 'decade', label: 'decade', items: decadeItems },
+//   { type: 'sort', label: 'sort by', items: sortItems }
+// ];
+
+export const BROWSE_BAR_LABEL = 'browse by';
+
+export const SORT_BY_LABEL = 'sort by';

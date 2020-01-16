@@ -6,7 +6,7 @@ import { connect } from 'react-redux';
 import { setActiveGenre, setActiveDecade } from '../../../actions';
 
 // before returning navitem, check what happens when classname is moved to li from link
-
+// move helper func
 const sanitise = (str) => {
   return str.toLowerCase().replace(' ', '-');
 };
