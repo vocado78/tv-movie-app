@@ -2,12 +2,12 @@
 
 exports[`Storyshots BrowserBar Normal 1`] = `
 <div
-  className="flex items-center text-gray-400 text-sm uppercase"
+  className="flex items-center text-gray-400 text-sm"
 >
   <h3
-    className="mr-6 tracking-wider"
+    className="mr-6 tracking-wider uppercase"
   >
-    Browse by
+    browse by
   </h3>
   <ul
     className="flex border border-solid border-gray-600 rounded px-1 py-px"
@@ -16,9 +16,9 @@ exports[`Storyshots BrowserBar Normal 1`] = `
       className="dropdown-container px-4 py-1 min-w-32 border-r border-solid border-gray-600 last:border-r-0 relative hover:text-white hover:bg-gray-400 hover:rounded-t"
     >
       <p
-        className="tracking-wider inline"
+        className="tracking-wider inline uppercase"
       >
-        Genre
+        genre
       </p>
       <svg
         className="inline ml-2 fill-current"
@@ -26,204 +26,186 @@ exports[`Storyshots BrowserBar Normal 1`] = `
         arrow-down.svg
       </svg>
       <ul
-        className="hidden absolute -ml-4 mt-1 px-3 w-full bg-gray-400 border-t border-solid border-gray-600 text-gray-600 capitalize rounded-b py-1 dropdown-content"
+        className="hidden absolute -ml-4 mt-1 px-3 w-full bg-gray-400 border-t border-solid border-gray-600 text-gray-600 rounded-b py-1 dropdown-content"
       >
         <li
-          className="text-sm py-px whitespace-no-wrap hover:text-white"
+          className="text-sm capitalize py-px whitespace-no-wrap hover:text-white"
         >
           <a
-            href="/films"
-            id="Action"
+            href="/films/genre/action/decade/decade"
             onClick={[Function]}
           >
-            Action
+            action
           </a>
         </li>
         <li
-          className="text-sm py-px whitespace-no-wrap hover:text-white"
+          className="text-sm capitalize py-px whitespace-no-wrap hover:text-white"
         >
           <a
-            href="/films"
-            id="Adventure"
+            href="/films/genre/adventure/decade/decade"
             onClick={[Function]}
           >
-            Adventure
+            adventure
           </a>
         </li>
         <li
-          className="text-sm py-px whitespace-no-wrap hover:text-white"
+          className="text-sm capitalize py-px whitespace-no-wrap hover:text-white"
         >
           <a
-            href="/films"
-            id="Animation"
+            href="/films/genre/animation/decade/decade"
             onClick={[Function]}
           >
-            Animation
+            animation
           </a>
         </li>
         <li
-          className="text-sm py-px whitespace-no-wrap hover:text-white"
+          className="text-sm capitalize py-px whitespace-no-wrap hover:text-white"
         >
           <a
-            href="/films"
-            id="Comedy"
+            href="/films/genre/comedy/decade/decade"
             onClick={[Function]}
           >
-            Comedy
+            comedy
           </a>
         </li>
         <li
-          className="text-sm py-px whitespace-no-wrap hover:text-white"
+          className="text-sm capitalize py-px whitespace-no-wrap hover:text-white"
         >
           <a
-            href="/films"
-            id="Crime"
+            href="/films/genre/crime/decade/decade"
             onClick={[Function]}
           >
-            Crime
+            crime
           </a>
         </li>
         <li
-          className="text-sm py-px whitespace-no-wrap hover:text-white"
+          className="text-sm capitalize py-px whitespace-no-wrap hover:text-white"
         >
           <a
-            href="/films"
-            id="Documentary"
+            href="/films/genre/documentary/decade/decade"
             onClick={[Function]}
           >
-            Documentary
+            documentary
           </a>
         </li>
         <li
-          className="text-sm py-px whitespace-no-wrap hover:text-white"
+          className="text-sm capitalize py-px whitespace-no-wrap hover:text-white"
         >
           <a
-            href="/films"
-            id="Drama"
+            href="/films/genre/drama/decade/decade"
             onClick={[Function]}
           >
-            Drama
+            drama
           </a>
         </li>
         <li
-          className="text-sm py-px whitespace-no-wrap hover:text-white"
+          className="text-sm capitalize py-px whitespace-no-wrap hover:text-white"
         >
           <a
-            href="/films"
-            id="Family"
+            href="/films/genre/family/decade/decade"
             onClick={[Function]}
           >
-            Family
+            family
           </a>
         </li>
         <li
-          className="text-sm py-px whitespace-no-wrap hover:text-white"
+          className="text-sm capitalize py-px whitespace-no-wrap hover:text-white"
         >
           <a
-            href="/films"
-            id="Fantasy"
+            href="/films/genre/fantasy/decade/decade"
             onClick={[Function]}
           >
-            Fantasy
+            fantasy
           </a>
         </li>
         <li
-          className="text-sm py-px whitespace-no-wrap hover:text-white"
+          className="text-sm capitalize py-px whitespace-no-wrap hover:text-white"
         >
           <a
-            href="/films"
-            id="History"
+            href="/films/genre/history/decade/decade"
             onClick={[Function]}
           >
-            History
+            history
           </a>
         </li>
         <li
-          className="text-sm py-px whitespace-no-wrap hover:text-white"
+          className="text-sm capitalize py-px whitespace-no-wrap hover:text-white"
         >
           <a
-            href="/films"
-            id="Horror"
+            href="/films/genre/horror/decade/decade"
             onClick={[Function]}
           >
-            Horror
+            horror
           </a>
         </li>
         <li
-          className="text-sm py-px whitespace-no-wrap hover:text-white"
+          className="text-sm capitalize py-px whitespace-no-wrap hover:text-white"
         >
           <a
-            href="/films"
-            id="Music"
+            href="/films/genre/music/decade/decade"
             onClick={[Function]}
           >
-            Music
+            music
           </a>
         </li>
         <li
-          className="text-sm py-px whitespace-no-wrap hover:text-white"
+          className="text-sm capitalize py-px whitespace-no-wrap hover:text-white"
         >
           <a
-            href="/films"
-            id="Mystery"
+            href="/films/genre/mystery/decade/decade"
             onClick={[Function]}
           >
-            Mystery
+            mystery
           </a>
         </li>
         <li
-          className="text-sm py-px whitespace-no-wrap hover:text-white"
+          className="text-sm capitalize py-px whitespace-no-wrap hover:text-white"
         >
           <a
-            href="/films"
-            id="Romance"
+            href="/films/genre/romance/decade/decade"
             onClick={[Function]}
           >
-            Romance
+            romance
           </a>
         </li>
         <li
-          className="text-sm py-px whitespace-no-wrap hover:text-white"
+          className="text-sm capitalize py-px whitespace-no-wrap hover:text-white"
         >
           <a
-            href="/films"
-            id="Science Fiction"
+            href="/films/genre/science-fiction/decade/decade"
             onClick={[Function]}
           >
-            Science Fiction
+            science fiction
           </a>
         </li>
         <li
-          className="text-sm py-px whitespace-no-wrap hover:text-white"
+          className="text-sm capitalize py-px whitespace-no-wrap hover:text-white"
         >
           <a
-            href="/films"
-            id="Thriller"
+            href="/films/genre/thriller/decade/decade"
             onClick={[Function]}
           >
-            Thriller
+            thriller
           </a>
         </li>
         <li
-          className="text-sm py-px whitespace-no-wrap hover:text-white"
+          className="text-sm capitalize py-px whitespace-no-wrap hover:text-white"
         >
           <a
-            href="/films"
-            id="War"
+            href="/films/genre/war/decade/decade"
             onClick={[Function]}
           >
-            War
+            war
           </a>
         </li>
         <li
-          className="text-sm py-px whitespace-no-wrap hover:text-white"
+          className="text-sm capitalize py-px whitespace-no-wrap hover:text-white"
         >
           <a
-            href="/films"
-            id="Western"
+            href="/films/genre/western/decade/decade"
             onClick={[Function]}
           >
-            Western
+            western
           </a>
         </li>
       </ul>
@@ -232,9 +214,9 @@ exports[`Storyshots BrowserBar Normal 1`] = `
       className="dropdown-container px-4 py-1 min-w-32 border-r border-solid border-gray-600 last:border-r-0 relative hover:text-white hover:bg-gray-400 hover:rounded-t"
     >
       <p
-        className="tracking-wider inline"
+        className="tracking-wider inline uppercase"
       >
-        Decade
+        decade
       </p>
       <svg
         className="inline ml-2 fill-current"
@@ -242,157 +224,143 @@ exports[`Storyshots BrowserBar Normal 1`] = `
         arrow-down.svg
       </svg>
       <ul
-        className="hidden absolute -ml-4 mt-1 px-3 w-full bg-gray-400 border-t border-solid border-gray-600 text-gray-600 capitalize rounded-b py-1 dropdown-content"
+        className="hidden absolute -ml-4 mt-1 px-3 w-full bg-gray-400 border-t border-solid border-gray-600 text-gray-600 rounded-b py-1 dropdown-content"
       >
         <li
-          className="text-sm py-px whitespace-no-wrap hover:text-white"
+          className="text-sm capitalize py-px whitespace-no-wrap hover:text-white"
         >
           <a
-            href="/films"
-            id="All"
+            href="/films/genre/genre/decade/all"
             onClick={[Function]}
           >
-            All
+            all
           </a>
         </li>
         <li
-          className="text-sm py-px whitespace-no-wrap hover:text-white"
+          className="text-sm capitalize py-px whitespace-no-wrap hover:text-white"
         >
           <a
-            href="/films"
-            id="2020s"
+            href="/films/genre/genre/decade/2020s"
             onClick={[Function]}
           >
             2020s
           </a>
         </li>
         <li
-          className="text-sm py-px whitespace-no-wrap hover:text-white"
+          className="text-sm capitalize py-px whitespace-no-wrap hover:text-white"
         >
           <a
-            href="/films"
-            id="2010s"
+            href="/films/genre/genre/decade/2010s"
             onClick={[Function]}
           >
             2010s
           </a>
         </li>
         <li
-          className="text-sm py-px whitespace-no-wrap hover:text-white"
+          className="text-sm capitalize py-px whitespace-no-wrap hover:text-white"
         >
           <a
-            href="/films"
-            id="2000s"
+            href="/films/genre/genre/decade/2000s"
             onClick={[Function]}
           >
             2000s
           </a>
         </li>
         <li
-          className="text-sm py-px whitespace-no-wrap hover:text-white"
+          className="text-sm capitalize py-px whitespace-no-wrap hover:text-white"
         >
           <a
-            href="/films"
-            id="1990s"
+            href="/films/genre/genre/decade/1990s"
             onClick={[Function]}
           >
             1990s
           </a>
         </li>
         <li
-          className="text-sm py-px whitespace-no-wrap hover:text-white"
+          className="text-sm capitalize py-px whitespace-no-wrap hover:text-white"
         >
           <a
-            href="/films"
-            id="1980s"
+            href="/films/genre/genre/decade/1980s"
             onClick={[Function]}
           >
             1980s
           </a>
         </li>
         <li
-          className="text-sm py-px whitespace-no-wrap hover:text-white"
+          className="text-sm capitalize py-px whitespace-no-wrap hover:text-white"
         >
           <a
-            href="/films"
-            id="1970s"
+            href="/films/genre/genre/decade/1970s"
             onClick={[Function]}
           >
             1970s
           </a>
         </li>
         <li
-          className="text-sm py-px whitespace-no-wrap hover:text-white"
+          className="text-sm capitalize py-px whitespace-no-wrap hover:text-white"
         >
           <a
-            href="/films"
-            id="1960s"
+            href="/films/genre/genre/decade/1960s"
             onClick={[Function]}
           >
             1960s
           </a>
         </li>
         <li
-          className="text-sm py-px whitespace-no-wrap hover:text-white"
+          className="text-sm capitalize py-px whitespace-no-wrap hover:text-white"
         >
           <a
-            href="/films"
-            id="1950s"
+            href="/films/genre/genre/decade/1950s"
             onClick={[Function]}
           >
             1950s
           </a>
         </li>
         <li
-          className="text-sm py-px whitespace-no-wrap hover:text-white"
+          className="text-sm capitalize py-px whitespace-no-wrap hover:text-white"
         >
           <a
-            href="/films"
-            id="1940s"
+            href="/films/genre/genre/decade/1940s"
             onClick={[Function]}
           >
             1940s
           </a>
         </li>
         <li
-          className="text-sm py-px whitespace-no-wrap hover:text-white"
+          className="text-sm capitalize py-px whitespace-no-wrap hover:text-white"
         >
           <a
-            href="/films"
-            id="1930s"
+            href="/films/genre/genre/decade/1930s"
             onClick={[Function]}
           >
             1930s
           </a>
         </li>
         <li
-          className="text-sm py-px whitespace-no-wrap hover:text-white"
+          className="text-sm capitalize py-px whitespace-no-wrap hover:text-white"
         >
           <a
-            href="/films"
-            id="1920s"
+            href="/films/genre/genre/decade/1920s"
             onClick={[Function]}
           >
             1920s
           </a>
         </li>
         <li
-          className="text-sm py-px whitespace-no-wrap hover:text-white"
+          className="text-sm capitalize py-px whitespace-no-wrap hover:text-white"
         >
           <a
-            href="/films"
-            id="1910s"
+            href="/films/genre/genre/decade/1910s"
             onClick={[Function]}
           >
             1910s
           </a>
         </li>
         <li
-          className="text-sm py-px whitespace-no-wrap hover:text-white"
+          className="text-sm capitalize py-px whitespace-no-wrap hover:text-white"
         >
           <a
-            href="/films"
-            id="1900s"
+            href="/films/genre/genre/decade/1900s"
             onClick={[Function]}
           >
             1900s
