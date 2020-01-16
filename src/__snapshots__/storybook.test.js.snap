@@ -1,5 +1,377 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Storyshots BrowserBar Normal 1`] = `
+<div
+  className="flex items-center text-gray-400 text-sm"
+>
+  <h3
+    className="mr-6 tracking-wider uppercase"
+  >
+    browse by
+  </h3>
+  <ul
+    className="flex border border-solid border-gray-600 rounded px-1 py-px"
+  >
+    <li
+      className="dropdown-container px-4 py-1 min-w-32 border-r border-solid border-gray-600 last:border-r-0 relative hover:text-white hover:bg-gray-400 hover:rounded-t"
+    >
+      <p
+        className="tracking-wider inline uppercase"
+      >
+        genre
+      </p>
+      <svg
+        className="inline ml-2 fill-current"
+      >
+        arrow-down.svg
+      </svg>
+      <ul
+        className="hidden absolute -ml-4 mt-1 px-3 w-full bg-gray-400 border-t border-solid border-gray-600 text-gray-600 rounded-b py-1 dropdown-content"
+      >
+        <li
+          className="text-sm capitalize py-px whitespace-no-wrap hover:text-white"
+        >
+          <a
+            href="/films/genre/action/decade/decade"
+            onClick={[Function]}
+          >
+            action
+          </a>
+        </li>
+        <li
+          className="text-sm capitalize py-px whitespace-no-wrap hover:text-white"
+        >
+          <a
+            href="/films/genre/adventure/decade/decade"
+            onClick={[Function]}
+          >
+            adventure
+          </a>
+        </li>
+        <li
+          className="text-sm capitalize py-px whitespace-no-wrap hover:text-white"
+        >
+          <a
+            href="/films/genre/animation/decade/decade"
+            onClick={[Function]}
+          >
+            animation
+          </a>
+        </li>
+        <li
+          className="text-sm capitalize py-px whitespace-no-wrap hover:text-white"
+        >
+          <a
+            href="/films/genre/comedy/decade/decade"
+            onClick={[Function]}
+          >
+            comedy
+          </a>
+        </li>
+        <li
+          className="text-sm capitalize py-px whitespace-no-wrap hover:text-white"
+        >
+          <a
+            href="/films/genre/crime/decade/decade"
+            onClick={[Function]}
+          >
+            crime
+          </a>
+        </li>
+        <li
+          className="text-sm capitalize py-px whitespace-no-wrap hover:text-white"
+        >
+          <a
+            href="/films/genre/documentary/decade/decade"
+            onClick={[Function]}
+          >
+            documentary
+          </a>
+        </li>
+        <li
+          className="text-sm capitalize py-px whitespace-no-wrap hover:text-white"
+        >
+          <a
+            href="/films/genre/drama/decade/decade"
+            onClick={[Function]}
+          >
+            drama
+          </a>
+        </li>
+        <li
+          className="text-sm capitalize py-px whitespace-no-wrap hover:text-white"
+        >
+          <a
+            href="/films/genre/family/decade/decade"
+            onClick={[Function]}
+          >
+            family
+          </a>
+        </li>
+        <li
+          className="text-sm capitalize py-px whitespace-no-wrap hover:text-white"
+        >
+          <a
+            href="/films/genre/fantasy/decade/decade"
+            onClick={[Function]}
+          >
+            fantasy
+          </a>
+        </li>
+        <li
+          className="text-sm capitalize py-px whitespace-no-wrap hover:text-white"
+        >
+          <a
+            href="/films/genre/history/decade/decade"
+            onClick={[Function]}
+          >
+            history
+          </a>
+        </li>
+        <li
+          className="text-sm capitalize py-px whitespace-no-wrap hover:text-white"
+        >
+          <a
+            href="/films/genre/horror/decade/decade"
+            onClick={[Function]}
+          >
+            horror
+          </a>
+        </li>
+        <li
+          className="text-sm capitalize py-px whitespace-no-wrap hover:text-white"
+        >
+          <a
+            href="/films/genre/music/decade/decade"
+            onClick={[Function]}
+          >
+            music
+          </a>
+        </li>
+        <li
+          className="text-sm capitalize py-px whitespace-no-wrap hover:text-white"
+        >
+          <a
+            href="/films/genre/mystery/decade/decade"
+            onClick={[Function]}
+          >
+            mystery
+          </a>
+        </li>
+        <li
+          className="text-sm capitalize py-px whitespace-no-wrap hover:text-white"
+        >
+          <a
+            href="/films/genre/romance/decade/decade"
+            onClick={[Function]}
+          >
+            romance
+          </a>
+        </li>
+        <li
+          className="text-sm capitalize py-px whitespace-no-wrap hover:text-white"
+        >
+          <a
+            href="/films/genre/science-fiction/decade/decade"
+            onClick={[Function]}
+          >
+            science fiction
+          </a>
+        </li>
+        <li
+          className="text-sm capitalize py-px whitespace-no-wrap hover:text-white"
+        >
+          <a
+            href="/films/genre/thriller/decade/decade"
+            onClick={[Function]}
+          >
+            thriller
+          </a>
+        </li>
+        <li
+          className="text-sm capitalize py-px whitespace-no-wrap hover:text-white"
+        >
+          <a
+            href="/films/genre/war/decade/decade"
+            onClick={[Function]}
+          >
+            war
+          </a>
+        </li>
+        <li
+          className="text-sm capitalize py-px whitespace-no-wrap hover:text-white"
+        >
+          <a
+            href="/films/genre/western/decade/decade"
+            onClick={[Function]}
+          >
+            western
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li
+      className="dropdown-container px-4 py-1 min-w-32 border-r border-solid border-gray-600 last:border-r-0 relative hover:text-white hover:bg-gray-400 hover:rounded-t"
+    >
+      <p
+        className="tracking-wider inline uppercase"
+      >
+        decade
+      </p>
+      <svg
+        className="inline ml-2 fill-current"
+      >
+        arrow-down.svg
+      </svg>
+      <ul
+        className="hidden absolute -ml-4 mt-1 px-3 w-full bg-gray-400 border-t border-solid border-gray-600 text-gray-600 rounded-b py-1 dropdown-content"
+      >
+        <li
+          className="text-sm capitalize py-px whitespace-no-wrap hover:text-white"
+        >
+          <a
+            href="/films/genre/genre/decade/all"
+            onClick={[Function]}
+          >
+            all
+          </a>
+        </li>
+        <li
+          className="text-sm capitalize py-px whitespace-no-wrap hover:text-white"
+        >
+          <a
+            href="/films/genre/genre/decade/2020s"
+            onClick={[Function]}
+          >
+            2020s
+          </a>
+        </li>
+        <li
+          className="text-sm capitalize py-px whitespace-no-wrap hover:text-white"
+        >
+          <a
+            href="/films/genre/genre/decade/2010s"
+            onClick={[Function]}
+          >
+            2010s
+          </a>
+        </li>
+        <li
+          className="text-sm capitalize py-px whitespace-no-wrap hover:text-white"
+        >
+          <a
+            href="/films/genre/genre/decade/2000s"
+            onClick={[Function]}
+          >
+            2000s
+          </a>
+        </li>
+        <li
+          className="text-sm capitalize py-px whitespace-no-wrap hover:text-white"
+        >
+          <a
+            href="/films/genre/genre/decade/1990s"
+            onClick={[Function]}
+          >
+            1990s
+          </a>
+        </li>
+        <li
+          className="text-sm capitalize py-px whitespace-no-wrap hover:text-white"
+        >
+          <a
+            href="/films/genre/genre/decade/1980s"
+            onClick={[Function]}
+          >
+            1980s
+          </a>
+        </li>
+        <li
+          className="text-sm capitalize py-px whitespace-no-wrap hover:text-white"
+        >
+          <a
+            href="/films/genre/genre/decade/1970s"
+            onClick={[Function]}
+          >
+            1970s
+          </a>
+        </li>
+        <li
+          className="text-sm capitalize py-px whitespace-no-wrap hover:text-white"
+        >
+          <a
+            href="/films/genre/genre/decade/1960s"
+            onClick={[Function]}
+          >
+            1960s
+          </a>
+        </li>
+        <li
+          className="text-sm capitalize py-px whitespace-no-wrap hover:text-white"
+        >
+          <a
+            href="/films/genre/genre/decade/1950s"
+            onClick={[Function]}
+          >
+            1950s
+          </a>
+        </li>
+        <li
+          className="text-sm capitalize py-px whitespace-no-wrap hover:text-white"
+        >
+          <a
+            href="/films/genre/genre/decade/1940s"
+            onClick={[Function]}
+          >
+            1940s
+          </a>
+        </li>
+        <li
+          className="text-sm capitalize py-px whitespace-no-wrap hover:text-white"
+        >
+          <a
+            href="/films/genre/genre/decade/1930s"
+            onClick={[Function]}
+          >
+            1930s
+          </a>
+        </li>
+        <li
+          className="text-sm capitalize py-px whitespace-no-wrap hover:text-white"
+        >
+          <a
+            href="/films/genre/genre/decade/1920s"
+            onClick={[Function]}
+          >
+            1920s
+          </a>
+        </li>
+        <li
+          className="text-sm capitalize py-px whitespace-no-wrap hover:text-white"
+        >
+          <a
+            href="/films/genre/genre/decade/1910s"
+            onClick={[Function]}
+          >
+            1910s
+          </a>
+        </li>
+        <li
+          className="text-sm capitalize py-px whitespace-no-wrap hover:text-white"
+        >
+          <a
+            href="/films/genre/genre/decade/1900s"
+            onClick={[Function]}
+          >
+            1900s
+          </a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+`;
+
 exports[`Storyshots Button Primary 1`] = `
 <button
   className="btn btn-primary"
@@ -528,6 +900,43 @@ exports[`Storyshots ResetPasswordLink Normal 1`] = `
 >
   Forgot my password
 </a>
+`;
+
+exports[`Storyshots SearchBar Normal 1`] = `
+<form
+  className="flex text-gray-400 text-sm uppercase"
+  onSubmit={[Function]}
+>
+  <div
+    className="flex items-center"
+  >
+    <label
+      className=""
+      htmlFor="title"
+    >
+      Or Search By Title
+    </label>
+    <input
+      className="text-input mt-0 bg-gray-800 ml-6 mr-3"
+      id="title"
+      name="title"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      placeholder="Title"
+      type="text"
+      value=""
+    />
+  </div>
+  <button
+    className="btn btn-primary"
+    disabled={false}
+    onClick={[Function]}
+    type="submit"
+  >
+    Search
+  </button>
+</form>
 `;
 
 exports[`Storyshots TopNav Logged In 1`] = `

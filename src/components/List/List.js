@@ -13,9 +13,13 @@ export default function List({ listClass, itemClass, items, component }) {
   );
 }
 
+List.defaultProps = {
+  itemClass: ''
+};
+
 List.propTypes = {
   listClass: PropTypes.string.isRequired,
-  itemClass: PropTypes.string.isRequired,
+  itemClass: PropTypes.string,
   items: PropTypes.arrayOf(PropTypes.object).isRequired,
-  component: PropTypes.func.isRequired
+  component: PropTypes.oneOfType([PropTypes.object, PropTypes.func]).isRequired
 };

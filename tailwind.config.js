@@ -6,13 +6,20 @@ module.exports = {
         240: '60rem'
       },
       height: {
-        168: '42rem'
+        168: '42rem',
+        stick: 'calc(100vh - 12rem)'
+      },
+      minWidth: {
+        32: '8rem'
       }
     },
     inset: {
       '1/2': 'calc(50% - 1rem)'
-    }
+    },
   },
-  variants: {},
+  variants: {
+    borderRadius: ['hover', 'responsive', 'active'],
+    borderWidth: ['hover', 'responsive', 'last', 'active']
+  },
   plugins: []
 };

@@ -30,4 +30,8 @@ nav > ul:last-child {
   @apply bg-gray-300
 }
 
+.dropdown-container:hover > .dropdown-content {
+  @apply block
+}
+
 @tailwind utilities;
