@@ -414,7 +414,7 @@ exports[`Storyshots FeatureItem Normal 1`] = `
       }
     />
     <p
-      className="w-56 text-gray-700 text-sm"
+      className="w-56 text-blue-100 tracking-wide text-sm"
     >
       Some text to describe one of the app features.
     </p>
@@ -423,15 +423,20 @@ exports[`Storyshots FeatureItem Normal 1`] = `
 `;
 
 exports[`Storyshots Features Normal 1`] = `
-<div
-  className="flex w-240 my-0 mx-auto py-40"
+<section
+  className="py-40 font-rubik"
 >
+  <h3
+    className="text-sm text-gray-500 uppercase tracking-widest mb-3"
+  >
+    This app lets you...
+  </h3>
   <ul
     className="flex flex-wrap list-none justify-between"
   >
     <li>
       <div
-        className="flex w-76 mb-4 rounded shadow p-5"
+        className="flex w-76 mb-4 rounded p-5 bg-gray-700"
       >
         <img
           alt="Graphic icon of an eye"
@@ -448,7 +453,7 @@ exports[`Storyshots Features Normal 1`] = `
           }
         />
         <p
-          className="w-56 text-gray-700 text-sm"
+          className="w-56 text-blue-100 tracking-wide text-sm"
         >
           Create a watchlist of films to see, and keep track of films you have seen.
         </p>
@@ -456,7 +461,7 @@ exports[`Storyshots Features Normal 1`] = `
     </li>
     <li>
       <div
-        className="flex w-76 mb-4 rounded shadow p-5"
+        className="flex w-76 mb-4 rounded p-5 bg-gray-700"
       >
         <img
           alt="Graphic icon of an eye"
@@ -473,7 +478,7 @@ exports[`Storyshots Features Normal 1`] = `
           }
         />
         <p
-          className="w-56 text-gray-700 text-sm"
+          className="w-56 text-blue-100 tracking-wide text-sm"
         >
           Create a watchlist of films to see, and keep track of films you have seen.
         </p>
@@ -481,7 +486,7 @@ exports[`Storyshots Features Normal 1`] = `
     </li>
     <li>
       <div
-        className="flex w-76 mb-4 rounded shadow p-5"
+        className="flex w-76 mb-4 rounded p-5 bg-gray-700"
       >
         <img
           alt="Graphic icon of an eye"
@@ -498,7 +503,7 @@ exports[`Storyshots Features Normal 1`] = `
           }
         />
         <p
-          className="w-56 text-gray-700 text-sm"
+          className="w-56 text-blue-100 tracking-wide text-sm"
         >
           Create a watchlist of films to see, and keep track of films you have seen.
         </p>
@@ -506,7 +511,7 @@ exports[`Storyshots Features Normal 1`] = `
     </li>
     <li>
       <div
-        className="flex w-76 mb-4 rounded shadow p-5"
+        className="flex w-76 mb-4 rounded p-5 bg-gray-700"
       >
         <img
           alt="Graphic icon of an eye"
@@ -523,7 +528,7 @@ exports[`Storyshots Features Normal 1`] = `
           }
         />
         <p
-          className="w-56 text-gray-700 text-sm"
+          className="w-56 text-blue-100 tracking-wide text-sm"
         >
           Create a watchlist of films to see, and keep track of films you have seen.
         </p>
@@ -531,7 +536,7 @@ exports[`Storyshots Features Normal 1`] = `
     </li>
     <li>
       <div
-        className="flex w-76 mb-4 rounded shadow p-5"
+        className="flex w-76 mb-4 rounded p-5 bg-gray-700"
       >
         <img
           alt="Graphic icon of an eye"
@@ -548,7 +553,7 @@ exports[`Storyshots Features Normal 1`] = `
           }
         />
         <p
-          className="w-56 text-gray-700 text-sm"
+          className="w-56 text-blue-100 tracking-wide text-sm"
         >
           Create a watchlist of films to see, and keep track of films you have seen.
         </p>
@@ -556,7 +561,7 @@ exports[`Storyshots Features Normal 1`] = `
     </li>
     <li>
       <div
-        className="flex w-76 mb-4 rounded shadow p-5"
+        className="flex w-76 mb-4 rounded p-5 bg-gray-700"
       >
         <img
           alt="Graphic icon of an eye"
@@ -573,14 +578,14 @@ exports[`Storyshots Features Normal 1`] = `
           }
         />
         <p
-          className="w-56 text-gray-700 text-sm"
+          className="w-56 text-blue-100 tracking-wide text-sm"
         >
           Create a watchlist of films to see, and keep track of films you have seen.
         </p>
       </div>
     </li>
   </ul>
-</div>
+</section>
 `;
 
 exports[`Storyshots Form Normal 1`] = `
@@ -758,12 +763,7 @@ exports[`Storyshots Form/FormInput Text 1`] = `
 
 exports[`Storyshots Header Normal 1`] = `
 <header
-  className="h-16 relative z-10"
-  style={
-    Object {
-      "backgroundColor": "rgba(0,0,0,0.25)",
-    }
-  }
+  className="h-20 bg-transparent relative z-10"
 >
   <div
     className="flex w-240 my-0 mx-auto h-full items-center justify-between"
@@ -774,14 +774,14 @@ exports[`Storyshots Header Normal 1`] = `
       LOGO
     </div>
     <nav
-      className="flex w-2/3"
+      className="flex w-2/3 font-rubik"
     >
       <ul
-        className="flex"
+        className="flex items-center"
       >
         <li>
           <a
-            className="px-3 py-1 text-gray-400"
+            className="px-2 py-1 text-gray-400 uppercase tracking-widest text-sm hover:text-white active:text-white"
             href="/films"
             onClick={[Function]}
           >
@@ -790,7 +790,7 @@ exports[`Storyshots Header Normal 1`] = `
         </li>
         <li>
           <a
-            className="px-3 py-1 text-gray-400"
+            className="px-2 py-1 text-gray-400 uppercase tracking-widest text-sm hover:text-white active:text-white"
             href="/tv-shows"
             onClick={[Function]}
           >
@@ -799,7 +799,7 @@ exports[`Storyshots Header Normal 1`] = `
         </li>
         <li>
           <a
-            className="px-3 py-1 text-gray-400"
+            className="px-2 py-1 text-gray-400 uppercase tracking-widest text-sm hover:text-white active:text-white"
             href="/people"
             onClick={[Function]}
           >
@@ -808,7 +808,7 @@ exports[`Storyshots Header Normal 1`] = `
         </li>
         <li>
           <a
-            className="px-3 py-1 text-gray-400"
+            className="px-2 py-1 text-gray-400 uppercase tracking-widest text-sm hover:text-white active:text-white"
             href="/discussions"
             onClick={[Function]}
           >
@@ -817,10 +817,10 @@ exports[`Storyshots Header Normal 1`] = `
         </li>
       </ul>
       <ul
-        className="flex"
+        className="flex items-center"
       >
         <button
-          className="btn btn-primary"
+          className="px-2 py-1 text-gray-400 uppercase tracking-widest text-sm font-rubik hover:text-white active:text-white"
           disabled={false}
           onClick={[Function]}
           type="button"
@@ -828,7 +828,7 @@ exports[`Storyshots Header Normal 1`] = `
           Create Account
         </button>
         <button
-          className="btn btn-secondary"
+          className="px-2 py-1 text-gray-400 uppercase tracking-widest text-sm font-rubik hover:text-white active:text-white"
           disabled={false}
           onClick={[Function]}
           type="button"
@@ -843,27 +843,27 @@ exports[`Storyshots Header Normal 1`] = `
 
 exports[`Storyshots Hero Normal 1`] = `
 <div
-  className="flex justify-center content-center h-168 bg-center bg-no-repeat -mt-16"
+  className="flex mx-auto justify-center content-center h-168 w-296 bg-center bg-no-repeat -mt-20"
   style={
     Object {
-      "backgroundImage": "linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(watchingtv.jpg)",
+      "backgroundImage": "linear-gradient(90deg,#14181d 0,rgba(20,24,29,.98556487) .97%,rgba(20,24,29,.9451312) 2.07833333%,rgba(20,24,29,.88300656) 3.29666667%,rgba(20,24,29,.80349854) 4.60166667%,rgba(20,24,29,.71091472) 5.96666667%,rgba(20,24,29,.60956268) 7.365%,rgba(20,24,29,.50375) 8.77166667%,rgba(20,24,29,.39778426) 10.16%,rgba(20,24,29,.29597303) 11.505%,rgba(20,24,29,.20262391) 12.78%,rgba(20,24,29,.12204446) 13.95833333%,rgba(20,24,29,.05854227) 15.01666667%,rgba(20,24,29,.01642493) 15.92833333%,rgba(20,24,29,0) 16.66666667%,rgba(20,24,29,0) 83.33333333%,rgba(20,24,29,.01642493) 84.07166667%,rgba(20,24,29,.05854227) 84.98333333%,rgba(20,24,29,.12204446) 86.04166667%,rgba(20,24,29,.20262391) 87.22%,rgba(20,24,29,.29597303) 88.495%,rgba(20,24,29,.39778426) 89.84%,rgba(20,24,29,.50375) 91.22833333%,rgba(20,24,29,.60956268) 92.635%,rgba(20,24,29,.71091472) 94.03333333%,rgba(20,24,29,.80349854) 95.39833333%,rgba(20,24,29,.88300656) 96.70333333%,rgba(20,24,29,.9451312) 97.92166667%,rgba(20,24,29,.98556487) 99.03%,#14181d),linear-gradient(0deg,#14181d 0,#14181d 21.48148148%,rgba(20,24,29,.98556487) 23.63703704%,rgba(20,24,29,.9451312) 26.1%,rgba(20,24,29,.88300656) 28.80740741%,rgba(20,24,29,.80349854) 31.70740741%,rgba(20,24,29,.71091472) 34.74074074%,rgba(20,24,29,.60956268) 37.84814815%,rgba(20,24,29,.50375) 40.97407407%,rgba(20,24,29,.39778426) 44.05925926%,rgba(20,24,29,.29597303) 47.04814815%,rgba(20,24,29,.20262391) 49.88148148%,rgba(20,24,29,.12204446) 52.5%,rgba(20,24,29,.05854227) 54.85185185%,rgba(20,24,29,.01642493) 56.87777778%,rgba(20,24,29,0) 58.51851852%), url(watchingtv.jpg)",
     }
   }
 >
   <div
-    className="flex w-240 my-0 mx-auto flex-col justify-center text-center"
+    className="flex w-240 my-0 mx-auto flex-col justify-end text-center pb-8"
   >
     <h1
-      className="text-4xl font-bold leading-tight text-gray-200"
+      className="text-4xl font-serif font-bold tracking-tight leading-tight text-white"
     >
-      Save shows and movies you want to watch.
+      Track stuff you've watched.
       <br />
-      Track what you have watched.
+      Save what you want to watch.
       <br />
-      Share with your friends what is worth watching.
+      Share with your friends what's good.
     </h1>
     <button
-      className="btn btn-primary flex justify-around w-48 mx-auto mt-10 tracking-wide text-xl"
+      className="btn btn-primary flex justify-around w-48 mx-auto mt-10 tracking-widest font-light px-4 py-1"
       disabled={false}
       onClick={[Function]}
       type="button"
@@ -941,14 +941,14 @@ exports[`Storyshots SearchBar Normal 1`] = `
 
 exports[`Storyshots TopNav Logged In 1`] = `
 <nav
-  className="flex w-2/3"
+  className="flex w-2/3 font-rubik"
 >
   <ul
-    className="flex"
+    className="flex items-center"
   >
     <li>
       <a
-        className="px-3 py-1 text-gray-400"
+        className="px-2 py-1 text-gray-400 uppercase tracking-widest text-sm hover:text-white active:text-white"
         href="/films"
         onClick={[Function]}
       >
@@ -957,7 +957,7 @@ exports[`Storyshots TopNav Logged In 1`] = `
     </li>
     <li>
       <a
-        className="px-3 py-1 text-gray-400"
+        className="px-2 py-1 text-gray-400 uppercase tracking-widest text-sm hover:text-white active:text-white"
         href="/tv-shows"
         onClick={[Function]}
       >
@@ -966,7 +966,7 @@ exports[`Storyshots TopNav Logged In 1`] = `
     </li>
     <li>
       <a
-        className="px-3 py-1 text-gray-400"
+        className="px-2 py-1 text-gray-400 uppercase tracking-widest text-sm hover:text-white active:text-white"
         href="/people"
         onClick={[Function]}
       >
@@ -975,7 +975,7 @@ exports[`Storyshots TopNav Logged In 1`] = `
     </li>
     <li>
       <a
-        className="px-3 py-1 text-gray-400"
+        className="px-2 py-1 text-gray-400 uppercase tracking-widest text-sm hover:text-white active:text-white"
         href="/discussions"
         onClick={[Function]}
       >
@@ -984,11 +984,11 @@ exports[`Storyshots TopNav Logged In 1`] = `
     </li>
   </ul>
   <ul
-    className="flex"
+    className="flex items-center"
   >
     <li>
       <a
-        className="px-3 py-1 text-gray-400"
+        className="px-2 py-1 text-gray-400 uppercase tracking-widest text-sm hover:text-white active:text-white"
         href="/profile"
         onClick={[Function]}
       >
@@ -997,7 +997,7 @@ exports[`Storyshots TopNav Logged In 1`] = `
     </li>
     <li>
       <button
-        className="btn btn-primary"
+        className="btn btn-primary px-2 py-1 tracking-widest font-rubik text-sm"
         disabled={false}
         onClick={[Function]}
         type="button"
@@ -1011,14 +1011,14 @@ exports[`Storyshots TopNav Logged In 1`] = `
 
 exports[`Storyshots TopNav Logged Out 1`] = `
 <nav
-  className="flex w-2/3"
+  className="flex w-2/3 font-rubik"
 >
   <ul
-    className="flex"
+    className="flex items-center"
   >
     <li>
       <a
-        className="px-3 py-1 text-gray-400"
+        className="px-2 py-1 text-gray-400 uppercase tracking-widest text-sm hover:text-white active:text-white"
         href="/films"
         onClick={[Function]}
       >
@@ -1027,7 +1027,7 @@ exports[`Storyshots TopNav Logged Out 1`] = `
     </li>
     <li>
       <a
-        className="px-3 py-1 text-gray-400"
+        className="px-2 py-1 text-gray-400 uppercase tracking-widest text-sm hover:text-white active:text-white"
         href="/tv-shows"
         onClick={[Function]}
       >
@@ -1036,7 +1036,7 @@ exports[`Storyshots TopNav Logged Out 1`] = `
     </li>
     <li>
       <a
-        className="px-3 py-1 text-gray-400"
+        className="px-2 py-1 text-gray-400 uppercase tracking-widest text-sm hover:text-white active:text-white"
         href="/people"
         onClick={[Function]}
       >
@@ -1045,7 +1045,7 @@ exports[`Storyshots TopNav Logged Out 1`] = `
     </li>
     <li>
       <a
-        className="px-3 py-1 text-gray-400"
+        className="px-2 py-1 text-gray-400 uppercase tracking-widest text-sm hover:text-white active:text-white"
         href="/discussions"
         onClick={[Function]}
       >
@@ -1054,10 +1054,10 @@ exports[`Storyshots TopNav Logged Out 1`] = `
     </li>
   </ul>
   <ul
-    className="flex"
+    className="flex items-center"
   >
     <button
-      className="btn btn-primary"
+      className="px-2 py-1 text-gray-400 uppercase tracking-widest text-sm font-rubik hover:text-white active:text-white"
       disabled={false}
       onClick={[Function]}
       type="button"
@@ -1065,7 +1065,7 @@ exports[`Storyshots TopNav Logged Out 1`] = `
       Create Account
     </button>
     <button
-      className="btn btn-secondary"
+      className="px-2 py-1 text-gray-400 uppercase tracking-widest text-sm font-rubik hover:text-white active:text-white"
       disabled={false}
       onClick={[Function]}
       type="button"

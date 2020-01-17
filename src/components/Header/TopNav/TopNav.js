@@ -13,23 +13,23 @@ import LABELS from '../../../constants/buttonLabels';
 
 
 export default function TopNav({ isLoggedIn, showModal }) {
-  const itemClass = 'px-3 py-1 text-gray-400';
-
+  const itemClass = 'px-2 py-1 text-gray-400 uppercase tracking-widest text-sm hover:text-white active:text-white';
+  const btnClass = 'px-2 py-1 text-gray-400 uppercase tracking-widest text-sm font-rubik hover:text-white active:text-white';
   return (
-    <nav className="flex w-2/3">
+    <nav className="flex w-2/3 font-rubik">
       <List
-        listClass="flex"
+        listClass="flex items-center"
         itemClass={itemClass}
         items={topNavItemsLeft}
         component={NavItem}
       />
-      <ul className="flex">
+      <ul className="flex items-center">
         {isLoggedIn ? [
           <NavItem className={itemClass} key="myprofile" label="My Profile" to={ROUTES.PROFILE} />,
           <LogoutButton key="logout" />
         ] : [
-          <Button className="btn btn-primary" key="signup" onClick={() => showModal(MODAL_IDS.SIGN_UP)} label={LABELS.CREATE_ACCOUNT} />,
-          <Button className="btn btn-secondary" key="login" onClick={() => showModal(MODAL_IDS.LOG_IN)} label={LABELS.LOG_IN} />
+          <Button className={btnClass} key="signup" onClick={() => showModal(MODAL_IDS.SIGN_UP)} label={LABELS.CREATE_ACCOUNT} />,
+          <Button className={btnClass} key="login" onClick={() => showModal(MODAL_IDS.LOG_IN)} label={LABELS.LOG_IN} />
         ]}
       </ul>
     </nav>

@@ -11,7 +11,7 @@ export const LogoutButton = ({ firebase }) => {
     <li>
       <Button
         type="button"
-        className="btn btn-primary"
+        className="btn btn-primary px-2 py-1 tracking-widest font-rubik text-sm"
         onClick={firebase.doSignOut}
         label={LABELS.LOG_OUT}
       />
