@@ -15,7 +15,7 @@ import { withAuthentication } from '../Auth';
 
 const App = () => {
   return (
-    <div className="bg-gray-800">
+    <div>
       <BrowserRouter>
         <ModalContainer />
         <Header />

@@ -11,23 +11,23 @@ nav > ul:last-child {
 }
 
 .btn {
-  @apply px-3 py-1 rounded uppercase;
+  @apply rounded uppercase;
 }
 
 .btn-primary {
-  @apply bg-gray-500 text-white;
+  @apply bg-lb-green text-white;
 }
 
 .btn-primary:hover {
-  @apply bg-gray-700
+  @apply bg-lb-green-dark
 }
 
 .btn-secondary {
-  @apply bg-white text-gray-800 border border-solid border-gray-800;
+  @apply bg-gray-400 text-gray-800;
 }
 
 .btn-secondary:hover {
-  @apply bg-gray-300
+  @apply bg-gray-200
 }
 
 .dropdown-container:hover > .dropdown-content {

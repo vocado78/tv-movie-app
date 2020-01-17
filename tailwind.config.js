@@ -3,14 +3,22 @@ module.exports = {
     extend: {
       width: {
         76: '19.2rem',
-        240: '60rem'
+        240: '60rem',
+        296: '74rem'
       },
       height: {
-        168: '42rem',
+        128: '32rem',
         stick: 'calc(100vh - 12rem)'
       },
       minWidth: {
         32: '8rem'
+      },
+      fontFamily: {
+        rubik: 'Rubik, sans-serif'
+      },
+      colors: {
+        'lb-green': '#00C030',
+        'lb-green-dark': '#00b020'
       }
     },
     inset: {

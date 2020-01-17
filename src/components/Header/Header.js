@@ -9,12 +9,12 @@ import { showModal } from '../../actions';
 
 
 export const Header = (props) => {
-  const backgroundStyles = {
-    backgroundColor: 'rgba(0,0,0,0.25)'
-  };
+  // const backgroundStyles = {
+  //   backgroundColor: 'rgba(0,0,0,0.25)'
+  // };
 
   return (
-    <header className="h-16 relative z-10" style={backgroundStyles}>
+    <header className="h-20 bg-transparent relative z-10">
       <Container className="h-full items-center justify-between">
         <div className="mr-20 px-3 py-1 text-gray-400">LOGO</div>
         <TopNav isLoggedIn={props.auth} showModal={props.showModal} />
