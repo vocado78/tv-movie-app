@@ -16,9 +16,8 @@ export const Hero = (props) => {
   };
 
   return (
-    <>
-      <div className="flex mx-auto justify-center content-center h-128 w-296 bg-center bg-no-repeat -mt-20" style={backgroundStyles} />
-      <Container className="flex-col justify-center text-center -mt-16">
+    <div className="flex mx-auto justify-center content-center h-168 w-296 bg-center bg-no-repeat -mt-20" style={backgroundStyles}>
+      <Container className="flex-col justify-end text-center pb-8">
         <h1 className="text-4xl font-serif font-bold tracking-tight leading-tight text-white">
           Track stuff you&apos;ve watched.
           <br />
@@ -30,7 +29,7 @@ export const Hero = (props) => {
           <ArrowIcon className="bg-white rounded-full p-1 self-center" title="arrow icon" />
         </Button>
       </Container>
-    </>
+    </div>
   );
 };
 

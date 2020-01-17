@@ -8,6 +8,7 @@ module.exports = {
       },
       height: {
         128: '32rem',
+        168: '42rem',
         stick: 'calc(100vh - 12rem)'
       },
       minWidth: {

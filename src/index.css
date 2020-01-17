@@ -4580,6 +4580,10 @@ nav > ul:last-child {
   height: 32rem;
 }
 
+.h-168 {
+  height: 42rem;
+}
+
 .h-auto {
   height: auto;
 }
@@ -13098,6 +13102,10 @@ nav > ul:last-child {
 
   .sm\:h-128 {
     height: 32rem;
+  }
+
+  .sm\:h-168 {
+    height: 42rem;
   }
 
   .sm\:h-auto {
@@ -21621,6 +21629,10 @@ nav > ul:last-child {
     height: 32rem;
   }
 
+  .md\:h-168 {
+    height: 42rem;
+  }
+
   .md\:h-auto {
     height: auto;
   }
@@ -30142,6 +30154,10 @@ nav > ul:last-child {
     height: 32rem;
   }
 
+  .lg\:h-168 {
+    height: 42rem;
+  }
+
   .lg\:h-auto {
     height: auto;
   }
@@ -38661,6 +38677,10 @@ nav > ul:last-child {
 
   .xl\:h-128 {
     height: 32rem;
+  }
+
+  .xl\:h-168 {
+    height: 42rem;
   }
 
   .xl\:h-auto {

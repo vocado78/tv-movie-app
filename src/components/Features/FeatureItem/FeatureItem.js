@@ -7,7 +7,7 @@ export default function FeatureItem({ className, text, src, alt }) {
     <li>
       <div className={className}>
         <img className="mr-5 -mt-1 w-10 h-10" src={require(`${src}`)} alt={alt} />
-        <p className="w-56 text-gray-700 text-sm">{text}</p>
+        <p className="w-56 text-blue-100 tracking-wide text-sm">{text}</p>
       </div>
     </li>
   );
