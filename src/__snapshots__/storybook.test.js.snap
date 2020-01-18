@@ -426,11 +426,11 @@ exports[`Storyshots Features Normal 1`] = `
 <section
   className="py-40 font-rubik"
 >
-  <h3
+  <h2
     className="text-sm text-gray-500 uppercase tracking-widest mb-3"
   >
     This app lets you...
-  </h3>
+  </h2>
   <ul
     className="flex flex-wrap list-none justify-between"
   >
