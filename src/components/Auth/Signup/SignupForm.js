@@ -15,7 +15,7 @@ import { validateSignup } from '../../../helpers/validate';
 import MODAL_IDS from '../../../constants/modalIds';
 import ROUTES from '../../../constants/routes';
 
-
+// TODO: fix styling when error msgs appear, right now modal becomes higher to account for the extra content
 export class SignupForm extends Component {
   constructor(props) {
     super(props);
@@ -56,7 +56,7 @@ export class SignupForm extends Component {
           formStyle="mt-6"
           onSubmit={this.onSubmit}
           otherAttrs={signupAttrs}
-          inputStyle="text-input"
+          inputStyle="text-input focus:bg-white focus:text-gray-800 text-base"
           validate={validateSignup}
         >
           <AuthFormBottom

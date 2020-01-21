@@ -13,10 +13,10 @@ const AuthFormBottom = ({ hideModal, showModal, modalId }) => {
   const modalToShow = modalId === MODAL_IDS.LOG_IN ? MODAL_IDS.SIGN_UP : MODAL_IDS.LOG_IN;
 
   return (
-    <div className="" data-testid="auth-form-bottom">
+    <div className="flex justify-between mt-8" data-testid="auth-form-bottom">
       {modalId === MODAL_IDS.LOG_IN && <ResetPasswordLink onClick={hideModal} />}
-      <Button type="submit" className="btn btn-primary" label={labelPrimary} />
-      <Button type="button" className="btn btn-secondary" onClick={() => showModal(modalToShow)} label={labelSecondary} />
+      <Button type="submit" className="btn btn-primary py-1 px-2 text-sm font-medium" label={labelPrimary} />
+      <Button type="button" className="btn btn-secondary py-1 px-2 text-sm font-medium" onClick={() => showModal(modalToShow)} label={labelSecondary} />
     </div>
   );
 };

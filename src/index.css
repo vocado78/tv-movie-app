@@ -615,21 +615,24 @@ nav > ul:last-child {
 }
 
 .text-input {
-  border-width: 1px;
-  border-style: solid;
-  border-color: #a0aec0;
+  background-color: #bee3f8;
+  color: #718096;
   border-radius: 0.25rem;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
-  margin-top: 0.5rem;
+  margin-top: 0.25rem;
   width: 16rem;
+  box-shadow: inset 0 -1px 0 #fff;
+  outline: 0;
 }
 
 .btn {
   border-radius: 0.25rem;
   text-transform: uppercase;
+  letter-spacing: .075em;
+  font-family: Rubik, sans-serif;
 }
 
 .btn-primary {
@@ -7484,6 +7487,10 @@ nav > ul:last-child {
   box-shadow: none;
 }
 
+.shadow-input-inner {
+  box-shadow: inset 0 -1px 0 #fff;
+}
+
 .hover\:shadow:hover {
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
 }
@@ -7516,6 +7523,10 @@ nav > ul:last-child {
   box-shadow: none;
 }
 
+.hover\:shadow-input-inner:hover {
+  box-shadow: inset 0 -1px 0 #fff;
+}
+
 .focus\:shadow:focus {
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
 }
@@ -7546,6 +7557,10 @@ nav > ul:last-child {
 
 .focus\:shadow-none:focus {
   box-shadow: none;
+}
+
+.focus\:shadow-input-inner:focus {
+  box-shadow: inset 0 -1px 0 #fff;
 }
 
 .fill-current {
@@ -8852,6 +8867,10 @@ nav > ul:last-child {
 
 .tracking-widest {
   letter-spacing: 0.1em;
+}
+
+.tracking-more-wider {
+  letter-spacing: .075em;
 }
 
 .select-none {
@@ -16008,6 +16027,10 @@ nav > ul:last-child {
     box-shadow: none;
   }
 
+  .sm\:shadow-input-inner {
+    box-shadow: inset 0 -1px 0 #fff;
+  }
+
   .sm\:hover\:shadow:hover {
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   }
@@ -16040,6 +16063,10 @@ nav > ul:last-child {
     box-shadow: none;
   }
 
+  .sm\:hover\:shadow-input-inner:hover {
+    box-shadow: inset 0 -1px 0 #fff;
+  }
+
   .sm\:focus\:shadow:focus {
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   }
@@ -16070,6 +16097,10 @@ nav > ul:last-child {
 
   .sm\:focus\:shadow-none:focus {
     box-shadow: none;
+  }
+
+  .sm\:focus\:shadow-input-inner:focus {
+    box-shadow: inset 0 -1px 0 #fff;
   }
 
   .sm\:fill-current {
@@ -17376,6 +17407,10 @@ nav > ul:last-child {
 
   .sm\:tracking-widest {
     letter-spacing: 0.1em;
+  }
+
+  .sm\:tracking-more-wider {
+    letter-spacing: .075em;
   }
 
   .sm\:select-none {
@@ -24533,6 +24568,10 @@ nav > ul:last-child {
     box-shadow: none;
   }
 
+  .md\:shadow-input-inner {
+    box-shadow: inset 0 -1px 0 #fff;
+  }
+
   .md\:hover\:shadow:hover {
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   }
@@ -24565,6 +24604,10 @@ nav > ul:last-child {
     box-shadow: none;
   }
 
+  .md\:hover\:shadow-input-inner:hover {
+    box-shadow: inset 0 -1px 0 #fff;
+  }
+
   .md\:focus\:shadow:focus {
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   }
@@ -24595,6 +24638,10 @@ nav > ul:last-child {
 
   .md\:focus\:shadow-none:focus {
     box-shadow: none;
+  }
+
+  .md\:focus\:shadow-input-inner:focus {
+    box-shadow: inset 0 -1px 0 #fff;
   }
 
   .md\:fill-current {
@@ -25901,6 +25948,10 @@ nav > ul:last-child {
 
   .md\:tracking-widest {
     letter-spacing: 0.1em;
+  }
+
+  .md\:tracking-more-wider {
+    letter-spacing: .075em;
   }
 
   .md\:select-none {
@@ -33058,6 +33109,10 @@ nav > ul:last-child {
     box-shadow: none;
   }
 
+  .lg\:shadow-input-inner {
+    box-shadow: inset 0 -1px 0 #fff;
+  }
+
   .lg\:hover\:shadow:hover {
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   }
@@ -33090,6 +33145,10 @@ nav > ul:last-child {
     box-shadow: none;
   }
 
+  .lg\:hover\:shadow-input-inner:hover {
+    box-shadow: inset 0 -1px 0 #fff;
+  }
+
   .lg\:focus\:shadow:focus {
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   }
@@ -33120,6 +33179,10 @@ nav > ul:last-child {
 
   .lg\:focus\:shadow-none:focus {
     box-shadow: none;
+  }
+
+  .lg\:focus\:shadow-input-inner:focus {
+    box-shadow: inset 0 -1px 0 #fff;
   }
 
   .lg\:fill-current {
@@ -34426,6 +34489,10 @@ nav > ul:last-child {
 
   .lg\:tracking-widest {
     letter-spacing: 0.1em;
+  }
+
+  .lg\:tracking-more-wider {
+    letter-spacing: .075em;
   }
 
   .lg\:select-none {
@@ -41583,6 +41650,10 @@ nav > ul:last-child {
     box-shadow: none;
   }
 
+  .xl\:shadow-input-inner {
+    box-shadow: inset 0 -1px 0 #fff;
+  }
+
   .xl\:hover\:shadow:hover {
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   }
@@ -41615,6 +41686,10 @@ nav > ul:last-child {
     box-shadow: none;
   }
 
+  .xl\:hover\:shadow-input-inner:hover {
+    box-shadow: inset 0 -1px 0 #fff;
+  }
+
   .xl\:focus\:shadow:focus {
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   }
@@ -41645,6 +41720,10 @@ nav > ul:last-child {
 
   .xl\:focus\:shadow-none:focus {
     box-shadow: none;
+  }
+
+  .xl\:focus\:shadow-input-inner:focus {
+    box-shadow: inset 0 -1px 0 #fff;
   }
 
   .xl\:fill-current {
@@ -42951,6 +43030,10 @@ nav > ul:last-child {
 
   .xl\:tracking-widest {
     letter-spacing: 0.1em;
+  }
+
+  .xl\:tracking-more-wider {
+    letter-spacing: .075em;
   }
 
   .xl\:select-none {
