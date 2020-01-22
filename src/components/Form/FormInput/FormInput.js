@@ -10,18 +10,18 @@ export default function FormInput({
   inputStyle
 }) {
   const isError = meta.error && meta.touched;
-  const divClass = attrs.name === 'title' ? 'flex items-center' : 'flex flex-col mb-4';
+  const divClass = attrs.name === 'title' ? 'flex items-center' : 'flex flex-col mb-4 text-sm';
 
   return (
     <div className={divClass}>
       <label htmlFor={attrs.name} className={isError ? 'text-red-600' : ''}>{attrs.label}</label>
       <input
         id={attrs.name}
-        placeholder={attrs.placeholder}
+        placeholder={attrs.placeholder || ''}
         className={isError ? `${inputStyle} border-red-600` : inputStyle}
         {...input}
       />
-      {isError && <span className="text-red-600">{meta.error}</span>}
+      {isError && <span className="text-red-600 w-64 break-words mt-1 leading-tight">{meta.error}</span>}
     </div>
   );
 }

@@ -22,7 +22,7 @@ export default function Form({
       onSubmit={onSubmit}
       validate={validate}
       render={({ handleSubmit, submitting }) => (
-        <form className={formStyle} onSubmit={handleSubmit}>
+        <form className={formStyle} onSubmit={handleSubmit} autoComplete="off" autoCapitalize="off">
           {otherAttrs.map((attrs) => (
             <Field name={attrs.name} type={attrs.type} key={attrs.name}>
               {({ input, meta }) => (

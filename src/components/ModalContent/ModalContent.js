@@ -24,25 +24,25 @@ export default class ModalContent extends Component {
         <div
           onClick={closeModal}
           onKeyDown={onKeyDown}
-          className="fixed top-0 left-0 w-full h-full flex justify-center items-center"
-          style={{ backgroundColor: 'rgba(0,0,0,0.75)' }}
+          className="fixed z-20 top-0 left-0 w-full h-full flex justify-center items-center"
+          style={{ backgroundColor: 'rgba(0,0,0,0.9)' }}
         >
           <div
             onClick={(e) => e.stopPropagation()}
-            className="pt-4 pb-6 px-10 bg-white rounded"
+            className="pt-4 pb-6 px-10 bg-gray-700 text-white font-rubik rounded"
             role="dialog"
             tabIndex="-1"
             aria-labelledby="modal-title"
           >
             <button
               onClick={closeModal}
-              className="float-right text-4xl -mt-4 -mr-5 hover:text-gray-500"
+              className="float-right text-4xl -mt-4 -mr-5 text-gray-500 hover:text-white font-light"
               type="button"
               aria-label={`Close ${title} dialog`}
             >
               &times;
             </button>
-            <h2 className="text-xl mb-3" id="modal-title">{title}</h2>
+            <h2 className="text-gray-500 uppercase tracking-more-wider mb-3" id="modal-title">{title}</h2>
             {children}
           </div>
         </div>
