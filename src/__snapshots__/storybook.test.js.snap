@@ -896,7 +896,7 @@ exports[`Storyshots NavItem Normal 1`] = `
 
 exports[`Storyshots ResetPasswordLink Normal 1`] = `
 <a
-  className="text-xs"
+  className="text-sm -mt-4 text-gray-400 hover:text-lb-green"
   href="/reset-password"
   onClick={[Function]}
 >

@@ -22,8 +22,7 @@ describe('AuthError', () => {
       </MemoryRouter>
     );
 
-    expect(getByTestId('auth-form-bottom').innerHTML).toContain('Forgot my password');
-    expect(getByTestId('auth-form-bottom').children[1].innerHTML).toEqual(LABELS.LOG_IN);
+    expect(getByTestId('auth-form-bottom').children[0].innerHTML).toEqual(LABELS.LOG_IN);
   });
 
   it('renders signup elements if modalId is SIGN_UP', () => {
