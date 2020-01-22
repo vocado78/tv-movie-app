@@ -7,12 +7,15 @@ import { compose } from 'recompose';
 
 import Form from '../../Form/Form';
 import AuthError from '../AuthError/AuthError';
+// import Button from '../../Button/Button';
 import AuthFormBottom from '../AuthFormBottom/AuthFormBottom';
+import { ResetPasswordLink } from '../ResetPassword';
 import { loginAttrs } from '../../../content/forms';
 import { withFirebase } from '../../Firebase';
 import { hideModal, showModal } from '../../../actions';
 import { validateLogin } from '../../../helpers/validate';
 import MODAL_IDS from '../../../constants/modalIds';
+// import LABELS from '../../../constants/buttonLabels';
 import ROUTES from '../../../constants/routes';
 
 
@@ -49,11 +52,8 @@ export class LoginForm extends Component {
           inputStyle="text-input"
           validate={validateLogin}
         >
-          <AuthFormBottom
-            modalId={MODAL_IDS.LOG_IN}
-            hideModal={this.props.hideModal}
-            showModal={this.props.showModal}
-          />
+          <ResetPasswordLink onClick={this.props.hideModal} />
+          <AuthFormBottom showModal={this.props.showModal} modalId={MODAL_IDS.LOG_IN} />
         </Form>
       </>
     );

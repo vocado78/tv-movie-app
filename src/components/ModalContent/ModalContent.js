@@ -29,7 +29,7 @@ export default class ModalContent extends Component {
         >
           <div
             onClick={(e) => e.stopPropagation()}
-            className="pt-4 pb-6 px-10 bg-gray-700 text-white font-rubik rounded"
+            className="pt-4 pb-6 px-10 bg-gray-700 text-white font-rubik rounded outline-none"
             role="dialog"
             tabIndex="-1"
             aria-labelledby="modal-title"
