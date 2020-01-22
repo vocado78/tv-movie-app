@@ -616,7 +616,7 @@ nav > ul:last-child {
 
 .text-input {
   background-color: #bee3f8;
-  color: #718096;
+  color: #2d3748;
   font-size: 1rem;
   border-radius: 0.25rem;
   padding-left: 0.5rem;
@@ -629,9 +629,23 @@ nav > ul:last-child {
   outline: 0;
 }
 
-.text-input:focus {
-  background-color: #fff;
-  color: #2d3748
+.text-input-dark {
+  background-color: #2d3748;
+  color: #2a4365;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  margin-top: 0.25rem;
+  width: 16rem;
+  box-shadow: inset 0 -1px 0 #456;
+  outline: 0;
+}
+
+.text-input:focus, .text-input-dark:focus {
+  background-color: #fff
 }
 
 .btn {
@@ -1107,6 +1121,10 @@ nav > ul:last-child {
   background-color: #00b020;
 }
 
+.bg-lb-form-black {
+  background-color: rgba(29,35,40,.4);
+}
+
 .hover\:bg-transparent:hover {
   background-color: transparent;
 }
@@ -1487,6 +1505,10 @@ nav > ul:last-child {
   background-color: #00b020;
 }
 
+.hover\:bg-lb-form-black:hover {
+  background-color: rgba(29,35,40,.4);
+}
+
 .focus\:bg-transparent:focus {
   background-color: transparent;
 }
@@ -1865,6 +1887,10 @@ nav > ul:last-child {
 
 .focus\:bg-lb-green-dark:focus {
   background-color: #00b020;
+}
+
+.focus\:bg-lb-form-black:focus {
+  background-color: rgba(29,35,40,.4);
 }
 
 .bg-bottom {
@@ -2327,6 +2353,10 @@ nav > ul:last-child {
   border-color: #00b020;
 }
 
+.border-lb-form-black {
+  border-color: rgba(29,35,40,.4);
+}
+
 .hover\:border-transparent:hover {
   border-color: transparent;
 }
@@ -2707,6 +2737,10 @@ nav > ul:last-child {
   border-color: #00b020;
 }
 
+.hover\:border-lb-form-black:hover {
+  border-color: rgba(29,35,40,.4);
+}
+
 .focus\:border-transparent:focus {
   border-color: transparent;
 }
@@ -3085,6 +3119,10 @@ nav > ul:last-child {
 
 .focus\:border-lb-green-dark:focus {
   border-color: #00b020;
+}
+
+.focus\:border-lb-form-black:focus {
+  border-color: rgba(29,35,40,.4);
 }
 
 .rounded-none {
@@ -7003,6 +7041,10 @@ nav > ul:last-child {
   color: #00b020;
 }
 
+.placeholder-lb-form-black::placeholder {
+  color: rgba(29,35,40,.4);
+}
+
 .focus\:placeholder-transparent:focus::placeholder {
   color: transparent;
 }
@@ -7383,6 +7425,10 @@ nav > ul:last-child {
   color: #00b020;
 }
 
+.focus\:placeholder-lb-form-black:focus::placeholder {
+  color: rgba(29,35,40,.4);
+}
+
 .pointer-events-none {
   pointer-events: none;
 }
@@ -7493,8 +7539,12 @@ nav > ul:last-child {
   box-shadow: none;
 }
 
-.shadow-input-inner {
+.shadow-input-inner-white {
   box-shadow: inset 0 -1px 0 #fff;
+}
+
+.shadow-input-inner-gray {
+  box-shadow: inset 0 -1px 0 #456;
 }
 
 .hover\:shadow:hover {
@@ -7529,8 +7579,12 @@ nav > ul:last-child {
   box-shadow: none;
 }
 
-.hover\:shadow-input-inner:hover {
+.hover\:shadow-input-inner-white:hover {
   box-shadow: inset 0 -1px 0 #fff;
+}
+
+.hover\:shadow-input-inner-gray:hover {
+  box-shadow: inset 0 -1px 0 #456;
 }
 
 .focus\:shadow:focus {
@@ -7565,8 +7619,12 @@ nav > ul:last-child {
   box-shadow: none;
 }
 
-.focus\:shadow-input-inner:focus {
+.focus\:shadow-input-inner-white:focus {
   box-shadow: inset 0 -1px 0 #fff;
+}
+
+.focus\:shadow-input-inner-gray:focus {
+  box-shadow: inset 0 -1px 0 #456;
 }
 
 .fill-current {
@@ -7981,6 +8039,10 @@ nav > ul:last-child {
   color: #00b020;
 }
 
+.text-lb-form-black {
+  color: rgba(29,35,40,.4);
+}
+
 .hover\:text-transparent:hover {
   color: transparent;
 }
@@ -8361,6 +8423,10 @@ nav > ul:last-child {
   color: #00b020;
 }
 
+.hover\:text-lb-form-black:hover {
+  color: rgba(29,35,40,.4);
+}
+
 .focus\:text-transparent:focus {
   color: transparent;
 }
@@ -8739,6 +8805,10 @@ nav > ul:last-child {
 
 .focus\:text-lb-green-dark:focus {
   color: #00b020;
+}
+
+.focus\:text-lb-form-black:focus {
+  color: rgba(29,35,40,.4);
 }
 
 .text-xs {
@@ -9647,6 +9717,10 @@ nav > ul:last-child {
     background-color: #00b020;
   }
 
+  .sm\:bg-lb-form-black {
+    background-color: rgba(29,35,40,.4);
+  }
+
   .sm\:hover\:bg-transparent:hover {
     background-color: transparent;
   }
@@ -10027,6 +10101,10 @@ nav > ul:last-child {
     background-color: #00b020;
   }
 
+  .sm\:hover\:bg-lb-form-black:hover {
+    background-color: rgba(29,35,40,.4);
+  }
+
   .sm\:focus\:bg-transparent:focus {
     background-color: transparent;
   }
@@ -10405,6 +10483,10 @@ nav > ul:last-child {
 
   .sm\:focus\:bg-lb-green-dark:focus {
     background-color: #00b020;
+  }
+
+  .sm\:focus\:bg-lb-form-black:focus {
+    background-color: rgba(29,35,40,.4);
   }
 
   .sm\:bg-bottom {
@@ -10867,6 +10949,10 @@ nav > ul:last-child {
     border-color: #00b020;
   }
 
+  .sm\:border-lb-form-black {
+    border-color: rgba(29,35,40,.4);
+  }
+
   .sm\:hover\:border-transparent:hover {
     border-color: transparent;
   }
@@ -11247,6 +11333,10 @@ nav > ul:last-child {
     border-color: #00b020;
   }
 
+  .sm\:hover\:border-lb-form-black:hover {
+    border-color: rgba(29,35,40,.4);
+  }
+
   .sm\:focus\:border-transparent:focus {
     border-color: transparent;
   }
@@ -11625,6 +11715,10 @@ nav > ul:last-child {
 
   .sm\:focus\:border-lb-green-dark:focus {
     border-color: #00b020;
+  }
+
+  .sm\:focus\:border-lb-form-black:focus {
+    border-color: rgba(29,35,40,.4);
   }
 
   .sm\:rounded-none {
@@ -15543,6 +15637,10 @@ nav > ul:last-child {
     color: #00b020;
   }
 
+  .sm\:placeholder-lb-form-black::placeholder {
+    color: rgba(29,35,40,.4);
+  }
+
   .sm\:focus\:placeholder-transparent:focus::placeholder {
     color: transparent;
   }
@@ -15923,6 +16021,10 @@ nav > ul:last-child {
     color: #00b020;
   }
 
+  .sm\:focus\:placeholder-lb-form-black:focus::placeholder {
+    color: rgba(29,35,40,.4);
+  }
+
   .sm\:pointer-events-none {
     pointer-events: none;
   }
@@ -16033,8 +16135,12 @@ nav > ul:last-child {
     box-shadow: none;
   }
 
-  .sm\:shadow-input-inner {
+  .sm\:shadow-input-inner-white {
     box-shadow: inset 0 -1px 0 #fff;
+  }
+
+  .sm\:shadow-input-inner-gray {
+    box-shadow: inset 0 -1px 0 #456;
   }
 
   .sm\:hover\:shadow:hover {
@@ -16069,8 +16175,12 @@ nav > ul:last-child {
     box-shadow: none;
   }
 
-  .sm\:hover\:shadow-input-inner:hover {
+  .sm\:hover\:shadow-input-inner-white:hover {
     box-shadow: inset 0 -1px 0 #fff;
+  }
+
+  .sm\:hover\:shadow-input-inner-gray:hover {
+    box-shadow: inset 0 -1px 0 #456;
   }
 
   .sm\:focus\:shadow:focus {
@@ -16105,8 +16215,12 @@ nav > ul:last-child {
     box-shadow: none;
   }
 
-  .sm\:focus\:shadow-input-inner:focus {
+  .sm\:focus\:shadow-input-inner-white:focus {
     box-shadow: inset 0 -1px 0 #fff;
+  }
+
+  .sm\:focus\:shadow-input-inner-gray:focus {
+    box-shadow: inset 0 -1px 0 #456;
   }
 
   .sm\:fill-current {
@@ -16521,6 +16635,10 @@ nav > ul:last-child {
     color: #00b020;
   }
 
+  .sm\:text-lb-form-black {
+    color: rgba(29,35,40,.4);
+  }
+
   .sm\:hover\:text-transparent:hover {
     color: transparent;
   }
@@ -16901,6 +17019,10 @@ nav > ul:last-child {
     color: #00b020;
   }
 
+  .sm\:hover\:text-lb-form-black:hover {
+    color: rgba(29,35,40,.4);
+  }
+
   .sm\:focus\:text-transparent:focus {
     color: transparent;
   }
@@ -17279,6 +17401,10 @@ nav > ul:last-child {
 
   .sm\:focus\:text-lb-green-dark:focus {
     color: #00b020;
+  }
+
+  .sm\:focus\:text-lb-form-black:focus {
+    color: rgba(29,35,40,.4);
   }
 
   .sm\:text-xs {
@@ -18188,6 +18314,10 @@ nav > ul:last-child {
     background-color: #00b020;
   }
 
+  .md\:bg-lb-form-black {
+    background-color: rgba(29,35,40,.4);
+  }
+
   .md\:hover\:bg-transparent:hover {
     background-color: transparent;
   }
@@ -18568,6 +18698,10 @@ nav > ul:last-child {
     background-color: #00b020;
   }
 
+  .md\:hover\:bg-lb-form-black:hover {
+    background-color: rgba(29,35,40,.4);
+  }
+
   .md\:focus\:bg-transparent:focus {
     background-color: transparent;
   }
@@ -18946,6 +19080,10 @@ nav > ul:last-child {
 
   .md\:focus\:bg-lb-green-dark:focus {
     background-color: #00b020;
+  }
+
+  .md\:focus\:bg-lb-form-black:focus {
+    background-color: rgba(29,35,40,.4);
   }
 
   .md\:bg-bottom {
@@ -19408,6 +19546,10 @@ nav > ul:last-child {
     border-color: #00b020;
   }
 
+  .md\:border-lb-form-black {
+    border-color: rgba(29,35,40,.4);
+  }
+
   .md\:hover\:border-transparent:hover {
     border-color: transparent;
   }
@@ -19788,6 +19930,10 @@ nav > ul:last-child {
     border-color: #00b020;
   }
 
+  .md\:hover\:border-lb-form-black:hover {
+    border-color: rgba(29,35,40,.4);
+  }
+
   .md\:focus\:border-transparent:focus {
     border-color: transparent;
   }
@@ -20166,6 +20312,10 @@ nav > ul:last-child {
 
   .md\:focus\:border-lb-green-dark:focus {
     border-color: #00b020;
+  }
+
+  .md\:focus\:border-lb-form-black:focus {
+    border-color: rgba(29,35,40,.4);
   }
 
   .md\:rounded-none {
@@ -24084,6 +24234,10 @@ nav > ul:last-child {
     color: #00b020;
   }
 
+  .md\:placeholder-lb-form-black::placeholder {
+    color: rgba(29,35,40,.4);
+  }
+
   .md\:focus\:placeholder-transparent:focus::placeholder {
     color: transparent;
   }
@@ -24464,6 +24618,10 @@ nav > ul:last-child {
     color: #00b020;
   }
 
+  .md\:focus\:placeholder-lb-form-black:focus::placeholder {
+    color: rgba(29,35,40,.4);
+  }
+
   .md\:pointer-events-none {
     pointer-events: none;
   }
@@ -24574,8 +24732,12 @@ nav > ul:last-child {
     box-shadow: none;
   }
 
-  .md\:shadow-input-inner {
+  .md\:shadow-input-inner-white {
     box-shadow: inset 0 -1px 0 #fff;
+  }
+
+  .md\:shadow-input-inner-gray {
+    box-shadow: inset 0 -1px 0 #456;
   }
 
   .md\:hover\:shadow:hover {
@@ -24610,8 +24772,12 @@ nav > ul:last-child {
     box-shadow: none;
   }
 
-  .md\:hover\:shadow-input-inner:hover {
+  .md\:hover\:shadow-input-inner-white:hover {
     box-shadow: inset 0 -1px 0 #fff;
+  }
+
+  .md\:hover\:shadow-input-inner-gray:hover {
+    box-shadow: inset 0 -1px 0 #456;
   }
 
   .md\:focus\:shadow:focus {
@@ -24646,8 +24812,12 @@ nav > ul:last-child {
     box-shadow: none;
   }
 
-  .md\:focus\:shadow-input-inner:focus {
+  .md\:focus\:shadow-input-inner-white:focus {
     box-shadow: inset 0 -1px 0 #fff;
+  }
+
+  .md\:focus\:shadow-input-inner-gray:focus {
+    box-shadow: inset 0 -1px 0 #456;
   }
 
   .md\:fill-current {
@@ -25062,6 +25232,10 @@ nav > ul:last-child {
     color: #00b020;
   }
 
+  .md\:text-lb-form-black {
+    color: rgba(29,35,40,.4);
+  }
+
   .md\:hover\:text-transparent:hover {
     color: transparent;
   }
@@ -25442,6 +25616,10 @@ nav > ul:last-child {
     color: #00b020;
   }
 
+  .md\:hover\:text-lb-form-black:hover {
+    color: rgba(29,35,40,.4);
+  }
+
   .md\:focus\:text-transparent:focus {
     color: transparent;
   }
@@ -25820,6 +25998,10 @@ nav > ul:last-child {
 
   .md\:focus\:text-lb-green-dark:focus {
     color: #00b020;
+  }
+
+  .md\:focus\:text-lb-form-black:focus {
+    color: rgba(29,35,40,.4);
   }
 
   .md\:text-xs {
@@ -26729,6 +26911,10 @@ nav > ul:last-child {
     background-color: #00b020;
   }
 
+  .lg\:bg-lb-form-black {
+    background-color: rgba(29,35,40,.4);
+  }
+
   .lg\:hover\:bg-transparent:hover {
     background-color: transparent;
   }
@@ -27109,6 +27295,10 @@ nav > ul:last-child {
     background-color: #00b020;
   }
 
+  .lg\:hover\:bg-lb-form-black:hover {
+    background-color: rgba(29,35,40,.4);
+  }
+
   .lg\:focus\:bg-transparent:focus {
     background-color: transparent;
   }
@@ -27487,6 +27677,10 @@ nav > ul:last-child {
 
   .lg\:focus\:bg-lb-green-dark:focus {
     background-color: #00b020;
+  }
+
+  .lg\:focus\:bg-lb-form-black:focus {
+    background-color: rgba(29,35,40,.4);
   }
 
   .lg\:bg-bottom {
@@ -27949,6 +28143,10 @@ nav > ul:last-child {
     border-color: #00b020;
   }
 
+  .lg\:border-lb-form-black {
+    border-color: rgba(29,35,40,.4);
+  }
+
   .lg\:hover\:border-transparent:hover {
     border-color: transparent;
   }
@@ -28329,6 +28527,10 @@ nav > ul:last-child {
     border-color: #00b020;
   }
 
+  .lg\:hover\:border-lb-form-black:hover {
+    border-color: rgba(29,35,40,.4);
+  }
+
   .lg\:focus\:border-transparent:focus {
     border-color: transparent;
   }
@@ -28707,6 +28909,10 @@ nav > ul:last-child {
 
   .lg\:focus\:border-lb-green-dark:focus {
     border-color: #00b020;
+  }
+
+  .lg\:focus\:border-lb-form-black:focus {
+    border-color: rgba(29,35,40,.4);
   }
 
   .lg\:rounded-none {
@@ -32625,6 +32831,10 @@ nav > ul:last-child {
     color: #00b020;
   }
 
+  .lg\:placeholder-lb-form-black::placeholder {
+    color: rgba(29,35,40,.4);
+  }
+
   .lg\:focus\:placeholder-transparent:focus::placeholder {
     color: transparent;
   }
@@ -33005,6 +33215,10 @@ nav > ul:last-child {
     color: #00b020;
   }
 
+  .lg\:focus\:placeholder-lb-form-black:focus::placeholder {
+    color: rgba(29,35,40,.4);
+  }
+
   .lg\:pointer-events-none {
     pointer-events: none;
   }
@@ -33115,8 +33329,12 @@ nav > ul:last-child {
     box-shadow: none;
   }
 
-  .lg\:shadow-input-inner {
+  .lg\:shadow-input-inner-white {
     box-shadow: inset 0 -1px 0 #fff;
+  }
+
+  .lg\:shadow-input-inner-gray {
+    box-shadow: inset 0 -1px 0 #456;
   }
 
   .lg\:hover\:shadow:hover {
@@ -33151,8 +33369,12 @@ nav > ul:last-child {
     box-shadow: none;
   }
 
-  .lg\:hover\:shadow-input-inner:hover {
+  .lg\:hover\:shadow-input-inner-white:hover {
     box-shadow: inset 0 -1px 0 #fff;
+  }
+
+  .lg\:hover\:shadow-input-inner-gray:hover {
+    box-shadow: inset 0 -1px 0 #456;
   }
 
   .lg\:focus\:shadow:focus {
@@ -33187,8 +33409,12 @@ nav > ul:last-child {
     box-shadow: none;
   }
 
-  .lg\:focus\:shadow-input-inner:focus {
+  .lg\:focus\:shadow-input-inner-white:focus {
     box-shadow: inset 0 -1px 0 #fff;
+  }
+
+  .lg\:focus\:shadow-input-inner-gray:focus {
+    box-shadow: inset 0 -1px 0 #456;
   }
 
   .lg\:fill-current {
@@ -33603,6 +33829,10 @@ nav > ul:last-child {
     color: #00b020;
   }
 
+  .lg\:text-lb-form-black {
+    color: rgba(29,35,40,.4);
+  }
+
   .lg\:hover\:text-transparent:hover {
     color: transparent;
   }
@@ -33983,6 +34213,10 @@ nav > ul:last-child {
     color: #00b020;
   }
 
+  .lg\:hover\:text-lb-form-black:hover {
+    color: rgba(29,35,40,.4);
+  }
+
   .lg\:focus\:text-transparent:focus {
     color: transparent;
   }
@@ -34361,6 +34595,10 @@ nav > ul:last-child {
 
   .lg\:focus\:text-lb-green-dark:focus {
     color: #00b020;
+  }
+
+  .lg\:focus\:text-lb-form-black:focus {
+    color: rgba(29,35,40,.4);
   }
 
   .lg\:text-xs {
@@ -35270,6 +35508,10 @@ nav > ul:last-child {
     background-color: #00b020;
   }
 
+  .xl\:bg-lb-form-black {
+    background-color: rgba(29,35,40,.4);
+  }
+
   .xl\:hover\:bg-transparent:hover {
     background-color: transparent;
   }
@@ -35650,6 +35892,10 @@ nav > ul:last-child {
     background-color: #00b020;
   }
 
+  .xl\:hover\:bg-lb-form-black:hover {
+    background-color: rgba(29,35,40,.4);
+  }
+
   .xl\:focus\:bg-transparent:focus {
     background-color: transparent;
   }
@@ -36028,6 +36274,10 @@ nav > ul:last-child {
 
   .xl\:focus\:bg-lb-green-dark:focus {
     background-color: #00b020;
+  }
+
+  .xl\:focus\:bg-lb-form-black:focus {
+    background-color: rgba(29,35,40,.4);
   }
 
   .xl\:bg-bottom {
@@ -36490,6 +36740,10 @@ nav > ul:last-child {
     border-color: #00b020;
   }
 
+  .xl\:border-lb-form-black {
+    border-color: rgba(29,35,40,.4);
+  }
+
   .xl\:hover\:border-transparent:hover {
     border-color: transparent;
   }
@@ -36870,6 +37124,10 @@ nav > ul:last-child {
     border-color: #00b020;
   }
 
+  .xl\:hover\:border-lb-form-black:hover {
+    border-color: rgba(29,35,40,.4);
+  }
+
   .xl\:focus\:border-transparent:focus {
     border-color: transparent;
   }
@@ -37248,6 +37506,10 @@ nav > ul:last-child {
 
   .xl\:focus\:border-lb-green-dark:focus {
     border-color: #00b020;
+  }
+
+  .xl\:focus\:border-lb-form-black:focus {
+    border-color: rgba(29,35,40,.4);
   }
 
   .xl\:rounded-none {
@@ -41166,6 +41428,10 @@ nav > ul:last-child {
     color: #00b020;
   }
 
+  .xl\:placeholder-lb-form-black::placeholder {
+    color: rgba(29,35,40,.4);
+  }
+
   .xl\:focus\:placeholder-transparent:focus::placeholder {
     color: transparent;
   }
@@ -41546,6 +41812,10 @@ nav > ul:last-child {
     color: #00b020;
   }
 
+  .xl\:focus\:placeholder-lb-form-black:focus::placeholder {
+    color: rgba(29,35,40,.4);
+  }
+
   .xl\:pointer-events-none {
     pointer-events: none;
   }
@@ -41656,8 +41926,12 @@ nav > ul:last-child {
     box-shadow: none;
   }
 
-  .xl\:shadow-input-inner {
+  .xl\:shadow-input-inner-white {
     box-shadow: inset 0 -1px 0 #fff;
+  }
+
+  .xl\:shadow-input-inner-gray {
+    box-shadow: inset 0 -1px 0 #456;
   }
 
   .xl\:hover\:shadow:hover {
@@ -41692,8 +41966,12 @@ nav > ul:last-child {
     box-shadow: none;
   }
 
-  .xl\:hover\:shadow-input-inner:hover {
+  .xl\:hover\:shadow-input-inner-white:hover {
     box-shadow: inset 0 -1px 0 #fff;
+  }
+
+  .xl\:hover\:shadow-input-inner-gray:hover {
+    box-shadow: inset 0 -1px 0 #456;
   }
 
   .xl\:focus\:shadow:focus {
@@ -41728,8 +42006,12 @@ nav > ul:last-child {
     box-shadow: none;
   }
 
-  .xl\:focus\:shadow-input-inner:focus {
+  .xl\:focus\:shadow-input-inner-white:focus {
     box-shadow: inset 0 -1px 0 #fff;
+  }
+
+  .xl\:focus\:shadow-input-inner-gray:focus {
+    box-shadow: inset 0 -1px 0 #456;
   }
 
   .xl\:fill-current {
@@ -42144,6 +42426,10 @@ nav > ul:last-child {
     color: #00b020;
   }
 
+  .xl\:text-lb-form-black {
+    color: rgba(29,35,40,.4);
+  }
+
   .xl\:hover\:text-transparent:hover {
     color: transparent;
   }
@@ -42524,6 +42810,10 @@ nav > ul:last-child {
     color: #00b020;
   }
 
+  .xl\:hover\:text-lb-form-black:hover {
+    color: rgba(29,35,40,.4);
+  }
+
   .xl\:focus\:text-transparent:focus {
     color: transparent;
   }
@@ -42902,6 +43192,10 @@ nav > ul:last-child {
 
   .xl\:focus\:text-lb-green-dark:focus {
     color: #00b020;
+  }
+
+  .xl\:focus\:text-lb-form-black:focus {
+    color: rgba(29,35,40,.4);
   }
 
   .xl\:text-xs {

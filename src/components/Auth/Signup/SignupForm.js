@@ -61,7 +61,6 @@ export class SignupForm extends Component {
         >
           <AuthFormBottom
             modalId={MODAL_IDS.SIGN_UP}
-            hideModal={this.props.hideModal}
             showModal={this.props.showModal}
           />
         </Form>

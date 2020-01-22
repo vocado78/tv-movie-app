@@ -10,7 +10,7 @@ export const loginAttrs = [
 ];
 
 export const resetAttrs = [
-  { name: 'email', type: 'email', placeholder: 'E-mail address', label: 'E-mail address' }
+  { name: 'email', type: 'email', label: 'E-mail address' }
 ];
 
 export const searchAttrs = [

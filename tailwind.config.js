@@ -19,10 +19,12 @@ module.exports = {
       },
       colors: {
         'lb-green': '#00C030',
-        'lb-green-dark': '#00b020'
+        'lb-green-dark': '#00b020',
+        'lb-form-black': 'rgba(29,35,40,.4)'
       },
       boxShadow: {
-        'input-inner': 'inset 0 -1px 0 #fff'
+        'input-inner-white': 'inset 0 -1px 0 #fff',
+        'input-inner-gray': 'inset 0 -1px 0 #456'
       },
       letterSpacing: {
         'more-wider': '.075em'

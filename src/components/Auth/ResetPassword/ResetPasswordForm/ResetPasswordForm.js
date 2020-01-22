@@ -32,12 +32,12 @@ export class ResetPasswordForm extends Component {
       <>
         {error && <AuthError error={error} />}
         <Form
-          formStyle="mt-6 rounded bg-gray-300"
+          formStyle="mt-6 rounded bg-lb-form-black text-white px-5 py-6 text-sm border border-solid border-gray-800"
           onSubmit={this.onSubmit}
           otherAttrs={resetAttrs}
-          inputStyle="text-input"
+          inputStyle="text-input-dark"
           buttonLabel={LABELS.RESET_PASSWORD}
-          buttonStyle="btn btn-primary"
+          buttonStyle="btn btn-primary mt-4 py-1 px-3 text-sm font-medium float-right"
           validate={validateReset}
         />
       </>
