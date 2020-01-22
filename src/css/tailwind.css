@@ -7,7 +7,11 @@ nav > ul:last-child {
 }
 
 .text-input {
-  @apply bg-blue-200 text-gray-600 rounded px-2 py-1 mt-1 w-64 shadow-input-inner outline-none;
+  @apply bg-blue-200 text-gray-600 text-base rounded px-2 py-1 mt-1 w-64 shadow-input-inner outline-none;
+}
+
+.text-input:focus {
+  @apply bg-white text-gray-800
 }
 
 .btn {

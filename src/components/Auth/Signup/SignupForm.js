@@ -56,7 +56,7 @@ export class SignupForm extends Component {
           formStyle="mt-6"
           onSubmit={this.onSubmit}
           otherAttrs={signupAttrs}
-          inputStyle="text-input focus:bg-white focus:text-gray-800 text-base"
+          inputStyle="text-input"
           validate={validateSignup}
         >
           <AuthFormBottom

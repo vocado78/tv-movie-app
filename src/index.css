@@ -617,6 +617,7 @@ nav > ul:last-child {
 .text-input {
   background-color: #bee3f8;
   color: #718096;
+  font-size: 1rem;
   border-radius: 0.25rem;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -626,6 +627,11 @@ nav > ul:last-child {
   width: 16rem;
   box-shadow: inset 0 -1px 0 #fff;
   outline: 0;
+}
+
+.text-input:focus {
+  background-color: #fff;
+  color: #2d3748
 }
 
 .btn {
