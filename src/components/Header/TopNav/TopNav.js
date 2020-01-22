@@ -13,8 +13,8 @@ import LABELS from '../../../constants/buttonLabels';
 
 
 export default function TopNav({ isLoggedIn, showModal }) {
-  const itemClass = 'px-2 py-1 text-gray-400 uppercase tracking-widest text-sm hover:text-white active:text-white';
-  const btnClass = 'px-2 py-1 text-gray-400 uppercase tracking-widest text-sm font-rubik hover:text-white active:text-white';
+  const itemClass = 'px-2 py-1 text-gray-400 uppercase tracking-more-wider text-sm font-medium hover:text-white active:text-white';
+  const btnClass = 'px-2 py-1 text-gray-400 uppercase tracking-more-wider text-sm font-rubik font-medium hover:text-white active:text-white';
   return (
     <nav className="flex w-2/3 font-rubik">
       <List
