@@ -11,10 +11,10 @@ export default function SearchBar({ onSubmit }) {
       formStyle="flex text-gray-400 text-sm uppercase"
       onSubmit={onSubmit}
       otherAttrs={searchAttrs}
-      inputStyle="text-input mt-0 bg-gray-800 ml-6 mr-3"
+      inputStyle="text-input-dark mt-0 ml-6 mr-3"
       validate={() => {}}
       buttonLabel="Search"
-      buttonStyle="btn btn-primary"
+      buttonStyle="btn btn-primary py-1 px-3 text-sm font-medium"
     />
   );
 }
