@@ -17,7 +17,7 @@ export default function TopNav({ isLoggedIn, showModal }) {
   const btnClass = `${itemClass} font-rubik`;
 
   return (
-    <nav className="flex w-2/3 font-rubik">
+    <nav className="flex w-2/3">
       <List
         listClass="flex items-center"
         itemClass={itemClass}

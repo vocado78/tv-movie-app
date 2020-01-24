@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
 
-// import Container from '../../components/Layout/Container/Container';
+import Layout from '../../components/Layout/Layout';
 import BrowseBar from '../../components/BrowseBar/BrowseBar';
 import SearchBar from '../../components/SearchBar/SearchBar';
 import SearchResults from '../../components/SearchResults/SearchResults';
@@ -14,7 +14,7 @@ import ROUTES from '../../constants/routes';
 
 const FilmsScreen = () => {
   return (
-    <div className="h-stick">
+    <Layout className="h-stick">
       <section className="flex justify-between">
         <BrowseBar />
         <SearchBar onSubmit={() => { }} />
@@ -28,7 +28,7 @@ const FilmsScreen = () => {
       <Route path={ROUTES.FILMS_GENRE_DECADE}>
         <SearchResults />
       </Route>
-    </div>
+    </Layout>
   );
 };
 
