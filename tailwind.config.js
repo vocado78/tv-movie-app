@@ -20,7 +20,8 @@ module.exports = {
       colors: {
         'lb-green': '#00C030',
         'lb-green-dark': '#00b020',
-        'lb-form-black': 'rgba(29,35,40,.4)'
+        'lb-form-black': 'rgba(29,35,40,.4)',
+        'lb-home-black': '#13171d'
       },
       boxShadow: {
         'input-inner-white': 'inset 0 -1px 0 #fff',

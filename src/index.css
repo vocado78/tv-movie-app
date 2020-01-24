@@ -1125,6 +1125,10 @@ nav > ul:last-child {
   background-color: rgba(29,35,40,.4);
 }
 
+.bg-lb-home-black {
+  background-color: #13171d;
+}
+
 .hover\:bg-transparent:hover {
   background-color: transparent;
 }
@@ -1509,6 +1513,10 @@ nav > ul:last-child {
   background-color: rgba(29,35,40,.4);
 }
 
+.hover\:bg-lb-home-black:hover {
+  background-color: #13171d;
+}
+
 .focus\:bg-transparent:focus {
   background-color: transparent;
 }
@@ -1891,6 +1899,10 @@ nav > ul:last-child {
 
 .focus\:bg-lb-form-black:focus {
   background-color: rgba(29,35,40,.4);
+}
+
+.focus\:bg-lb-home-black:focus {
+  background-color: #13171d;
 }
 
 .bg-bottom {
@@ -2357,6 +2369,10 @@ nav > ul:last-child {
   border-color: rgba(29,35,40,.4);
 }
 
+.border-lb-home-black {
+  border-color: #13171d;
+}
+
 .hover\:border-transparent:hover {
   border-color: transparent;
 }
@@ -2741,6 +2757,10 @@ nav > ul:last-child {
   border-color: rgba(29,35,40,.4);
 }
 
+.hover\:border-lb-home-black:hover {
+  border-color: #13171d;
+}
+
 .focus\:border-transparent:focus {
   border-color: transparent;
 }
@@ -3123,6 +3143,10 @@ nav > ul:last-child {
 
 .focus\:border-lb-form-black:focus {
   border-color: rgba(29,35,40,.4);
+}
+
+.focus\:border-lb-home-black:focus {
+  border-color: #13171d;
 }
 
 .rounded-none {
@@ -7045,6 +7069,10 @@ nav > ul:last-child {
   color: rgba(29,35,40,.4);
 }
 
+.placeholder-lb-home-black::placeholder {
+  color: #13171d;
+}
+
 .focus\:placeholder-transparent:focus::placeholder {
   color: transparent;
 }
@@ -7427,6 +7455,10 @@ nav > ul:last-child {
 
 .focus\:placeholder-lb-form-black:focus::placeholder {
   color: rgba(29,35,40,.4);
+}
+
+.focus\:placeholder-lb-home-black:focus::placeholder {
+  color: #13171d;
 }
 
 .pointer-events-none {
@@ -8043,6 +8075,10 @@ nav > ul:last-child {
   color: rgba(29,35,40,.4);
 }
 
+.text-lb-home-black {
+  color: #13171d;
+}
+
 .hover\:text-transparent:hover {
   color: transparent;
 }
@@ -8427,6 +8463,10 @@ nav > ul:last-child {
   color: rgba(29,35,40,.4);
 }
 
+.hover\:text-lb-home-black:hover {
+  color: #13171d;
+}
+
 .focus\:text-transparent:focus {
   color: transparent;
 }
@@ -8809,6 +8849,10 @@ nav > ul:last-child {
 
 .focus\:text-lb-form-black:focus {
   color: rgba(29,35,40,.4);
+}
+
+.focus\:text-lb-home-black:focus {
+  color: #13171d;
 }
 
 .text-xs {
@@ -9721,6 +9765,10 @@ nav > ul:last-child {
     background-color: rgba(29,35,40,.4);
   }
 
+  .sm\:bg-lb-home-black {
+    background-color: #13171d;
+  }
+
   .sm\:hover\:bg-transparent:hover {
     background-color: transparent;
   }
@@ -10105,6 +10153,10 @@ nav > ul:last-child {
     background-color: rgba(29,35,40,.4);
   }
 
+  .sm\:hover\:bg-lb-home-black:hover {
+    background-color: #13171d;
+  }
+
   .sm\:focus\:bg-transparent:focus {
     background-color: transparent;
   }
@@ -10487,6 +10539,10 @@ nav > ul:last-child {
 
   .sm\:focus\:bg-lb-form-black:focus {
     background-color: rgba(29,35,40,.4);
+  }
+
+  .sm\:focus\:bg-lb-home-black:focus {
+    background-color: #13171d;
   }
 
   .sm\:bg-bottom {
@@ -10953,6 +11009,10 @@ nav > ul:last-child {
     border-color: rgba(29,35,40,.4);
   }
 
+  .sm\:border-lb-home-black {
+    border-color: #13171d;
+  }
+
   .sm\:hover\:border-transparent:hover {
     border-color: transparent;
   }
@@ -11337,6 +11397,10 @@ nav > ul:last-child {
     border-color: rgba(29,35,40,.4);
   }
 
+  .sm\:hover\:border-lb-home-black:hover {
+    border-color: #13171d;
+  }
+
   .sm\:focus\:border-transparent:focus {
     border-color: transparent;
   }
@@ -11719,6 +11783,10 @@ nav > ul:last-child {
 
   .sm\:focus\:border-lb-form-black:focus {
     border-color: rgba(29,35,40,.4);
+  }
+
+  .sm\:focus\:border-lb-home-black:focus {
+    border-color: #13171d;
   }
 
   .sm\:rounded-none {
@@ -15641,6 +15709,10 @@ nav > ul:last-child {
     color: rgba(29,35,40,.4);
   }
 
+  .sm\:placeholder-lb-home-black::placeholder {
+    color: #13171d;
+  }
+
   .sm\:focus\:placeholder-transparent:focus::placeholder {
     color: transparent;
   }
@@ -16023,6 +16095,10 @@ nav > ul:last-child {
 
   .sm\:focus\:placeholder-lb-form-black:focus::placeholder {
     color: rgba(29,35,40,.4);
+  }
+
+  .sm\:focus\:placeholder-lb-home-black:focus::placeholder {
+    color: #13171d;
   }
 
   .sm\:pointer-events-none {
@@ -16639,6 +16715,10 @@ nav > ul:last-child {
     color: rgba(29,35,40,.4);
   }
 
+  .sm\:text-lb-home-black {
+    color: #13171d;
+  }
+
   .sm\:hover\:text-transparent:hover {
     color: transparent;
   }
@@ -17023,6 +17103,10 @@ nav > ul:last-child {
     color: rgba(29,35,40,.4);
   }
 
+  .sm\:hover\:text-lb-home-black:hover {
+    color: #13171d;
+  }
+
   .sm\:focus\:text-transparent:focus {
     color: transparent;
   }
@@ -17405,6 +17489,10 @@ nav > ul:last-child {
 
   .sm\:focus\:text-lb-form-black:focus {
     color: rgba(29,35,40,.4);
+  }
+
+  .sm\:focus\:text-lb-home-black:focus {
+    color: #13171d;
   }
 
   .sm\:text-xs {
@@ -18318,6 +18406,10 @@ nav > ul:last-child {
     background-color: rgba(29,35,40,.4);
   }
 
+  .md\:bg-lb-home-black {
+    background-color: #13171d;
+  }
+
   .md\:hover\:bg-transparent:hover {
     background-color: transparent;
   }
@@ -18702,6 +18794,10 @@ nav > ul:last-child {
     background-color: rgba(29,35,40,.4);
   }
 
+  .md\:hover\:bg-lb-home-black:hover {
+    background-color: #13171d;
+  }
+
   .md\:focus\:bg-transparent:focus {
     background-color: transparent;
   }
@@ -19084,6 +19180,10 @@ nav > ul:last-child {
 
   .md\:focus\:bg-lb-form-black:focus {
     background-color: rgba(29,35,40,.4);
+  }
+
+  .md\:focus\:bg-lb-home-black:focus {
+    background-color: #13171d;
   }
 
   .md\:bg-bottom {
@@ -19550,6 +19650,10 @@ nav > ul:last-child {
     border-color: rgba(29,35,40,.4);
   }
 
+  .md\:border-lb-home-black {
+    border-color: #13171d;
+  }
+
   .md\:hover\:border-transparent:hover {
     border-color: transparent;
   }
@@ -19934,6 +20038,10 @@ nav > ul:last-child {
     border-color: rgba(29,35,40,.4);
   }
 
+  .md\:hover\:border-lb-home-black:hover {
+    border-color: #13171d;
+  }
+
   .md\:focus\:border-transparent:focus {
     border-color: transparent;
   }
@@ -20316,6 +20424,10 @@ nav > ul:last-child {
 
   .md\:focus\:border-lb-form-black:focus {
     border-color: rgba(29,35,40,.4);
+  }
+
+  .md\:focus\:border-lb-home-black:focus {
+    border-color: #13171d;
   }
 
   .md\:rounded-none {
@@ -24238,6 +24350,10 @@ nav > ul:last-child {
     color: rgba(29,35,40,.4);
   }
 
+  .md\:placeholder-lb-home-black::placeholder {
+    color: #13171d;
+  }
+
   .md\:focus\:placeholder-transparent:focus::placeholder {
     color: transparent;
   }
@@ -24620,6 +24736,10 @@ nav > ul:last-child {
 
   .md\:focus\:placeholder-lb-form-black:focus::placeholder {
     color: rgba(29,35,40,.4);
+  }
+
+  .md\:focus\:placeholder-lb-home-black:focus::placeholder {
+    color: #13171d;
   }
 
   .md\:pointer-events-none {
@@ -25236,6 +25356,10 @@ nav > ul:last-child {
     color: rgba(29,35,40,.4);
   }
 
+  .md\:text-lb-home-black {
+    color: #13171d;
+  }
+
   .md\:hover\:text-transparent:hover {
     color: transparent;
   }
@@ -25620,6 +25744,10 @@ nav > ul:last-child {
     color: rgba(29,35,40,.4);
   }
 
+  .md\:hover\:text-lb-home-black:hover {
+    color: #13171d;
+  }
+
   .md\:focus\:text-transparent:focus {
     color: transparent;
   }
@@ -26002,6 +26130,10 @@ nav > ul:last-child {
 
   .md\:focus\:text-lb-form-black:focus {
     color: rgba(29,35,40,.4);
+  }
+
+  .md\:focus\:text-lb-home-black:focus {
+    color: #13171d;
   }
 
   .md\:text-xs {
@@ -26915,6 +27047,10 @@ nav > ul:last-child {
     background-color: rgba(29,35,40,.4);
   }
 
+  .lg\:bg-lb-home-black {
+    background-color: #13171d;
+  }
+
   .lg\:hover\:bg-transparent:hover {
     background-color: transparent;
   }
@@ -27299,6 +27435,10 @@ nav > ul:last-child {
     background-color: rgba(29,35,40,.4);
   }
 
+  .lg\:hover\:bg-lb-home-black:hover {
+    background-color: #13171d;
+  }
+
   .lg\:focus\:bg-transparent:focus {
     background-color: transparent;
   }
@@ -27681,6 +27821,10 @@ nav > ul:last-child {
 
   .lg\:focus\:bg-lb-form-black:focus {
     background-color: rgba(29,35,40,.4);
+  }
+
+  .lg\:focus\:bg-lb-home-black:focus {
+    background-color: #13171d;
   }
 
   .lg\:bg-bottom {
@@ -28147,6 +28291,10 @@ nav > ul:last-child {
     border-color: rgba(29,35,40,.4);
   }
 
+  .lg\:border-lb-home-black {
+    border-color: #13171d;
+  }
+
   .lg\:hover\:border-transparent:hover {
     border-color: transparent;
   }
@@ -28531,6 +28679,10 @@ nav > ul:last-child {
     border-color: rgba(29,35,40,.4);
   }
 
+  .lg\:hover\:border-lb-home-black:hover {
+    border-color: #13171d;
+  }
+
   .lg\:focus\:border-transparent:focus {
     border-color: transparent;
   }
@@ -28913,6 +29065,10 @@ nav > ul:last-child {
 
   .lg\:focus\:border-lb-form-black:focus {
     border-color: rgba(29,35,40,.4);
+  }
+
+  .lg\:focus\:border-lb-home-black:focus {
+    border-color: #13171d;
   }
 
   .lg\:rounded-none {
@@ -32835,6 +32991,10 @@ nav > ul:last-child {
     color: rgba(29,35,40,.4);
   }
 
+  .lg\:placeholder-lb-home-black::placeholder {
+    color: #13171d;
+  }
+
   .lg\:focus\:placeholder-transparent:focus::placeholder {
     color: transparent;
   }
@@ -33217,6 +33377,10 @@ nav > ul:last-child {
 
   .lg\:focus\:placeholder-lb-form-black:focus::placeholder {
     color: rgba(29,35,40,.4);
+  }
+
+  .lg\:focus\:placeholder-lb-home-black:focus::placeholder {
+    color: #13171d;
   }
 
   .lg\:pointer-events-none {
@@ -33833,6 +33997,10 @@ nav > ul:last-child {
     color: rgba(29,35,40,.4);
   }
 
+  .lg\:text-lb-home-black {
+    color: #13171d;
+  }
+
   .lg\:hover\:text-transparent:hover {
     color: transparent;
   }
@@ -34217,6 +34385,10 @@ nav > ul:last-child {
     color: rgba(29,35,40,.4);
   }
 
+  .lg\:hover\:text-lb-home-black:hover {
+    color: #13171d;
+  }
+
   .lg\:focus\:text-transparent:focus {
     color: transparent;
   }
@@ -34599,6 +34771,10 @@ nav > ul:last-child {
 
   .lg\:focus\:text-lb-form-black:focus {
     color: rgba(29,35,40,.4);
+  }
+
+  .lg\:focus\:text-lb-home-black:focus {
+    color: #13171d;
   }
 
   .lg\:text-xs {
@@ -35512,6 +35688,10 @@ nav > ul:last-child {
     background-color: rgba(29,35,40,.4);
   }
 
+  .xl\:bg-lb-home-black {
+    background-color: #13171d;
+  }
+
   .xl\:hover\:bg-transparent:hover {
     background-color: transparent;
   }
@@ -35896,6 +36076,10 @@ nav > ul:last-child {
     background-color: rgba(29,35,40,.4);
   }
 
+  .xl\:hover\:bg-lb-home-black:hover {
+    background-color: #13171d;
+  }
+
   .xl\:focus\:bg-transparent:focus {
     background-color: transparent;
   }
@@ -36278,6 +36462,10 @@ nav > ul:last-child {
 
   .xl\:focus\:bg-lb-form-black:focus {
     background-color: rgba(29,35,40,.4);
+  }
+
+  .xl\:focus\:bg-lb-home-black:focus {
+    background-color: #13171d;
   }
 
   .xl\:bg-bottom {
@@ -36744,6 +36932,10 @@ nav > ul:last-child {
     border-color: rgba(29,35,40,.4);
   }
 
+  .xl\:border-lb-home-black {
+    border-color: #13171d;
+  }
+
   .xl\:hover\:border-transparent:hover {
     border-color: transparent;
   }
@@ -37128,6 +37320,10 @@ nav > ul:last-child {
     border-color: rgba(29,35,40,.4);
   }
 
+  .xl\:hover\:border-lb-home-black:hover {
+    border-color: #13171d;
+  }
+
   .xl\:focus\:border-transparent:focus {
     border-color: transparent;
   }
@@ -37510,6 +37706,10 @@ nav > ul:last-child {
 
   .xl\:focus\:border-lb-form-black:focus {
     border-color: rgba(29,35,40,.4);
+  }
+
+  .xl\:focus\:border-lb-home-black:focus {
+    border-color: #13171d;
   }
 
   .xl\:rounded-none {
@@ -41432,6 +41632,10 @@ nav > ul:last-child {
     color: rgba(29,35,40,.4);
   }
 
+  .xl\:placeholder-lb-home-black::placeholder {
+    color: #13171d;
+  }
+
   .xl\:focus\:placeholder-transparent:focus::placeholder {
     color: transparent;
   }
@@ -41814,6 +42018,10 @@ nav > ul:last-child {
 
   .xl\:focus\:placeholder-lb-form-black:focus::placeholder {
     color: rgba(29,35,40,.4);
+  }
+
+  .xl\:focus\:placeholder-lb-home-black:focus::placeholder {
+    color: #13171d;
   }
 
   .xl\:pointer-events-none {
@@ -42430,6 +42638,10 @@ nav > ul:last-child {
     color: rgba(29,35,40,.4);
   }
 
+  .xl\:text-lb-home-black {
+    color: #13171d;
+  }
+
   .xl\:hover\:text-transparent:hover {
     color: transparent;
   }
@@ -42814,6 +43026,10 @@ nav > ul:last-child {
     color: rgba(29,35,40,.4);
   }
 
+  .xl\:hover\:text-lb-home-black:hover {
+    color: #13171d;
+  }
+
   .xl\:focus\:text-transparent:focus {
     color: transparent;
   }
@@ -43196,6 +43412,10 @@ nav > ul:last-child {
 
   .xl\:focus\:text-lb-form-black:focus {
     color: rgba(29,35,40,.4);
+  }
+
+  .xl\:focus\:text-lb-home-black:focus {
+    color: #13171d;
   }
 
   .xl\:text-xs {

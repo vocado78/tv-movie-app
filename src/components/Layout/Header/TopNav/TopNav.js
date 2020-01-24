@@ -2,19 +2,20 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import List from '../../List/List';
-import NavItem from '../../NavItem/NavItem';
-import { LogoutButton } from '../../Auth';
-import Button from '../../Button/Button';
-import topNavItemsLeft from '../../../content/topNav';
-import MODAL_IDS from '../../../constants/modalIds';
-import ROUTES from '../../../constants/routes';
-import LABELS from '../../../constants/buttonLabels';
+import List from '../../../List/List';
+import NavItem from '../../../NavItem/NavItem';
+import { LogoutButton } from '../../../Auth';
+import Button from '../../../Button/Button';
+import topNavItemsLeft from '../../../../content/topNav';
+import MODAL_IDS from '../../../../constants/modalIds';
+import ROUTES from '../../../../constants/routes';
+import LABELS from '../../../../constants/buttonLabels';
 
 
 export default function TopNav({ isLoggedIn, showModal }) {
   const itemClass = 'px-2 py-1 text-gray-400 uppercase tracking-more-wider text-sm font-medium hover:text-white active:text-white';
-  const btnClass = 'px-2 py-1 text-gray-400 uppercase tracking-more-wider text-sm font-rubik font-medium hover:text-white active:text-white';
+  const btnClass = `${itemClass} font-rubik`;
+
   return (
     <nav className="flex w-2/3 font-rubik">
       <List

@@ -3,8 +3,8 @@ import { render } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
 
 import TopNav from '../TopNav';
-import FirebaseContext from '../../../Firebase/FirebaseContext';
-import FirebaseMock from '../../../Auth/__mocks__/FirebaseMock';
+import FirebaseContext from '../../../../Firebase/FirebaseContext';
+import FirebaseMock from '../../../../Auth/__mocks__/FirebaseMock';
 
 const showModalStub = () => {};
 

@@ -8,7 +8,7 @@ import { searchAttrs } from '../../content/forms';
 export default function SearchBar({ onSubmit }) {
   return (
     <Form
-      formStyle="flex text-gray-400 text-sm uppercase"
+      formStyle="flex text-sm uppercase"
       onSubmit={onSubmit}
       otherAttrs={searchAttrs}
       inputStyle="text-input-dark mt-0 ml-6 mr-3"

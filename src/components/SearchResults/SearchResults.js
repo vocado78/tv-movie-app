@@ -10,8 +10,8 @@ function SearchResults(props) {
 
   return (
     <section>
-      <div className="flex items-center border-b border-gray-500 text-gray-500 text-sm mt-8">
-        <h2 className="uppercase tracking-wider text-gray-400">Films found are the following</h2>
+      <div className="flex items-center border-b border-gray-500 text-sm mt-8">
+        <h2 className="uppercase tracking-wider">Films found are the following</h2>
         <SearchResultsDropdown />
       </div>
       <div>This is the results list.</div>

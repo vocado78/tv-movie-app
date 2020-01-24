@@ -8,7 +8,7 @@ import BrowseBarDropdownItem from './BrowseBarDropdownItem/BrowseBarDropdownItem
 
 const BrowseBar = (props) => {
   return (
-    <div className="flex items-center text-gray-400 text-sm">
+    <div className="flex items-center text-sm">
       <h3 className="mr-6 tracking-wider uppercase">{BROWSE_BAR_LABEL}</h3>
       <ul className="flex border border-solid border-gray-600 rounded px-1 py-px">
         {browseBarDropdownLabels.map(({ type, label, items }) => {
