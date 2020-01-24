@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 
 import Container from '../Container/Container';
 import TopNav from './TopNav/TopNav';
-import { showModal } from '../../actions';
+import { showModal } from '../../../actions';
 
 
 export const Header = (props) => {

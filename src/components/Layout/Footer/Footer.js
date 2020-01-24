@@ -4,8 +4,8 @@ import Container from '../Container/Container';
 
 export default function Footer() {
   return (
-    <footer className="py-8 bg-gray-800 text-gray-600 text-xs">
-      <Container className="flex items-center justify-center py-4">
+    <footer className="py-12 text-gray-600 text-xs">
+      <Container className="items-center justify-center">
         <p>
           Made with&nbsp;
           <span role="img" aria-label="mug of tea">&#127861;</span>
