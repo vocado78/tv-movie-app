@@ -2,7 +2,7 @@
 
 exports[`Storyshots BrowserBar Normal 1`] = `
 <div
-  className="flex items-center text-gray-400 text-sm"
+  className="flex items-center text-sm"
 >
   <h3
     className="mr-6 tracking-wider uppercase"
@@ -424,10 +424,10 @@ exports[`Storyshots FeatureItem Normal 1`] = `
 
 exports[`Storyshots Features Normal 1`] = `
 <section
-  className="py-40 font-rubik"
+  className="py-40 w-240 my-0 mx-auto"
 >
   <h2
-    className="text-sm text-gray-500 uppercase tracking-more-wider mb-3"
+    className="text-sm uppercase tracking-more-wider mb-3"
   >
     This app lets you...
   </h2>
@@ -776,14 +776,14 @@ exports[`Storyshots Header Normal 1`] = `
       LOGO
     </div>
     <nav
-      className="flex w-2/3 font-rubik"
+      className="flex w-2/3"
     >
       <ul
         className="flex items-center"
       >
         <li>
           <a
-            className="px-2 py-1 text-gray-400 uppercase tracking-widest text-sm hover:text-white active:text-white"
+            className="px-2 py-1 text-gray-400 uppercase tracking-more-wider text-sm font-medium hover:text-white active:text-white"
             href="/films"
             onClick={[Function]}
           >
@@ -792,7 +792,7 @@ exports[`Storyshots Header Normal 1`] = `
         </li>
         <li>
           <a
-            className="px-2 py-1 text-gray-400 uppercase tracking-widest text-sm hover:text-white active:text-white"
+            className="px-2 py-1 text-gray-400 uppercase tracking-more-wider text-sm font-medium hover:text-white active:text-white"
             href="/tv-shows"
             onClick={[Function]}
           >
@@ -801,7 +801,7 @@ exports[`Storyshots Header Normal 1`] = `
         </li>
         <li>
           <a
-            className="px-2 py-1 text-gray-400 uppercase tracking-widest text-sm hover:text-white active:text-white"
+            className="px-2 py-1 text-gray-400 uppercase tracking-more-wider text-sm font-medium hover:text-white active:text-white"
             href="/people"
             onClick={[Function]}
           >
@@ -810,7 +810,7 @@ exports[`Storyshots Header Normal 1`] = `
         </li>
         <li>
           <a
-            className="px-2 py-1 text-gray-400 uppercase tracking-widest text-sm hover:text-white active:text-white"
+            className="px-2 py-1 text-gray-400 uppercase tracking-more-wider text-sm font-medium hover:text-white active:text-white"
             href="/discussions"
             onClick={[Function]}
           >
@@ -822,7 +822,7 @@ exports[`Storyshots Header Normal 1`] = `
         className="flex items-center"
       >
         <button
-          className="px-2 py-1 text-gray-400 uppercase tracking-widest text-sm font-rubik hover:text-white active:text-white"
+          className="px-2 py-1 text-gray-400 uppercase tracking-more-wider text-sm font-medium hover:text-white active:text-white font-rubik"
           disabled={false}
           onClick={[Function]}
           type="button"
@@ -830,7 +830,7 @@ exports[`Storyshots Header Normal 1`] = `
           Create Account
         </button>
         <button
-          className="px-2 py-1 text-gray-400 uppercase tracking-widest text-sm font-rubik hover:text-white active:text-white"
+          className="px-2 py-1 text-gray-400 uppercase tracking-more-wider text-sm font-medium hover:text-white active:text-white font-rubik"
           disabled={false}
           onClick={[Function]}
           type="button"
@@ -845,12 +845,7 @@ exports[`Storyshots Header Normal 1`] = `
 
 exports[`Storyshots Hero Normal 1`] = `
 <div
-  className="flex mx-auto justify-center content-center h-168 w-296 bg-center bg-no-repeat -mt-20"
-  style={
-    Object {
-      "backgroundImage": "linear-gradient(90deg,#14181d 0,rgba(20,24,29,.98556487) .97%,rgba(20,24,29,.9451312) 2.07833333%,rgba(20,24,29,.88300656) 3.29666667%,rgba(20,24,29,.80349854) 4.60166667%,rgba(20,24,29,.71091472) 5.96666667%,rgba(20,24,29,.60956268) 7.365%,rgba(20,24,29,.50375) 8.77166667%,rgba(20,24,29,.39778426) 10.16%,rgba(20,24,29,.29597303) 11.505%,rgba(20,24,29,.20262391) 12.78%,rgba(20,24,29,.12204446) 13.95833333%,rgba(20,24,29,.05854227) 15.01666667%,rgba(20,24,29,.01642493) 15.92833333%,rgba(20,24,29,0) 16.66666667%,rgba(20,24,29,0) 83.33333333%,rgba(20,24,29,.01642493) 84.07166667%,rgba(20,24,29,.05854227) 84.98333333%,rgba(20,24,29,.12204446) 86.04166667%,rgba(20,24,29,.20262391) 87.22%,rgba(20,24,29,.29597303) 88.495%,rgba(20,24,29,.39778426) 89.84%,rgba(20,24,29,.50375) 91.22833333%,rgba(20,24,29,.60956268) 92.635%,rgba(20,24,29,.71091472) 94.03333333%,rgba(20,24,29,.80349854) 95.39833333%,rgba(20,24,29,.88300656) 96.70333333%,rgba(20,24,29,.9451312) 97.92166667%,rgba(20,24,29,.98556487) 99.03%,#14181d),linear-gradient(0deg,#14181d 0,#14181d 21.48148148%,rgba(20,24,29,.98556487) 23.63703704%,rgba(20,24,29,.9451312) 26.1%,rgba(20,24,29,.88300656) 28.80740741%,rgba(20,24,29,.80349854) 31.70740741%,rgba(20,24,29,.71091472) 34.74074074%,rgba(20,24,29,.60956268) 37.84814815%,rgba(20,24,29,.50375) 40.97407407%,rgba(20,24,29,.39778426) 44.05925926%,rgba(20,24,29,.29597303) 47.04814815%,rgba(20,24,29,.20262391) 49.88148148%,rgba(20,24,29,.12204446) 52.5%,rgba(20,24,29,.05854227) 54.85185185%,rgba(20,24,29,.01642493) 56.87777778%,rgba(20,24,29,0) 58.51851852%), url(watchingtv.jpg)",
-    }
-  }
+  className="hero-background"
 >
   <div
     className="flex w-240 my-0 mx-auto flex-col justify-end text-center pb-8"
@@ -908,7 +903,7 @@ exports[`Storyshots SearchBar Normal 1`] = `
 <form
   autoCapitalize="off"
   autoComplete="off"
-  className="flex text-gray-400 text-sm uppercase"
+  className="flex text-sm uppercase"
   onSubmit={[Function]}
 >
   <div
@@ -921,7 +916,7 @@ exports[`Storyshots SearchBar Normal 1`] = `
       Or Search By Title
     </label>
     <input
-      className="text-input mt-0 bg-gray-800 ml-6 mr-3"
+      className="text-input-dark mt-0 ml-6 mr-3"
       id="title"
       name="title"
       onBlur={[Function]}
@@ -933,7 +928,7 @@ exports[`Storyshots SearchBar Normal 1`] = `
     />
   </div>
   <button
-    className="btn btn-primary"
+    className="btn btn-primary py-1 px-3 text-sm font-medium"
     disabled={false}
     onClick={[Function]}
     type="submit"
@@ -945,14 +940,14 @@ exports[`Storyshots SearchBar Normal 1`] = `
 
 exports[`Storyshots TopNav Logged In 1`] = `
 <nav
-  className="flex w-2/3 font-rubik"
+  className="flex w-2/3"
 >
   <ul
     className="flex items-center"
   >
     <li>
       <a
-        className="px-2 py-1 text-gray-400 uppercase tracking-widest text-sm hover:text-white active:text-white"
+        className="px-2 py-1 text-gray-400 uppercase tracking-more-wider text-sm font-medium hover:text-white active:text-white"
         href="/films"
         onClick={[Function]}
       >
@@ -961,7 +956,7 @@ exports[`Storyshots TopNav Logged In 1`] = `
     </li>
     <li>
       <a
-        className="px-2 py-1 text-gray-400 uppercase tracking-widest text-sm hover:text-white active:text-white"
+        className="px-2 py-1 text-gray-400 uppercase tracking-more-wider text-sm font-medium hover:text-white active:text-white"
         href="/tv-shows"
         onClick={[Function]}
       >
@@ -970,7 +965,7 @@ exports[`Storyshots TopNav Logged In 1`] = `
     </li>
     <li>
       <a
-        className="px-2 py-1 text-gray-400 uppercase tracking-widest text-sm hover:text-white active:text-white"
+        className="px-2 py-1 text-gray-400 uppercase tracking-more-wider text-sm font-medium hover:text-white active:text-white"
         href="/people"
         onClick={[Function]}
       >
@@ -979,7 +974,7 @@ exports[`Storyshots TopNav Logged In 1`] = `
     </li>
     <li>
       <a
-        className="px-2 py-1 text-gray-400 uppercase tracking-widest text-sm hover:text-white active:text-white"
+        className="px-2 py-1 text-gray-400 uppercase tracking-more-wider text-sm font-medium hover:text-white active:text-white"
         href="/discussions"
         onClick={[Function]}
       >
@@ -992,7 +987,7 @@ exports[`Storyshots TopNav Logged In 1`] = `
   >
     <li>
       <a
-        className="px-2 py-1 text-gray-400 uppercase tracking-widest text-sm hover:text-white active:text-white"
+        className="px-2 py-1 text-gray-400 uppercase tracking-more-wider text-sm font-medium hover:text-white active:text-white"
         href="/profile"
         onClick={[Function]}
       >
@@ -1015,14 +1010,14 @@ exports[`Storyshots TopNav Logged In 1`] = `
 
 exports[`Storyshots TopNav Logged Out 1`] = `
 <nav
-  className="flex w-2/3 font-rubik"
+  className="flex w-2/3"
 >
   <ul
     className="flex items-center"
   >
     <li>
       <a
-        className="px-2 py-1 text-gray-400 uppercase tracking-widest text-sm hover:text-white active:text-white"
+        className="px-2 py-1 text-gray-400 uppercase tracking-more-wider text-sm font-medium hover:text-white active:text-white"
         href="/films"
         onClick={[Function]}
       >
@@ -1031,7 +1026,7 @@ exports[`Storyshots TopNav Logged Out 1`] = `
     </li>
     <li>
       <a
-        className="px-2 py-1 text-gray-400 uppercase tracking-widest text-sm hover:text-white active:text-white"
+        className="px-2 py-1 text-gray-400 uppercase tracking-more-wider text-sm font-medium hover:text-white active:text-white"
         href="/tv-shows"
         onClick={[Function]}
       >
@@ -1040,7 +1035,7 @@ exports[`Storyshots TopNav Logged Out 1`] = `
     </li>
     <li>
       <a
-        className="px-2 py-1 text-gray-400 uppercase tracking-widest text-sm hover:text-white active:text-white"
+        className="px-2 py-1 text-gray-400 uppercase tracking-more-wider text-sm font-medium hover:text-white active:text-white"
         href="/people"
         onClick={[Function]}
       >
@@ -1049,7 +1044,7 @@ exports[`Storyshots TopNav Logged Out 1`] = `
     </li>
     <li>
       <a
-        className="px-2 py-1 text-gray-400 uppercase tracking-widest text-sm hover:text-white active:text-white"
+        className="px-2 py-1 text-gray-400 uppercase tracking-more-wider text-sm font-medium hover:text-white active:text-white"
         href="/discussions"
         onClick={[Function]}
       >
@@ -1061,7 +1056,7 @@ exports[`Storyshots TopNav Logged Out 1`] = `
     className="flex items-center"
   >
     <button
-      className="px-2 py-1 text-gray-400 uppercase tracking-widest text-sm font-rubik hover:text-white active:text-white"
+      className="px-2 py-1 text-gray-400 uppercase tracking-more-wider text-sm font-medium hover:text-white active:text-white font-rubik"
       disabled={false}
       onClick={[Function]}
       type="button"
@@ -1069,7 +1064,7 @@ exports[`Storyshots TopNav Logged Out 1`] = `
       Create Account
     </button>
     <button
-      className="px-2 py-1 text-gray-400 uppercase tracking-widest text-sm font-rubik hover:text-white active:text-white"
+      className="px-2 py-1 text-gray-400 uppercase tracking-more-wider text-sm font-medium hover:text-white active:text-white font-rubik"
       disabled={false}
       onClick={[Function]}
       type="button"

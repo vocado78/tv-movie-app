@@ -2,7 +2,7 @@ import React from 'react';
 import { MemoryRouter } from 'react-router-dom';
 
 import TopNav from './TopNav';
-import FirebaseContext from '../../Firebase/FirebaseContext';
+import FirebaseContext from '../../../Firebase/FirebaseContext';
 
 
 const firebaseMock = {
